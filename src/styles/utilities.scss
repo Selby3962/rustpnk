@@ -6,6 +6,8 @@
   }
 }
 
+.docSection {padding-top:0rem;}
+
 // Container
 .container {
   @apply mx-auto max-w-[1200px] px-4;
@@ -16,13 +18,13 @@
   @apply rounded-[4px];
 }
 .rounded {
-  @apply rounded-[6px];
+  @apply rounded-[4px];
 }
 .rounded-lg {
-  @apply rounded-[12px];
+  @apply rounded-[4px];
 }
 .rounded-xl {
-  @apply rounded-[16px];
+  @apply rounded-[4px];
 }
 
 // Header Conditionals

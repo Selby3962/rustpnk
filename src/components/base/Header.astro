@@ -12,43 +12,39 @@ const menu = [
     url: "/",
   },
   {
-    name: "About",
+    name: "Character Creation",
+    url: "/docs/arules/character-creation",
+  },
+  {
+    name: "Rules",
+    url: "/docs/arules",
+  },
+  {
+    name: "Setting",
+    url: "/docs/bsetting",
+  },
+  {
+    name: "Factions",
+    url: "/docs/cfactions",
+  },
+  {
+    name: "Misc Topics",
+    url: "/docs/dothertopics",
+  },
+  {
+    name: "Tables",
+    url: "/docs/etables",
+  },
+  {
+    name: "City Map",
     url: "/about",
-  },
-  {
-    name: "Docs",
-    url: "/docs",
-  },
-  {
-    name: "Blog",
-    url: "/blog",
-  },
-  {
-    name: "Recipes",
-    url: "/recipes",
-  },
-  {
-    name: "Poetry",
-    url: "/poetry",
-  },
-  {
-    name: "Index Cards",
-    url: "/index-cards",
-  },
-  {
-    name: "Authors",
-    url: "/authors",
-  },
-  {
-    name: "Portfolio",
-    url: "/portfolio",
-  },
+  }
 ];
 ---
 
 <header
   transition:persist
-  class={`container glass py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
+  class={`nav container glass py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
 >
   <nav class="relative flex flex-wrap items-center justify-between">
     <!-- navbar toggler -->
@@ -97,7 +93,14 @@ const menu = [
       >
         <IoSearch />
       </a>
-      <ThemeSwitcher />
     </div>
   </nav>
 </header>
+
+<style>
+
+.nav{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+</style>

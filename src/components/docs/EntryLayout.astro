@@ -5,6 +5,7 @@ import DocBrowser from "@components/docs/Browser.astro";
 import TableOfContents from "@components/common/TableOfContents.astro";
 import { render } from "astro:content";
 import EntryHeader from "@components/common/EntryHeader.astro";
+import Header from "@components/base/Header.astro";
 
 interface Props {
   entry: DocsEntry;
@@ -50,6 +51,7 @@ if (actuallyHideNav && actuallyHideToc) {
 ---
 
 <BaseLayout title={title} image={image?.src} description={description}>
+  <Header />
   <section class="flex container p-4">
     <div class=`max-h-static_sidemenu sticky top-[5rem] mr-4 ${navClass}`>
       <DocBrowser
@@ -60,7 +62,7 @@ if (actuallyHideNav && actuallyHideToc) {
     <div class=`w-full ${articleClass}`>
       <article class="">
         <section class="">
-          <EntryHeader entry={entry} showImage showPubDate />
+          <EntryHeader entry={entry} showImage/>
         </section>
         <section class="content mb-4 glass px-4 rounded-lg">
           <Content />

@@ -2,6 +2,7 @@
 import type { SearchableEntry } from "@/types";
 import BaseLayout from "@components/base/BaseLayout.astro";
 import Search from "@components/search/Search";
+import Header from "@components/base/Header.astro";
 
 interface Props {
   searchList: SearchableEntry[];
@@ -11,5 +12,6 @@ const { searchList } = Astro.props;
 ---
 
 <BaseLayout title="Search" description="Search for content on this site">
+  <Header />
   <Search client:load searchList={searchList} />
 </BaseLayout>

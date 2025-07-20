@@ -43,21 +43,21 @@ module.exports = {
     extend: {
       colors: {
         txt: {
-          p: "#000",
-          s: "#222",
-          light: "#444",
+          p: "#fff",
+          s: "#fff",
+          light: "#fff",
         },
         bg: {
-          p: "#fff",
-          s: "#ddd",
-          t: "#ddd",
+          p: "#100",
+          s: "#444",
+          t: "#444",
         },
         border: "#ddd",
         darkmode: {
           txt: {
             p: "#fff",
-            s: "#ddd",
-            light: "#bbb",
+            s: "#fff",
+            light: "#fff",
           },
           bg: {
             p: "#222",
@@ -126,6 +126,9 @@ module.exports = {
         twinkle: "twinkle 5s infinite ease-in-out",
         // Cycle Background
         cycleBg: "cycleBg 60s ease infinite",
+        // Infinite Vertical Scroll
+        infiniteScroll: "infinite-scroll 25s linear infinite",
+        dimlight: 'dimlight 5s infinite',
       },
       keyframes: {
         // Intersect
@@ -158,6 +161,20 @@ module.exports = {
           "0%, 20%, 100%": { opacity: 1 },
           "10%": { opacity: 0.25 },
         },
+        infiniteScroll: {
+          from: {transform: "translateY(0)"},
+          to: {transform: "translateY(-100%)"},
+        },
+        dimlight: {
+            '0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%': {
+              color: '#0e3742',
+              boxShadow: 'none',
+            },
+            '18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%': {
+              color: '#fff',
+              textShadow: '0 0 10px #03bcf4',
+            },
+        },
         // Cycle Background
         cycleBg: {
           "0%, 100%": { backgroundPosition: "0% 50%" },
@@ -168,6 +185,7 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
+    require('tailwindcss-motion'),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({
       generateContainer: false,
@@ -183,5 +201,14 @@ module.exports = {
     plugin(({ addVariant }) => {
       addVariant("intersect", "&:not([no-intersect])");
     }),
+    function({
+        addUtilities
+      }) {
+        addUtilities({
+          '.box-reflect': {
+            '-webkit-box-reflect': 'below 1px linear-gradient(transparent, #0004)',
+          },
+        });
+      },
   ],
 };

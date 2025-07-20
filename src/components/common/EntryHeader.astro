@@ -92,7 +92,7 @@ tags?.sort((a: string, b: string) => a.localeCompare(b));
   }
   {
     showInfo && (
-      <div class="glass mb-8 p-4 rounded-lg intersect:animate-fade opacity-0 intersect-no-queue">
+      <div class="glass mb-8 titlebox w-full rounded-lg intersect:animate-fade opacity-0 intersect-no-queue">
         <h1 set:html={markdownify(title)} class="mb-4" />
         <ul>
           {author && showAuthor && (
@@ -154,3 +154,15 @@ tags?.sort((a: string, b: string) => a.localeCompare(b));
     )
   }
 </div>
+
+<style>
+  .titlebox{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .titlebox h1{
+    margin-bottom: 0;
+  }
+
+</style>

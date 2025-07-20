@@ -4,6 +4,8 @@ import { markdownify } from "@lib/textConverter";
 import { Image } from "astro:assets";
 import type { AboutEntry } from "@/types";
 import { render } from "astro:content";
+import Button from "@components/common/Button.astro";
+import Header from "@components/base/Header.astro";
 
 interface Props {
   entry: AboutEntry;
@@ -15,26 +17,32 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={title} description={description} image={image?.src}>
-  <section class="section-sm">
+  <Header />
+  <section class="section">
     <div class="container">
       <div class="row justify-center">
-        <div class="glass rounded-lg text-center p-8 md:col-10 lg:col-7 intersect:animate-fadeUp opacity-0 intersect-no-queue">
+        <div class="">
+          <br>
           {
             image && (
               <Image
-                class="mx-auto mb-6 rounded-lg w-64"
+                class="map intersect:animate-fade mx-auto w-full rounded-lg"
                 src={image}
                 alt={imageAlt}
-                width={1024}
-                height={1024}
+                width={3954}
+                height={2763}
                 loading="eager"
               />
             )
           }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
-            <Content />
         </div>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .map{
+    margin-top: -5rem;
+  }
+</style>

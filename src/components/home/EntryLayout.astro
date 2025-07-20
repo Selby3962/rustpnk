@@ -2,32 +2,37 @@
 import BaseLayout from "@components/base/BaseLayout.astro";
 import { markdownify } from "@lib/textConverter";
 import Button from "@components/common/Button.astro";
-import type { HomeEntry } from "@/types";
+import IconButton from "@components/common/IconButton.astro";
+import type { HomeEntry, SearchableEntry } from "@/types";
+import { render } from "astro:content";
 import { Image } from "astro:assets";
 
 interface Props {
   entry: HomeEntry;
 }
 
-const { entry } = Astro.props;
+const { entry} = Astro.props;
 const { image, imageAlt, title, content, button } = entry.data;
+const { Content } = await render(entry);
 ---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 
 <BaseLayout>
   <!-- Banner -->
-  <section class="section">
+  <section class="section animate-fade">
     <div class="container">
       <div class="row justify-center">
-        <div class="text-center lg:col-6">
+        <div class="text-center lg:col-10">
           {
             image && (
               <div class="blur-[0px]">
                 <Image
-                class="mb-6 w-64"
+                class="mb-8 w-1024"
                 src={image}
                 alt={imageAlt}
-                width={1024}
-                height={1024}
+                width=1018
+                height=382
                 loading="eager"
               />
               </div>
@@ -35,20 +40,42 @@ const { image, imageAlt, title, content, button } = entry.data;
             )
           }
           <h1 set:html={markdownify(title)} class="mb-4" />
-          <p set:html={markdownify(content)} class="mb-8" />
-          {
-            button && (
-              <Button
-                label={button.label}
-                link={button.link}
-                newtab
-                hoverInvert
-                color=""
-              />
-            )
-          }
-        </div>
-      </div>
+          <p set:html={markdownify(content)} class="blurb" />
+          
+          <section class="" style="margin-top:0px;">
+            <Content />
+          </section>
+          
+          <section class="mb-4 glass px-4 rounded-lg" style="margin-top:20px;" />
+
+          <div class="row around-xs">
+            <div class="col-xs">
+              <Button label="- CHARACTER CREATION -" link="/docs/arules/character-creation"/>
+              <Button label="- RULES -" link="/docs/arules"/>
+              <Button label="- SETTING -" link="/docs/bsetting"/>
+              <Button label="- FACTIONS -" link="/docs/cfactions"/>
+              <Button label="- TABLES -" link="/docs/etables"/>
+              <Button label="- MAP -" link="/about"/>
+              <Button label="- INDEX -" link="/docs/"/>
+              <IconButton label="🔍" link="/search"/>
+            </div>
+          </div>
+          
+          <section class="mb-4 glass px-4 rounded-lg" style="margin-top:20px;" />
+
+
     </div>
   </section>
 </BaseLayout>
+
+<style>
+
+	.buttonSpan{
+	};
+
+	.blurb{
+		color:red;
+		font-size: 40px;
+	}
+  
+</style>

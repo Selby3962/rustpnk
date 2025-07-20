@@ -2,7 +2,10 @@
 import BaseLayout from "@components/base/BaseLayout.astro";
 import DocCard from "@components/docs/Card.astro";
 import PageHeader from "@components/common/PageHeader.astro";
+import Header from "@components/base/Header.astro";
+import { render } from "astro:content";
 import type { DocsEntry } from "@/types";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   collectionIndex: DocsEntry;
@@ -10,6 +13,7 @@ interface Props {
 }
 
 const { collectionIndex, entries } = Astro.props;
+const { Content, headings } = await render(collectionIndex);
 ---
 
 <BaseLayout
@@ -17,11 +21,14 @@ const { collectionIndex, entries } = Astro.props;
   image={collectionIndex.data.image?.src}
   description={collectionIndex.data.description}
 >
+  <Header />
   <PageHeader title={collectionIndex.data.title} />
-  <section class="section">
+  <section class="section docSection">
     <div class="container">
+      
       <div class="row">
         {
+          
           entries.map((entry) => (
             <div class="md:col-6 lg:col-4 h-min p-2">
               <DocCard entry={entry} />
@@ -29,6 +36,15 @@ const { collectionIndex, entries } = Astro.props;
           ))
         }
       </div>
+      
+      
+      <section class="content mb-4 glass px-4 rounded-lg">
+        <Content />
+      </section>
+      
+	  
+	  
     </div>
   </section>
+  <ClientRouter fallback="swap" />
 </BaseLayout>

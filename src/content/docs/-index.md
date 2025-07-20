@@ -1,5 +1,5 @@
 ---
-title: Documentation
-description: This is the docs
+title: Index
+description: ""
 draft: false
 ---
