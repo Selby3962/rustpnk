@@ -11,7 +11,7 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "selby3962.github.io",
+  site: "https://selby3962.github.io",
   base: "/rustpnk",
   trailingSlash: "ignore",
   prefetch: {
