@@ -14,6 +14,9 @@ export default defineConfig({
   site: "https://selby3962.github.io",
   base: "/rustpnk",
   trailingSlash: "ignore",
+  build: {
+    assets: "assets",
+  },
   prefetch: {
     prefetchAll: true
   },
