@@ -11,14 +11,14 @@
 	var index  = 0;
 	var $top   = $('.cycler');
 
-	setInterval(function() {
-	   $top.animate({ opacity: 0 }, 1500, function() {
-		 $top.css('background-image', 'url('+images[++index]+')');
-		 $top.animate({ opacity: 1 }, 1500, function() {
-		   if(index === images.length) index = 0; 
-		 });
-	   });
-	}, 24000);
+	// setInterval(function() {
+	//    $top.animate({ opacity: 0 }, 1500, function() {
+	// 	 $top.css('background-image', 'url('+images[++index]+')');
+	// 	 $top.animate({ opacity: 1 }, 1500, function() {
+	// 	   if(index === images.length) index = 0; 
+	// 	 });
+	//    });
+	// }, 24000);
 
 </script>
 
