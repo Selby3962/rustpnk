@@ -128,6 +128,7 @@
 </style>
 
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Syne+Mono&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 h1,
 h2,
@@ -243,8 +244,14 @@ li::marker {
 }
 
 
+.accordion{
+	font-family: "Tomorrow", sans-serif;
+	border-width:0px;
+}
 
-
+.accordion button{
+	font-size: 12px;
+}
 
 .content{
 	@apply intersect:animate-fadeUp;
@@ -270,7 +277,7 @@ li::marker {
 	text-align: center;
 	font-size: 12px;
 	table-layout: auto;
-	/* width: 100%; */
+	width: 100%;
 	@apply intersect:animate-fade;
 	
 }
@@ -342,7 +349,8 @@ li[role=tab]{
 }
 
 .tab-content {
-	padding-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 }
 
 li[role=tab]:hover{background-color: rgba(161, 1, 1, 0.25);}
@@ -380,6 +388,5 @@ li[tabindex="0"]{background-color: rgba(1, 1, 1, 0.25);}
 .content table td p:hover span {
   visibility: visible;
 }
-
 
 </style>

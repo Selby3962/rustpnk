@@ -11,9 +11,9 @@ const Accordion = ({
   const [show, setShow] = useState(false);
 
   return (
-    <div className="mb-6 overflow-hidden rounded-lg border border-border dark:border-darkmode-border">
+    <div className="mb-3 overflow-hidden rounded-lg border border-border dark:border-darkmode-border accordion">
       <button
-        className="glass-t-borderless flex w-full cursor-pointer items-center justify-between px-4 py-2 text-lg text-txt-p dark:text-darkmode-txt-p"
+        className="glass-t-borderless flex w-full cursor-pointer items-center justify-between px-4 py-2 text-lg text-txt-p dark:text-darkmode-txt-p btn-one"
         onClick={() => setShow(!show)}
       >
         {title}
@@ -31,7 +31,7 @@ const Accordion = ({
         </svg>
       </button>
       <div
-        className={`max-h-0 overflow-hidden px-4 py-0 ${show && "max-h-full py-0"}`}
+        className={`max-h-0 overflow-hidden px-0 py-0 w-full accordionchild ${show && "max-h-full py-0"}`}
       >
         {children}
       </div>

@@ -64,7 +64,7 @@ const Tabs = ({ children }: { children: React.ReactElement }) => {
       </ul>
       {tabLinks.map((item: { name: string; children: string }, i: number) => (
         <div
-          className={active === i ? "tab-content block px-5" : "hidden"}
+          className={active === i ? "tab-content block px-2" : "hidden"}
           key={i}
           dangerouslySetInnerHTML={{
             __html: marked.parse(item.children),

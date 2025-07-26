@@ -22,7 +22,7 @@ const { menu, currentPage } = Astro.props;
                 href={`/rustpnk/docs/${item.id}`}
                 class={`w-full leading-none no-underline ${item.id === currentPage ? "font-bold" : ""}`}
               >
-                {item.title}
+                {item.title.slice(3)}
               </a>
               {item.children.length > 0 && (
                 <ul class="list-none m-0">
@@ -32,7 +32,7 @@ const { menu, currentPage } = Astro.props;
                         href={`/rustpnk/docs/${child.id}`}
                         class={`w-full leading-none no-underline ${child.id === currentPage ? "font-bold" : ""}`}
                       >
-                        {child.title}
+                        {child.title.slice(4)}
                       </a>
                     </li>
                   ))}
@@ -45,3 +45,20 @@ const { menu, currentPage } = Astro.props;
     </div>
   )
 }
+
+
+<style>
+
+.ml-0 a{
+  font-size: 12px;
+  font-weight:400;
+  font-family: "Tomorrow", sans-serif;
+}
+
+.ml-4 a{
+	color: rgb(211, 144, 144);
+  font-size: 12px;
+}
+
+
+</style>
