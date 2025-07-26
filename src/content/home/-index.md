@@ -3,9 +3,6 @@ image: "@assets/rustGlitch01.gif"
 imageAlt: RUST/PNK Logo
 title: ""
 content: The world of RUST/PNK is a blend of Cyberpunk, Cassette-Futurism, and Neo-Noir. A futuristic crime drama, set against the backdrop of the unforgiving rust-red frontier of a terraformed [Mars](docs/bsetting/mars).
-button:
-  label: DOCS
-  link: /docs/
 ---
 
 Set in Wuhai, a sin-soaked cross between Hong Kong, Las Vegas, and New York City. Wuhai is a uniquely independent, maritime metropolis, situated on the edge of the Masursky Bay, and surrounded on all other sides by The Expanse: Mars' vast, red wasteland.
