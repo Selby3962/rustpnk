@@ -1,12 +1,12 @@
 <script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-	var images = ['/rustpnk/media/alley_05.png',
-	'/rustpnk/media/outskirts_06.png',
-	'/rustpnk/media/industry_04.png',
-	'/rustpnk/media/market_07.png',
-	'/rustpnk/media/outskirts_01.png',
-	'/rustpnk/media/rooftops_01.png',
-	'/rustpnk/media/seaboard_01.png'];
+	var images = ['/rustpnk/media/4.png',
+	'/rustpnk/media/2.png',
+	'/rustpnk/media/3.png',
+	'/rustpnk/media/1.png',
+	'/rustpnk/media/5.png',
+	'/rustpnk/media/6.png',
+	'/rustpnk/media/7.png'];
 
 	var index  = 0;
 	var $top   = $('.cycler');
@@ -84,11 +84,12 @@
 		top: 0; left: 0;
 		width: 100%;
 		height: 100%;
-		background: url(/src/assets/backgrounds/alley_05.png) no-repeat center center;
+		background: url(/rustpnk/media/4.png) no-repeat center center;
 		background-size: cover;
 		z-index: -1;
 		pointer-events: none;
-		filter: blur(4px);
+		/* filter: blur(4px); */
+		filter:brightness(50%);
 	}
 	
 	.scanlinesContainer{
