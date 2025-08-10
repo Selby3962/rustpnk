@@ -1,5 +1,5 @@
 ---
-title: 6 - Crew Mechanics (Optional)
+title: 6 - Crew Mechanics
 description: ""
 image: "@assets/docs/headers/crew.png"
 ---
@@ -27,94 +27,159 @@ In theory, this could be anything, but its recommended to pick something that pl
 | 6_ON_D12 | Rebels and Insurgents            | Demolitions, Guerrilla Tactics, Propaganda, Mobilisation           | 12_ON_D12 | Rockstars and Performers           | Put on a Show, Evade the Law, Rile up an Audience, Stick it to the Man   |
 
 
-
-
-
-
 </div>
 If your group is more divided, consider the connections between player characters. What are they to each other?
 
 If its a little vague, or the characters don't really know each other yet, either write a broad descriptor of what the group currently is (Drifters, Freelancers, Nobodies, etc.), or just skip this. Do a few more jobs and come back to it.
 
-Playing to the **Strengths** of your **Archetype** earns you **Reputation** (or "Rep") at the end of a job. As your Reputation increases, your crew gain additional benefits. See Crew Advancement below.
+Playing to the **Strengths** of your **Archetype** earns you **Status** at the end of a job. As your Status increases, your crew gain additional benefits. See [Crew Advancement](/rustpnk/docs/arules/crew-faction#crew-advancement) below.
 
 ---
 
-## Heat
-**Heat** represents how likely your enemies are to make a move against you.
+## Contacts & Faction Relations
 
-**Heat** is displayed as a Track, split into groups of three, every **three ticks** your Retribution Rating increases. As your Retribution increases, the events and complications you'll face during downtime become more severe. See [Downtime](/rustpnk/docs/arules/downtime-advancement#events--retribution).
+### Crew Contacts
+Much like individual Characters, the crew have access to Contacts; a network of friends, fixers, and experts.
 
-### Gaining Heat
-Heat is gained at the end of a job, depending on a number of factors:
-- **Noise:** If the job was loud and chaotic, gain **+1 Heat**.
-- **Evidence:** If the Crew were identified, or left behind a trail of evidence linking back to them, gain **+1 Heat**.
-- **Profile:** If the Target was particularly High Profile, gain **+1 Heat**.
+#### Starting Contact
+The Crew start knowing one shared, close **Contact**. 
+<br/>One PC might have more of a connection with them than the others, but you all know them well enough to trust them.
+
+<p class="text-center">**Give them a name, an occupation, as well as a detail about how you know them**.
+<br/>**Make something up, or roll on the table below.**</p>
+
+
+<div class="sonohead rolltable">
+|          |                                             |           |                                                     |
+| -------: | :------------------------------------------ | --------- | --------------------------------------------------- |
+| 1_ON_D12 | A family member with a local business       | 7_ON_D12  | A smuggler operating out of Heng Fa or Seaboard B-8 |
+| 2_ON_D12 | A trusted Ripperdoc who installed your Augs | 8_ON_D12  | A radical politician with a reasonable following    |
+| 3_ON_D12 | A Fixer who trusts you                      | 9_ON_D12  | A journalist for an underground publication         |
+| 4_ON_D12 | A bartender or club owner                   | 10_ON_D12 | A mechanic with a modest garage                     |
+| 5_ON_D12 | A low-to-mid ranking corporate insider      | 11_ON_D12 | A retired mercenary                                 |
+| 6_ON_D12 | A low-to-mid ranking member of a gang       | 12_ON_D12 | A corrupt Cerberus beat-cop                         |
+</div>
+
+
+---
+
+### Faction Relations
+The Crew Sheet also tracks relations between the Crew and individual Factions.
+
+<p class="text-center">**Your Faction Relations are represented with a 6-segment clock, which starts half-filled.**</p>
+
+<p class="text-center">At 3/6 segments, your relation is Neutral, and your Rating is 0.<br/> As the clock fills your Rating increases. As the clock empties, your Rating decreases.</p>
+<div class="clock w-full text-center"> 0/6 1/6 2/6 3/6 4/6 5/6 6/6 </div>
+<p class="text-center">This rating, from **-3** to **+3** add **Advantage Dice** <AD/> or **Threat Dice** <TD/> to checks related to negotiations involving the faction.</p>
+
+<div class="sonohead">
+| Rating                                                      | Effects                                                                                                                                                                               |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div class="clock w-full text-center"> 6/6 </div> Allied    | This faction may be willing to put themselves at risk for you, as long as it doesn't contradict their aims, and possibly for nothing. But still don't expect them to do it regularly. |
+| <div class="clock w-full text-center"> 5/6 </div> Friendly  | This faction may be willing to put themselves at risk for you, but they'll be sure to collect on the favour.                                                                          |
+| <div class="clock w-full text-center"> 4/6 </div> Familiar  | This faction doesn't mind you. They might be inclined to help you in some minor way, for a price, and as long as it doesn't hurt them.                                                |
+| <div class="clock w-full text-center"> 3/6 </div> Neutral   | This faction doesn't care about your problems. They owe you nothing.                                                                                                                  |
+| <div class="clock w-full text-center"> 2/6 </div> Irritated | This faction is irritated about your recent behaviour, or encroachment on their territory. They might cause you complications.                                                        |
+| <div class="clock w-full text-center"> 1/6 </div> Enemies   | You've pissed this faction off big time. They'll almost certainly be looking to get payback in some form.                                                                             |
+| <div class="clock w-full text-center"> 0/6 </div> War       | This faction hates you. You've done something unforgivable toward them or their allies. Expect bloodshed.                                                                             |
+</div>
+
+<br/>
+#### Starting Relations
+<p class="text-center">**Pick one local faction to have **+2 Relation**, and another to have **-1 Relation** with.**<br/>Work with the GM to pick these two factions.</p>
+
+**Consider what this means for the crew.**
+<br/>Maybe one is a group you've worked with before, and the other is group you've upset, or owe a favour to.
+
+See [Factions](/rustpnk/docs/cfactions/) for a full list.
+
+---
+
+## Hostility
+**Hostility** represents how likely your enemies are to make a move against you.
+
+**Hostility** is displayed as five 3-Segment Clocks. For each full clock, your Hostility Rating increases. 
+
+<div class="clock w-full text-center"> 3/3 3/3 1/3 0/3 0/3 </div>
+<p class="text-center"> Example: The crew have 2 Full Clocks, one at 1/3, the rest empty.<br/>The Crew have a Hostility Rating of 2. </p>
+
+As your Hostility increases, the events and complications you'll face during downtime become more severe. See [Downtime](/rustpnk/docs/arules/downtime-advancement#events--retribution).
+
+### Gaining Hostility
+Hostility is gained at the end of a job, depending on a number of factors:
+- **Noise:** If the job was loud and chaotic, gain **+1 Hostility**.
+- **Evidence:** If the Crew were identified, or left behind a trail of evidence linking back to them, gain **+1 Hostility**.
+- **Profile:** If the Target was particularly High Profile, gain **+1 Hostility**.
 
 ---
 
 ## Crew Advancement
-Much like individual Characters, the Crew as a whole can make advancements. As the Crew become better known, more opportunities will open up to them.
+Much like individual Characters, the Crew as a whole improve over time. <br/>As the Crew become better known, more opportunities will open up to them.
 
-### Gaining Reputation
-**Reputation** indicates how well known, respected, and feared the Crew are among their clients, allies, and enemies. 
+### Status & Rank
+**Status** indicates how well known, respected, and feared the Crew are among their clients, allies, and enemies. **As it increases, so does your Rank.**
 
-**When Rep passes certain Thresholds, the Crew's Rank increases:**
-|  # Rep |   Rank    | Tags                                            |
-| -----: | :-------: | :---------------------------------------------- |
-|  0 Rep |  Unknown  | ⛉⛉ Nobodies\*                                 |
-| 10 Rep | Whispers  | Safehouse, ⛉ Unproven\*                        |
-| 20 Rep |   Known   | ⛊ Proven, ⛊ Connections, Market Contacts      |
-| 40 Rep | Connected | High Profile Jobs, ⛊ Better Pay, ⛊ Protection |
-| 60 Rep | Respected | ⛊ Loyal Allies, ⛉ Observed                    |
-| 80 Rep |  Legends  | ⛊ Legacy Status, ⛉ Mortal Enemies             |
+Increasing your Rank brings with it access to **Advantages** (Safehouse, Market Contacts, etc), which might add Advantage<AD/> or Threat<TD/> dice to relevant checks.
 
-**Tags marked with a \* are removed at the next Rank. Unmarked Tags carry over.**
+<p class="text-center">The Crew Sheet displays twelve, 8-Segment [Clocks](/rustpnk/docs/arules/skill-checks#clocks--extended-checks). <br/>Every point of Status adds one tick to a clock.</p>
 
-Increasing your Rank brings with it access to **Advantages** (Safehouse, Market Contacts), and Tags (⛊, ⛉) that might add Action/Danger die to checks related to the Crew.
-
-For shorter, faster campaigns, half the required number of ticks.
-
+<div class="clock w-full text-center"> 8/8 8/8 8/8 8/8 3/8 0/8 0/8 0/8 0/8 0/8 0/8 0/8 </div>
+<p class="text-center"> Example: The crew have 4 Full Clocks, one at 3/8, the rest empty.<br/>The Crew are Rank 4 ("Connected") </p>
 <br/>
-**Reputation is gained at the end of a job, depending on a number of factors:**
-- **Archetype:** Gain **+1** Rep if the group played to the particular strengths (Triggers) of Crew.
-- **Noise:** Gain **+1** Rep if you gained 2 or more Heat during the job.
-- **Profile:** Gain **+1** to **+3** Rep, depending on the Tier of the target. **0-1: +1** | **2-3: +2** | **4: +3.**
-- **Bonus:** At the GMs discretion, the Crew may gain an additional **+1-2** Rep for longer jobs, or for especially successful jobs (Quiet, clean, bonus objectives, etc.)
+
+**The number of fully filled clocks represents your Rank. Compare with the table below:**
+| Status    | Rank                 | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------- | -------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0 Clocks  | - 1 -<br/> Unknown   | **Disadvantages:**<br/>**Nobodies \|** +2<TD/> to checks when influencing or dealing based on your crew status.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 1 Clock   | - 2 -<br/> Whispers  | **Enables:** Purchasing a Safehouse, allows for upgrades to it.<br/><br/>**Disadvantages:**<br/>**Unproven\|** Removes Nobodies. +1<TD/> to checks when influencing or dealing based on your crew status.                                                                                                                                                                                                                                                                                                                                                             |
+| 2 Clocks  | - 3 -<br/> Known     | **Advantages:**<br/>**Proven \|** Removes Unproven. +1<AD/> to checks when influencing or dealing based on your crew status.<br/>**Market Contacts \|** Easier access to black market goods.<br/><br/>**Disadvantages:**<br/>**Upstarts \|** Your presence upsets local groups. Relations with a local faction are reduced by 2. +1 Hostility per job.                                                                                                                                                                                                                |
+| 4 Clocks  | - 4 -<br/> Connected | **Advantages:**<br/>**Fixer Connections \|** Access to better jobs, higher pay.<br/>**Protection \|** Removes Upstarts. Your reputation earns you protection from a friendly local faction, as long as you don't make moves to upset them.<br/><br/>**Includes Advantages from Known.**                                                                                                                                                                                                                                                                               |
+| 8 Clocks  | - 5 -<br/> Respected | **Advantages:**<br/>**Known Quantity \|** Replaces Proven. +2<AD/> to checks when influencing or dealing based on your crew status.<br/>**Professionals \|** Access to jobs of high profile and pay.<br/>**Loyal Allies \|** Friendly local factions will be willing to put themselves at risk to assist you when operating within their territory, as long as it doesn't contradict their aims.<br/><br/>**Disadvantages:**<br/>**Observed \|** Dangerous forces are keeping an eye on you. Better watch your step.<br/><br/>**Includes Advantages from Connected.** |
+| 12 Clocks | - 6 -<br/> Legends   | **Advantages:**<br/>**Legacy Status \|** Replaces Proven. +3<AD/> to checks when influencing or dealing based on your crew status.<br/>**The Obvious Choice \|** Access to jobs of the highest profile and pay.<br/><br/>**Disadvantages:**<br/>**Mortal Enemies \|** You've pissed off some powerful, and unforgiving enemies. One faction is set to -3 Relations, this cannot improve.<br/><br/>**Includes Advantages from Respected.**                                                                                                                             |
+
+<p>
+- **GM Advice:** For shorter, faster campaigns, half the number of clocks required for each tier.
+</p>
+
+#### Gaining Status
+**Status is gained at the end of a job, depending on a number of factors:**
+- **Archetype:** Gain **+1** Status if the group played to the Strengths of your Crew Archetype.
+- **Noise:** Gain **+1** Status if you gained 2 or more Hostility during the job.
+- **Profile:** Gain **+1** to **+3** Status, depending on the Tier of the target. **0-1: +1** | **2-3: +2** | **4: +3.**
+- **Bonus:** At the GMs discretion, the Crew may gain an additional **+1-2** Status for longer jobs, or for especially successful jobs (Quiet, clean, bonus objectives, etc.)
+
+#### Losing Status
+**1 or 2 ticks of Status could be lost as part of a Bane or Major Consequence**
+- This could represent a public embarassment or betrayal that damages your reputation.
+- You cannot take ticks from filled clocks. Once a clock is full, it is locked in. 
 
 ---
 
 ## Upgrades
 In addition to the benefits of Rank, you can commit time, money, and skill toward Upgrades; Features and Benefits that help the entire Crew.
 
-**As a note:** The Upgrades you choose should make logical sense with the fiction. *For example: Regular Clientele requires you to be running some sort of side business.*
-
----
+**As a note:** The Upgrades you choose should make logical sense within the fiction. *For example: Regular Clientele requires you to be running some sort of side business.*
 
 ### Crew Features
 
-**When your Reputation Rank increases, pick a new Feature:**
+**When your Status Rank increases, pick a new Feature:**
 
-|      Upgrade      | Features                                                                                                                                                                                                      |
-| :---------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|   Rental Market   | Can Rent gear for 25% of the base cost, the gear is available for one job.                                                                                                                                    |
-|  Courier Routes   | Can move around the City much faster and quieter, using hidden routes.                                                                                                                                        |
-|      MedEvac      | Once per job, a specialist team will attempt to rendezvous to extract an unconscious or dying PC or ally                                                                                                      |
-|     Influence     | Once per session, re-roll a failed attempt to persuade/deceive an NPC, with one less Danger Die.                                                                                                              |
-|      Fanbase      | Once per job, call upon a rabid cult following. Will help hide you, or cause a distraction.                                                                                                                   |
-|    Inside Man     | Once per job, call upon an "Inside Man" to do something for you. Make a check, add Action Dice for your Social Skills, add Danger Die for any threat they might face in doing what you asked.                 |
-|     Cleaners      | Reduce Heat gained from jobs by 1. If this results in gaining 0 Heat, gain +1 Rep.                                                                                                                            |
-|     Hardened      | All PCs gain +1 to their Maximum Physical or Mental Harm Track                                                                                                                                                |
-|    Coordinated    | Once per job, two Crew members may act as one. Pool your dice together. The resulting action has significantly greater effect.                                                                                |
-| Cross-Disciplined | Once per job, each Crew member may borrow an Edge from another PC. Even if they're not in the same scene.                                                                                                     |
-|   Burner Tools    | At any time, before a Check: Crew members can choose to "Burn Out" a piece of gear, destroying it, but increasing the final Result by one level (Botch > Fail > Partial > Success > Boon).                    |
-|     Prepared      | Once per job, Crew members can immediately purchase and use a piece of gear they didn't previously have.                                                                                                      |
-|    Ride or Die    | Once per job, when a Crew member takes lethal harm, another PC may immediately act to save them. Failure comes at a cost for the acting PC.                                                                   |
-|  Agents of Chaos  | Gain +1 Heat per job, but gain +1 Rep as well.                                                                                                                                                                |
-|  Code of Honour   | Gain a new way to gain EXP: Decide on a Rule, or set of Rules that the Crew swear to abide by. Characters gain +1 EXP at the end of a job if they played to this.                                             |
-|    Iconic Ride    | Designate a vehicle as the Crew's "Iconic Ride". Gain +1 Action Die for any check involving it. Also add the "Armoured" Advanced Tag for free. If it already has this tag, increase it to "Heavily Armoured". |
-
-
+|      Upgrade      | Features                                                                                                                                                                                                                                                 |
+| :---------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   Rental Market   | Can Rent gear for 25% of the base cost, the gear is available for one job.<br/> Can call upon this once during a job to acquire gear you didn't previously have.                                                                                         |
+|  Courier Routes   | Can move around the city much faster and quieter, using hidden and lesser-known routes. <br/>Always effective when not at risk.<br/> When at risk, adds +2<AD/> to checks related to escaping or navigation using these routes.                          |
+|      MedEvac      | Once per job, a specialist team will attempt to rendezvous to extract an incapacitated or dying PC or ally. <br/>You might need to place them somewhere relatively safe, first.                                                                          |
+| Strong Influence  | Once per session, automatically succeed an attempt to Influence an NPC, with no consequences.                                                                                                                                                            |
+|      Fanbase      | Once per job, call upon a rabid cult following. Will arrive to help hide you, break shit, cause a distraction, potentially all three.                                                                                                                    |
+|    Inside Man     | Once per job, declare and call upon an "Inside Man" to do something for you. No check is required, they'll always come through for you.                                                                                                                  |
+|     Cleaners      | Reduce Hostility gained from jobs by 1. If this results in gaining 0 Hostility, gain +1 Status.                                                                                                                                                          |
+|    Coordinated    | Once per job, two Crew members may act as one. Pool your dice together. The resulting action has significantly greater effect.                                                                                                                           |
+| Cross-Disciplined | Each Crew member writes an additional Expertise honed by their connection with another member of the Crew. In addition, increase the attached skill by one (Max +4).                                                                                     |
+|    Burner Augs    | At any time, before a Check: Crew members can choose to "Burn Out" an Augmentation used in the check, disabling it for the rest of the job, but increasing the final Result by one level (Bane > Hollow Success > Minor Success > Major Success > Boon). |
+|    Ride or Die    | Once per job, when a Crew member would suffer a lethal Trauma, another PC may make a check to save them. <br/>Major or Minor Success: The Threat is nullified. <br/>Hollow Success: There is a Major Consequence for the acting PC.                      |
+|  Agents of Chaos  | Always gain +1 Hostility per job, but gain +1 Status as well.                                                                                                                                                                                            |
+|  Code of Honour   | Decide on a prohibitive Rule, or set of Rules that the Crew swear to abide by.<br/> Characters gain +1 EXP at the end of a job if they played to this.                                                                                                   |
+|    Iconic Ride    | Designate a vehicle as the Crew's "Iconic Ride". Gain +1 <AD/> for any check involving it.<br/> In addition, pick and install one Mod of choice to it for free. This mod doesn't count toward the Mod limit.                                             |
 
 ---
 
@@ -122,79 +187,59 @@ In addition to the benefits of Rank, you can commit time, money, and skill towar
 Unlocked at Rank 2, the Crew have access to a shared Safehouse. This can be upgraded to expand its use.
 
 Prior to this, the Crew can still have a place to meet and plan; a public place, an abandoned building, or a backroom in a building owned by a trusted contact.
-The only implication is that they won't yet have the means or permission to start making improvements.
+The only implication is that they don't yet have the means or permission to start making improvements.
+
+<p class="text-center">**When picking a Safehouse, pick a District to operate out of.**<br/>Work with the GM to pick an interesting location.</p>
 
 #### Property
-Property comes with some inherent features. These don't count toward the Property's Max Improvements. *Re-style these as desired.*
-
-Additionally, feel free to adjust the cost from -20% to +20%, based on the area/district the property is in. Or waive the cost entirely if the Crew earned it through a job, or from a contact.
 
 
 |              Property               | Features                                        | Cost    | Max Improvements |
 | :---------------------------------: | :---------------------------------------------- | ------- | ---------------- |
 |         Stormdrain Chamber          | Sewer Access, Isolated                          | ₩500    | 1                |
 | Shipping Container / Storage Locker | Discreet                                        | ₩500    | 1                |
-|              Backroom               | Friendly Proprietor                             | ₩1000   | 2                |
-|              Tenement               | Gang Territory                                  | ₩1500   | 2                |
+|              Backroom               | Friendly Proprietor                             | ₩500    | 1                |
+|              Tenement               | Allied Gang Territory                           | ₩1500   | 2                |
 |              NET Cafe               | Live-In Nerds                                   | ₩2,000  | 2                |
 |             Nomad Camp              | Isolated, Garage                                | ₩6,000  | 3                |
 |         Waterfront Property         | Boat, Canal Access                              | ₩8,000  | 3                |
 |               Temple                | Loyal Cultists                                  | ₩8,000  | 3                |
 |              Warehouse              | Hidden Storage, Garage                          | ₩10,000 | 4                |
 |              Business               | Regular Clientele: (See List Below)             | ₩15,000 | 3                |
-|              Nightclub              | Hot Spot: (See List Below)                      | ₩15,000 | 3                |
+|              Club/Bar               | Hot Spot: (See List Below)                      | ₩15,000 | 3                |
 |                Dojo                 | Loyal Students, Training Room: (See List Below) | ₩15,000 | 3                |
 |              Penthouse              | Doorman, Security, Lounge, Helipad              | ₩30,000 | 3                |
 |              Freighter              | Mobile, Ocean-bound, Helipad                    | ₩40,000 | 6                |
 |               Oil Rig               | Isolated, Hangar, Ocean-bound                   | ₩70,000 | 6                |
+<p>
+- Property comes with some inherent features. *Re-style these as desired.* <br/>These don't count toward the Property's Max Improvements.
+- Cost includes setup, supplies, rigging up power, lighting, etc.
+- Additionally, feel free to adjust the cost by -50% to +50%, based on the area/district the property is in and other factors.
+- You could also waive the cost entirely if the Crew earned it through a job, or from a contact.
+</p>
 
-<br/>
-#### Improvements
-|      Upgrade      | Features / Tags                                                                                                                                                                                            | Cost   |
-| :---------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-|   Alarm System    | Early warning system                                                                                                                                                                                       | ₩1,000 |
-|     Safe Room     | Secure storage, heavily armoured, and supplies to survive for up to a week                                                                                                                                 | ₩1,000 |
-|   Sewer Access    | Passage between your safehouse and the outside world via the sewer system                                                                                                                                  | ₩1,000 |
-|      Lounge       | ⛊ Liaise,                                                                                                                                                                                                 | ₩1,500 |
-|     Amenities     | ⛊ Rest, ⛊ Reduce Stress                                                                                                                                                                                  | ₩2,000 |
-|  Gang Territory   | Backup from an allied gang while nearby                                                                                                                                                                    | ₩4,000 |
-|        Lab        | ⛊ Research, ⛊ Create Drugs                                                                                                                                                                               | ₩4,000 |
-|    Server Room    | ⛊ Interface, ⛊ Develop.                                                                                                                                                                                  | ₩4,000 |
-|      Medbay       | ⛊ Recovery. ⛊ Operate.                                                                                                                                                                                   | ₩4,000 |
-|  Private Hangar   | A secure Hangar to store 2 Aerial Vehicles. ⛊ Mechanics Workshop                                                                                                                                          | ₩5,000 |
-|      Garage       | Safe storage for 2 road vehicles, ⛊ Mechanics Workshop                                                                                                                                                    | ₩5,000 |
-|   Training Room   | Write a new Edge, for any of your Trademarks                                                                                                                                                               | ₩8,000 |
-| Regular Clientele | +20% Job Payout                                                                                                                                                                                            | ₩8,000 |
-|     Hot Spot      | +1 Rep & Heat per Job                                                                                                                                                                                      | ₩8,000 |
-|     Workshop      | ⛊ Repair, ⛊ Upgrade. <br/>Can attempt to add a 3rd "Advanced Tag" to gear. <br/>Roll using any relevant crafting skills. Add +2 Danger Die as a base, and +1 Danger Die per Gear Slot the item takes up. | ₩8,000 |
+#### Safehouse Improvements
+Safehouses can have Improvements up to the Max Improvements limit listed in the table above.
 
-**If for any reason you lose access to these Improvements (Moving Property, Destruction, Acts of God), you also lose the benefit you gained from it.**
+|      Upgrade      | Features / Tags                                                                                                                                                                                                                                         | Cost   |
+| :---------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
+|   Alarm System    | Early warning system. You will be alerted to any visitors or hostilties in advance.                                                                                                                                                                     | ₩1,000 |
+|     Safe Room     | Secure storage, heavily armoured, and supplies to survive for up to a week.<br/> A safe place to store valuables, or shelter if under attack.                                                                                                           | ₩1,000 |
+|   Sewer Access    | Secure passage between your safehouse and the outside world via the sewer system.<br/> Hidden. Avoids detection.                                                                                                                                        | ₩1,000 |
+|      Lounge       | +1<AD/> to Influence people while they are in your Safehouse.                                                                                                                                                                                           | ₩1,500 |
+|     Amenities     | +1<AD/> to checks related to recovery of health or stress.                                                                                                                                                                                              | ₩2,000 |
+|        Lab        | +1<AD/> to research and chemistry-related checks and long-term projects.                                                                                                                                                                                | ₩4,000 |
+|    Server Room    | +1<AD/> to coding, hacking, and development related checks and long-term projects.                                                                                                                                                                      | ₩4,000 |
+|      Medbay       | +1<AD/> to checks related to recovery of health or stress. <br/>+1<AD/> to checks related to surgery.                                                                                                                                                   | ₩4,000 |
+|     Hot Spot      | +1 Status per Job, and hostile actions near your Safehouse are less likely.<br/> However, you also gain +1 Hostility per Job.<br/> Being popular is blessing and a curse.                                                                               | ₩4,000 |
+|  Hangar/Helipad   | A secure place to store 1 Aerial Vehicle.<br/> +1<AD/> to modify and repair Aerial Vehicles.                                                                                                                                                            | ₩5,000 |
+|      Garage       | Safe storage for 2 ground vehicles.<br/> +1<AD/> to modify and repair ground Vehicles.                                                                                                                                                                  | ₩5,000 |
+|   Training Room   | Enables you to increase up to 2 Skills to +4 via Advancements.<br/>In addition, immediately write a new Expertise, for any Skill.                                                                                                                       | ₩8,000 |
+| Regular Clientele | +20% Job Payout. Representing money earned while you've been away.                                                                                                                                                                                      | ₩8,000 |
+|     Workshop      | Can attempt to add a 3rd "Advanced Tag" to gear. <br/>Roll using any relevant crafting skills.<br/> Add +2 Threat Die as a base, and +1 Threat Die for every Gear Slot the item takes up.<br/>In addition, add +1<AD/> to Engineering checks done here. | ₩8,000 |
 
-When moving to a new Property, at the GM's discretion, carry over purchased improvements up to the Max of the new property.
-**This doesn't include Features the original property inherently had, such as the Tenement's "Gang Territory", or the Dojo's "Training Room"**
+<p/>
+- If for any reason you lose access to these Improvements (Moving Property, Destruction, Acts of God), you also lose the benefit you gained from it.
 
----
-
-## Contacts & Status
-
-### Crew Contacts
-Much like individual Characters, the crew have access to Contacts; a network of friends, fixers, and experts.
-
-The Crew starts knowing **One Friend**. This is a shared contact. One PC might have more of a relationship with them than the others, but you all know them enough to trust them.
-
-Give them a **name**, and an **occupation** (ideally one that makes them useful), and a **detail** about how you know them.
-
-
-### Faction Relations
-The Crew Sheet also tracks relations between the Crew and individual Factions.
-
-Your **Faction Relations** are rated from **-3** to **+3**. This rating can add **Action Die** or **Danger Die** to checks with the associated Faction.
-
-**At the start of play, pick either:**
-- One faction to have +1 with, 
-<br/>**OR**
-- One faction to have +2 with, and another to have -1 with. 
-
-**Consider what this means for the crew.** Maybe one is a group you've worked with before, and the other is group you've upset, or owe a favour to?
-
-See [Factions](/rustpnk/docs/cfactions/) for a full list.
+**When moving to a new Property, at the GM's discretion, carry over purchased improvements up to the Max of the new property.**
+- This should always make sense within the fiction and typically doesn't include features the original property inherently had, such as the Tenement's "Gang Territory", or the Dojo's "Training Room"
