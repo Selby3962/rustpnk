@@ -216,6 +216,7 @@ span.AD {
 	font-size: medium;
 	margin-left: 2px;
 	margin-right: 2px;
+	font-style:normal;
 	
 	border-radius: 0.3rem;
 	background-color: rgba(0, 0, 0, 1); 
@@ -227,6 +228,7 @@ span.TD {
 	font-size: medium;
 	margin-left: 2px;
 	margin-right: 2px;
+	font-style:normal;
 
 	border-radius: 0.3rem;
 	background-color: rgba(221, 0, 0, 0.45);
@@ -376,12 +378,42 @@ table .hits{
 	width:10rem;
 }
 
+.content .rolltable table td:nth-child(odd){
+	font-family: "Dicier-Light";
+	font-size: 20px;
+	width: 2rem;
+	font-weight: normal;
+}
+
+.content .rolltable table td{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.content .rolltable-crewarch table td:nth-child(1),.content .rolltable-crewarch table td:nth-child(4){
+	font-family: "Dicier-Light";
+	font-size: 20px;
+	width: 2rem;
+	font-weight: normal;
+}
+
+.content .rolltable-crewarch table td:nth-child(2),.content .rolltable-crewarch table td:nth-child(5){
+	font-weight: bold;
+}
+
+.content .rolltable-crewarch table td{
+	font-size: 12px;
+	font-weight: normal;
+}
+
 .content tr:hover {background-color: rgba(161, 1, 1, 0.5);}
 
 .content th{
 	font-size: 12px;
 	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	background-color: rgba(0, 0, 0, 1);
+	text-align:center !important;
 }
 
 .content ul{
@@ -429,7 +461,7 @@ li[tabindex="0"]{background-color: rgba(1, 1, 1, 0.25);}
 .content table td p span {
   visibility: hidden;
   width: 300px;
-  background-color: black;
+  background-color: rgb(12, 12, 12);
   color: #fff;
   text-align: left;
   padding: 20px;

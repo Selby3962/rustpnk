@@ -1,5 +1,5 @@
 ---
-title: 1 - Character Creation
+title: 2 - Character Creation
 description: ""
 image: "@assets/docs/headers/characters2.png"
 #hideNav: true
@@ -9,16 +9,16 @@ image: "@assets/docs/headers/characters2.png"
 ## Character Creation Steps
 
 <div class="sonohead">
-|                               |                                                                                                                                                                                                                                                  |
-| ----------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   <span class="AD">ONE</span> | **Write 3 Aspects.** - A Background, an Archetype, and a Trait.<br/> *Use your Aspects to inform the choices in the next steps.*                                                                                                                 |
-|   <span class="AD">TWO</span> | **Assign 6 Points to Skills.** - Spread them between different Skills. <br/> *Skills cannot go above +3 at Character Creation.<br/> When using a skill as part of a [Check](/rustpnk/docs/arules/skill-checks), this is how many dice you roll.* |
-| <span class="AD">THREE</span> | **Write 3 Expertise** - Attach them to different Skills.  <br/> *Expertise are narrow, specialist areas of knowledge.<br/>When an Expertise is relevant to a [Check](/rustpnk/docs/arules/skill-checks), you add* 1 Advantage Die <AD/>          |
-|  <span class="AD">FOUR</span> | **Write 3 Flaws, one for each Aspect.** <br/> *Flaws can be invoked to cause trouble, but also restore your [Action Points](/rustpnk/docs/arules/skill-checks#action-points).*                                                                   |
-|  <span class="AD">FIVE</span> | **Pick Starting Gear** - The Tools and Augmentations of your Trade.                                                                                                                                                                              |
-|   <span class="AD">SIX</span> | **Form Connections** - Your Bonds with your teammates, an Ally, and a Rival.                                                                                                                                                                     |
-| <span class="AD">SEVEN</span> | **Define a Drive** - An aspiration or an obligation? What makes you risk your life?                                                                                                                                                              |
-| <span class="AD">EIGHT</span> | **Finishing Touches** - Maximum Wounds, Action Points, and Optional Details                                                                                                                                                                      |
+|                               |                                                                                                                                                                                                                                                |
+| ----------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   <span class="AD">ONE</span> | **Write 3 Aspects.** - A Background, an Archetype, and a Trait.<br/> *Use your Aspects to inform the choices in the next steps.*                                                                                                               |
+|   <span class="AD">TWO</span> | **Assign Points to Skills.** - Spread them between different Skills. <br/> *Skills cannot go above +3 at Character Creation.<br/> When using a skill as part of a [Check](/rustpnk/docs/arules/skill-checks), this is how many dice you roll.* |
+| <span class="AD">THREE</span> | **Write Expertise** - Attach them to different Skills.  <br/> *Expertise are narrow, specialist areas of knowledge.<br/>When an Expertise is relevant to a [Check](/rustpnk/docs/arules/skill-checks), you add* 1 Advantage Die <AD/>          |
+|  <span class="AD">FOUR</span> | **Write Flaws** <br/> *Flaws can be invoked to cause trouble, but also restore your [Action Points](/rustpnk/docs/arules/skill-checks#action-points).*                                                                                         |
+|  <span class="AD">FIVE</span> | **Pick Starting Gear** - The Tools and Augmentations of your Trade.                                                                                                                                                                            |
+|   <span class="AD">SIX</span> | **Form Connections** - Your Bonds with your teammates, an Ally, and a Rival.                                                                                                                                                                   |
+| <span class="AD">SEVEN</span> | **Define a Drive** - An aspiration or an obligation? What makes you risk your life?                                                                                                                                                            |
+| <span class="AD">EIGHT</span> | **Finishing Touches** - Maximum Wounds, Action Points, and Optional Details                                                                                                                                                                    |
 
 </div>
 
@@ -36,138 +36,169 @@ Who were you before, who are you now, how have you survived?
 <Tabs client:load>
 
     <Tab name="Backgrounds">
-        | Background           | Relevant Skills            | Example Flaws                                                                              |
-        | -------------------- | -------------------------- | ------------------------------------------------------------------------------------------ |
-        | Criminal             | Physical,<br/> Streetwise  | Known to the authorities,<br/> Nervous disposition,<br/> Powerful enemy                    |
-        | Cultist              | Influence,<br/> Medical    | Unstable Beliefs,<br/> Obedience Reflex                                                    |
-        | Dealer               | Streetwise,<br/> Influence | Shady Reputation,<br/> Crossed the Wrong People                                            |
-        | Disgraced Bureaucrat | Influence,<br/> Knowledge  | Blackmailed,<br/> Naive,<br/> Soft,<br/> Stole from the Corp                               |
-        | Ex-Cop               | Firearms,<br/> Streetwise  | Old Wound,<br/> Impressive Arrest Record,<br/> Hot-Headed,<br/> Cold-Hearted,<br/> Corrupt |
-        | Ex-Corp Drone        | Tech,<br/> Knowledge       | Still Employed,<br/> Stole from the Corp                                                   |
-        | Ex-Corp Security     | Physical,<br/> Firearms    | Stole from the Corp,<br/> Orders are Orders,<br/> Emotionless                              |
-        | Former Rich Kid      | Influence,<br/> Knowledge  | Naive,<br/> Entitled,<br/> Cut Off                                                         |
-        | Industrial Worker    | Physical,<br/> Engineering | Workplace Injury,<br/> known unionite                                                      |
-        | Lab Rat              | Medical,<br/> Survival     | Monitored,<br/> Dependency,<br/> Lost Years,<br/>                                          |
-        | Outlander            | Engineering,<br/> Survival | Adrenaline Junkie,<br/> Fugitive,<br/> Obvious Outsider                                    |
-        | Street Kid           | Streetwise,<br/> Mobility  | Old Gang Ties,<br/> Criminal Record                                                        |
-        | Vagrant              | Streetwise,<br/> Survival  | Poor Hygiene,<br/> Poor Health                                                             |
-        | Veteran              | Firearms,<br/> Survival    | Shoot-First,<br/> PTSD,<br/> Old Wounds                                                    |
+        | Background           | Relevant Skills             | Example Flaws                                                                   |
+        | -------------------- | --------------------------- | ------------------------------------------------------------------------------- |
+        | Criminal             | Fighting,<br/> Streetwise   | Usual Suspect,<br/> Jittery,<br/> Gang Grudges                                  |
+        | Cultist              | Influence,<br/> Medical     | Unstable,<br/> Obedient, <br/> Weirdo                                           |
+        | Dealer               | Streetwise,<br/> Influence  | Shady<br/> Crossed the Wrong People                                             |
+        | Disgraced Bureaucrat | Influence,<br/> Knowledge   | Blackmailed,<br/> Naive,<br/> Soft,<br/> Stole from the Corp                    |
+        | Ex-Cop               | Streetwise,<br/> Awareness  | Old Wound,<br/> Arrest Record,<br/> Hot-Headed,<br/> Cold-Hearted,<br/> Corrupt |
+        | Ex-Corp Drone        | Tech,<br/> Knowledge        | Still Employed,<br/> Stole from the Corp                                        |
+        | Ex-Corp Security     | Awareness,<br/> Firearms    | Stole from the Corp,<br/> Orders are Orders,<br/> Emotionless                   |
+        | Former Rich Kid      | Influence,<br/> Knowledge   | Naive,<br/> Entitled,<br/> Cut Off                                              |
+        | Industrial Worker    | Toughness,<br/> Engineering | Workplace Injury,<br/> Known Unionist                                           |
+        | Lab Rat              | Medical,<br/> Survival      | Monitored,<br/> Drug Dependency,<br/> Lost Years,<br/>                          |
+        | Outlander            | Engineering,<br/> Survival  | Adrenaline Junkie,<br/> Fugitive,<br/> Obvious Outsider                         |
+        | Street Kid           | Streetwise,<br/> Mobility   | Old Gang Ties,<br/> Criminal Record                                             |
+        | Vagrant              | Streetwise,<br/> Survival   | Poor Hygiene,<br/> Poor Health                                                  |
+        | Veteran              | Firearms,<br/> Survival     | Shoot-First,<br/> PTSD,<br/> Old Wounds                                         |
     </Tab>
 
     <Tab name="Archetypes">
         | Archetype         | Relevant Skills            | Example Flaws                                                             |
         | ----------------- | -------------------------- | ------------------------------------------------------------------------- |
-        | Backalley Brawler | Physical,<br/> Mobility    | Biggest Guy in the Yard,<br/> Soft-Hearted,<br/> Meat-Headed              |
-        | Bounty Hunter     | Firearms,<br/> Mobility    | Cold Hearted,<br/> Only in it for the Money,<br/> Soft Hearted            |
-        | Codeslinger       | Tech,<br/> Subterfuge      | Traceable,<br/> Unfit,<br/> Socially Awkward                              |
+        | Backalley Brawler | Fighting,<br/> Mobility    | Biggest Guy in the Yard,<br/> Soft-Hearted,<br/> Meat-Headed              |
+        | Bounty Hunter     | Firearms,<br/> Awareness   | Cold Hearted,<br/> Only in it for the Money,<br/> Soft Hearted            |
+        | Netrunner         | Tech,<br/> Subterfuge      | Traceable,<br/> Unfit,<br/> Socially Awkward                              |
         | Contract Killer   | Firearms,<br/> Subterfuge  | Cold,<br/> Unwavering Code,<br/> Calling Card                             |
-        | Driver-For-Hire   | Driving,<br/> Streetwise   | Collateral Damage,<br/> Fugitive,<br/> Adrenaline Junkie                  |
-        | Enforcer          | Physical,<br/> Firearms    | Stands Out,<br/> Mean Streak,<br/> Violence is always the Answer          |
+        | Driver            | Driving,<br/> Awareness    | Collateral Damage,<br/> Fugitive,<br/> Adrenaline Junkie                  |
+        | Enforcer          | Toughness,<br/> Fighting   | Stands Out,<br/> Mean Streak,<br/> Violence is always the Answer          |
         | Firebrand         | Mobility,<br/> Subterfuge  | Attention Seeker,<br/> Wanted,<br/> In Over My Head                       |
         | Grifter           | Influence,<br/> Streetwise | Greedy,<br/> Playboy/girl,<br/> Poor Reputation                           |
-        | Infiltrator       | Subterfuge,<br/> Physical  | Calling Card,<br/> Trusts No-One,<br/> Wanted                             |
+        | Infiltrator       | Subterfuge,<br/> Awareness | Calling Card,<br/> Trusts No-One,<br/> Wanted                             |
         | Mechanic          | Engineering,<br/> Driving  | Risk-taker,<br/> Short-tempered,<br/> Always dirty                        |
         | Medic             | Medical,<br/> Knowledge    | Fugitive,<br/> Unlicensed,<br/> Callous                                   |
         | Researcher        | Knowledge,<br/> Tech       | Arrogant,<br/> Weakling,<br/> Absent-minded                               |
         | Ripperdoc         | Medical,<br/> Engineering  | Blunt,<br/> Merciless,<br/> Humanitarian                                  |
-        | Rockstar          | Influence,<br/> Physical   | Powerful Enemies,<br/> Opinionated,<br/> Recognizable                     |
-        | Street Ganger     | Physical,<br/> Streetwise  | Exiled,<br/> Battle Scars,<br/> Filthy,<br/> Untrustworthy,<br/> Wanted   |
-        | Vigilante         | Firearms,<br/> Mobility    | Unwavering Code,<br/> Secret Vice,<br/> Altruistic,<br/> Powerful Enemies |
+        | Rockstar          | Influence,<br/> Fighting   | Powerful Enemies,<br/> Opinionated,<br/> Recognizable                     |
+        | Street Ganger     | Toughness,<br/> Streetwise | Exiled,<br/> Battle Scars,<br/> Filthy,<br/> Untrustworthy,<br/> Wanted   |
+        | Vigilante         | Awareness,<br/> Mobility   | Unwavering Code,<br/> Secret Vice,<br/> Altruistic,<br/> Powerful Enemies |
     </Tab>
 
-    <Tab name="Advantages">
+    <Tab name="Traits">
         | Traits               | Relevant Skills            | Example Flaws                                               |
         | -------------------- | -------------------------- | ----------------------------------------------------------- |
         | Born Leader          | Influence                  | Hangers-On,<br/> Opinionated,<br/> Authority Issues         |
-        | Cold-Blooded         | Physical,<br/> Mobility    | Emotionally Distant,<br/> Hard to Trust,<br/> No Warmth     |
+        | Cold-Blooded         | Fighting,<br/> Toughness   | Emotionally Distant,<br/> Hard to Trust,<br/> No Warmth     |
         | Daredevil            | Driving,<br/> Survival     | Reckless,<br/> Old Injury,<br/> Never Learns                |
         | Empathetic           | Influence,<br/> Subterfuge | Easily Overwhelmed,<br/> Gullible                           |
-        | Genetically Modified | Any                        | Secret Sickness,<br/> Escaped Subject,<br/> Visibly Mutated |
-        | Genius               | Knowledge,<br/> Tech       | Socially Inept,<br/> "Hyper-Fixation on,<br/> (Pick One)"   |
-        | Hardened             | Any Combat,<br/> Survival  | Reckless,<br/> Overconfident,<br/> Phobia (Pick one)        |
+        | Genetically Modified | Toughness                  | Secret Sickness,<br/> Escaped Subject,<br/> Visibly Mutated |
+        | Genius               | Knowledge,<br/> Tech       | Socially Inept,<br/> Hyper-Fixation on: (Pick One)          |
+        | Hardened             | Any Combat,<br/> Survival  | Reckless,<br/> Overconfident,<br/> Phobia: (Pick one)       |
         | Light-Footed         | Mobility,<br/> Subterfuge  | Creepy,<br/> Lives in Dark                                  |
-        | Sharp-Eyed           | Streetwise,<br/> Firearms  | Lost in the details,<br/> Paranoid,<br/> Blunt              |
+        | Sharp-Eyed           | Awareness                  | Lost in the details,<br/> Paranoid,<br/> Blunt              |
     </Tab>
 </Tabs>
 
 ---
 
-## Assign Six Points to Skills
+## Assign Points to Skills
 Skills represent broad areas of knowledge. 
 - Your choice of Skills should be relevant to your Aspects.
-- Skills are rated from 0 - 4. They cannot go above +3 at Character Creation.
+- Skills are rated from 0 - 4. Skills cannot go above +3 at Character Creation.
 - When making a [Check](/rustpnk/docs/arules/skill-checks), you roll Advantage Dice (AD <AD/>) equal to your Skill.
+- Skills can be improved later using [Advancements](/rustpnk/docs/arules/downtime-advancement).
 
 <br/>
-<p class="text-center">**Assign 6 Points, spread between the Skills below:**
+<p class="text-center">**Assign 3 Points, spread between the Physical Skills below:**
 <br/>*Use your Aspects to guide you. Skills cannot go above +3 at Character Creation.*</p>
-| Skills      | Example Expertise                                                                                                                                                             |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Physical    | Brawling, Blades, Blunt, Martial Art: , Disarm, Grappling, Throw, Wreck, Intimidation, Pain Resistance, Drug Resistance, Augmentation Adaptation, Toxin Resistance, Athletics |
-| Firearms    | Sidearms, Auto-Rifles, Precision Rifles, Shotguns, Heavy Weapons, Quick Draw, Close-Quarters Fire, Focus                                                                      |
-| Tech        | Security Systems, Drones, Electronics, Interface, Hacking, Encryption, Gather Information, Coding, NET Architecture                                                           |
-| Subterfuge  | Silent Takedown, Deception, Seduction, Disguise, Forgery, Security Systems, Sleight of Hand, Sneak, Escape Artist, Tracking, Resist Torture, Drug Resistance                  |
-| Mobility    | Evasion, Climb, Parkour, Navigation, Swimming, Quick Reflexes, Sneak, Martial Art:, Athletics, Acrobatics                                                                     |
-| Influence   | Persuasion, Deception, Interrogation, Negotiate, Bribe, Seduction, Leadership, Intimidation, High Society, Incite, Read People, Gather Information                            |
-| Survival    | Scavenging, Jury-Rig, Tracking, Navigation, Repair, First Aid, Foraging, Geography, Wilderness Survival, Toxin Resistance                                                     |
-| Driving     | Cars, Drones, Bikes, Boats, AVs, Military, Navigation, Pursuit, Stunt Driving, Mechanics, Focus                                                                               |
-| Medical     | First Aid, Augmentation, Surgery, Pharmaceuticals, Chemistry, Diagnosis, Biology, Psychology, Meditation Techniques, Drug Resistance, Augmentation Adaptation                 |
-| Knowledge   | Corporate, History, Language, Politics, Geography, Tactics, Law, Urban Planning, Gather Information, Mental Fortitude, Meditation Techniques, Gambling, Bureaucracy           |
-| Streetwise  | Black Market, Local Knowledge, Bribe, Scavenging, Underworld, Fixers, Smuggling, Read People, Read Situation, Gather Information,                                             |
-| Engineering | Augmentation, Drones, Robotics, Heavy Machinery, Sabotage, Physics, Mechanics, Fabricate                                                                                      |
+| Physical  | Example Expertise                                                                                                                               |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fighting  | Brawling, Blades, Blunt, Martial Art: [X] , Disarm, Grappling, Throw, Wreck, Intimidate                                                         |
+| Firearms  | Sidearms, Auto-Rifles, Precision Rifles, Shotguns, Heavy Weapons, Quick Draw, Close-Quarters Fire, Control, Careful Aim                         |
+| Mobility  | Evasion, Climb, Parkour, Navigation, Swimming, Quick Reflexes, Sneak, Martial Art: [X], Athletics, Acrobatics                                   |
+| Toughness | Pain Resistance, Drug Resistance, Augmentation Adaptation, Toxin Resistance, Athletics, Meditation Techniques, Mental Fortitude, Resist Torture |
 
-## Write Three Expertise
+<br/>
+<p class="text-center">**Assign 3 Points, spread between the Education Skills below:**
+<br/>*Use your Aspects to guide you. Skills cannot go above +3 at Character Creation.*</p>
+| Education   | Example Expertise                                                                                                                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Engineering | Augmentation, Drones, Robotics, Heavy Machinery, Sabotage, Physics, Mechanics, Fabricate                                                 |
+| Knowledge   | Corporate, History, Language, Politics, Geography, Tactics, Law, Urban Planning, Research Information, Gambling, Bureaucracy             |
+| Medical     | First Aid, Augmentation, Surgery, Pharmaceuticals, Chemistry, Diagnosis, Biology, Psychology, Meditation Techniques, Drug Resistance     |
+| Tech        | Security Systems, Drones, Electronics, Interface, Hacking, Encryption, Research Information, Coding, NET Architecture                    |
+| Streetwise  | Black Market, Local Knowledge, Bribe, Scavenging, Underworld, Fixers, Smuggling, Read People, Read Situation, Question People, Blackmail |
+
+<br/>
+<p class="text-center">**Assign 3 Points, spread between the Talents below:**
+<br/>*Use your Aspects to guide you. Skills cannot go above +3 at Character Creation.*</p>
+| Talents    | Example Expertise                                                                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Awareness  | Read People, Read Situation, Notice Details, Recall Information, Intuition, Quick Reflexes, Honed [Sense], Focus                                |
+| Driving    | Cars, Drones, Bikes, Boats, AVs, Military, Navigation, Pursuit, Stunt Driving, Mechanics, Control                                               |
+| Influence  | Persuasion, Deception, Interrogation, Negotiate, Bribe, Seduction, Leadership, Intimidation, High Society, Incite, Read People, Question People |
+| Subterfuge | Silent Takedown, Deception, Seduction, Disguise, Forgery, Security Systems, Sleight of Hand, Sneak, Escape Artist, Resist Torture, Sabotage     |
+| Survival   | Scavenging, Jury-Rig, Tracking, Navigation, Repair, First Aid, Foraging, Geography, Wilderness Survival, Toxin Resistance                       |
+
+<br/>
+- **GM Advice:** For games that intend to place the focus more/less on Combat, consider adjusting the number of points assigned to each category.
+- Likewise, for more/less competent characters, consider adjusting the total number of points to spend up or down.
+
+## Write Four Expertise
 Expertise represent narrow, specialist areas of knowledge.
 - Like Skills, Expertise should be relevant to your Aspects.
-- Each Expertise should be unique. You cannot pick the same Expertise twice.
+- Each Expertise should be unique. You cannot list the same Expertise twice, even across multiple different skills.
+- New Expertise can be acquired later using [Advancements](/rustpnk/docs/arules/downtime-advancement).
 - Each Skill can have at most 3 Expertise. These can be swapped out during [Downtime](/rustpnk/docs/arules/downtime-advancement).
 - When making a [Check](/rustpnk/docs/arules/skill-checks), each relevant Expertise grants +1 Advantage Die <AD/>.
 - You can use multiple Expertise in a single Check, as long as they're attached to the same Skill being used.<br/>
     - *If you have a relevant Expertise attached to a different Skill, you can make a case for how you apply it in a different context.<br/>The GM has final say about whether or not it is appropriate.*
-
-<p class="text-center">**Pick Three Expertise from the table above, or make up your own.**<br/>**Write them in the space next to relevant skills.**</p>
+    - The tables above include examples where an Expertise might be relevant to multiple skills, such as Intimidate (Fighting, Influence), or Sneak (Mobility, Subterfuge), judge appropriateness based on the context in which the Expertise is being used.
 
 <br/>
+<p class="text-center">**Pick Four Expertise from the table above, or make up your own.**<br/>**Write them in the space next to relevant skills.**</p>
+<br/>
 
-## Write Three "Flaws"
+## Write Three to Six "Flaws"
 
 Flaws are details that can be invoked (either by yourself, or the GM) to hinder you.
 - When a Flaw is invoked during a [Check](/rustpnk/docs/arules/skill-checks), you add 1 Threat Die <TD/>, making the check more difficult.
 - When a Flaw impedes you in this way, you restore a single [Action Point](/rustpnk/docs/arules/skill-checks#action-points). <br/>
+- Each Flaw can only be invoked once per-job. It can still impact the fiction, but it won't apply <TD/> or restore Action Points.
 *Action Points can be spent to avoid harm and take control of the action.*
+- The more Flaws you have, the more likely they are to cause your character trouble, however, more Flaws means more opportunities to restore Action Points.
 
-
-<p class="text-center">**Pick or create Three Flaws, one for each Aspect.**</p>
+<br/>
+<p class="text-center">**Pick Three to Six Flaws from the table above, or make up your own**<br/>**You should have one or two for each Aspect.**</p>
+<br/>
 
 ---
 
 ## Pick Starting Gear
-**Characters start with an amount of gear and augmentations to represent belongings and advantages acquired in their lives up to this point.**
+Characters start with an amount of gear and augmentations; useful belongings acquired in their lives up to this point.
 
 #### Basic Information
 ##### Loadout
-- **Gear Slots** represented with: (◆) indicate how bulky an item is.
-- Characters pick a Loadout between Light (3 ◆'s worth of items), and Heavy (6 ◆'s worth of items) before a job begins. **You don't need to worry about this now.**
-- A character's loadout implies how geared-up an Character appears to observers. The heavier your loadout, the more obviously ready for action you are.
+**Gear Slots** represented with: (◆) indicate how bulky an item is.
+- Characters pick a Loadout between Light (Max 3 ◆'s worth of items), and Heavy (Max 6 ◆'s worth of items), and declare all Heavy (◆◆◆) Items before a job begins.<br/>**You don't need to worry about this now.**
+- A character's loadout implies how geared-up an Character appears to observers.<br/> *The heavier your loadout, the more obviously ready for action you appear.*
 
-##### Tags
-- Items and Augmentations have **"Tags"** associated with them.
-- These can be **positive** or **negative**, either Adding **Action Die** (⛊) or **Danger Die** (⛉).
-- If a tag has no symbol (⛊/⛉), it doesn't add dice, but does **enable a particular action that otherwise may have been impossible**.
-- **Tags are only applied when they become relevant.** For example, the Portable Lab's "⛊ Identify" tag only applies when its used to Identify something.
-- Items and Augmentations also have **"Advanced Tags"**. These help to **expand the function and further individualise Gear**. These **aren't available during Character Creation**, and must be acquired through play.
+<p class="text-center"> For more information, see: [Gear System](/rustpnk/docs/arules/gear) </p>
 
-For more information, see: [Gear System](/rustpnk/docs/arules/gear)
+##### Features
+Items and Augmentations have Features. Details that define what actions they allow, and any specific advantages and disadvantages they may have.
+- **Some actions are Enabled by gear.**<br/>*Meaning, the use of this gear allows you to do something you previously couldn't.*
+- **Some gear have Advantages**<br/>*Advantages might add Advantage Dice <AD/> to relevant checks, or provide some other benefit.*
+- **Likewise, some gear may have Disadvantages**.<br/>*Disadvantages might reduce a Skill, add Threat Dice <TD/> to relevant checks, or be purely fictional problems, (E.g. Slow, Low-Range, Noisy, etc.).*
+- **Some pieces of gear have limited uses.**<br/>*This could be a limited duration (E.g. up to an hour), limited uses per-job (recovered during Downtime), or are consumed on use (E.g. Grenades, Drugs).*
+- **Features and Advantages are only applied when they become relevant.** <br/>*For example, the Survival Kit's +1<AD/> to Survival checks only applies when attempting something specific to the kit.*
+- **Items and Augmentations can also be upgraded with Mods**.<br/>*Mods can add features, remove disadvantages, and further individualise Gear.<br/> Mods are not available during Character Creation, and must be acquired through play.*
+
+<p class="text-center"> For more information, see: [Gear System](/rustpnk/docs/arules/gear) </p>
 
 ---
+
 ### Tools of the Trade
 
-**First, pick one of the following configurations:**
+**All characters start with 3d6x100 ₩**.
+
+**Then, pick one of the following configurations:**
 - **A.** An Item related to Trademarks + a mix of 3 Drugs/Grenades
 - **B.** A Vehicle related to Trademarks.
 <br/>
 **As well as one of the following:**
-- **A.** A Melee Weapon or Light Sidearm & Security-Grade Armour
+- **A.** A Melee Weapon or Light Sidearm + Security-Grade Armour
 - **B.** A Heavy Sidearm, Rifle, or Shotgun.
 
 <br/>
@@ -178,30 +209,18 @@ For more information, see: [Gear System](/rustpnk/docs/arules/gear)
 
         ##### Items Weigh between ◇ and ◆◆◆ (0 - 3 Slots)
 
-        |        Item        |                                                        Description                                                        | Basic Tags                                  | Gear Slots |
-        | :----------------: | :-----------------------------------------------------------------------------------------------------------------------: | :------------------------------------------ | :--------: |
-        | Anti-Flash Goggles |                                                             -                                                             | Resist Flash                                |     ◆      |
-        |   Climbing Gear    |              Ultralight cord, a grapnel, some grip handholds, and a fast-acting, ultra-strong wall adhesive.              | ⛊ Climb                                    |     ◆◆     |
-        |     Comm Gear      |                                                 Radios, Earpieces, etc..                                                  | Communicate                                 |     ◇      |
-        |      Fake ID       | A fake ID. Good enough to pass a spot check. <br/> **Add an additional Danger Die each time it is used after the first.** | ⛊ False Identity                           |     ◇      |
-        |        GRID        |                                               A portable computing device.                                                | ⛊ Interface,<br/> ⛉ Outmoded Tech         |     ◆◆     |
-        |  Lockbreaking Kit  |                                Tools for picking standard locks, hot-wiring vehicles, etc.                                | Pick Lock                                   |     ◆      |
-        |    Portable Lab    |                                         A kit of useful field-research equipment.                                         | ⛊ Research,<br/> ⛉ Basic Equipment        |     ◆◆     |
-        | Surveillance Gear  |                                      Portable Cameras, Microphones, Tracking Devices                                      | Record, <br/> ⛊ Track, <br/> ⛉ Detectable |     ◆      |
-        |      Tool Kit      |                                                A set of mechanic's tools.                                                 | ⛊ Repair, <br/> ⛉ Limited Supply          |     ◆◆     |
-
-
-    </Tab>
-
-    <Tab name="Vehicles">
-
-        |      Vehicle       |                                            Description                                            | Basic Tags                                       |
-        | :----------------: | :-----------------------------------------------------------------------------------------------: | :----------------------------------------------- |
-        | Classic Motorcycle |               A classic motorcycle, popular among the nomad tribes of the Expanse.                | ⛊ Drive, <br/> Saddlebags <br/> Single-Seater   |
-        |    Consumer Car    |       A standard, consumer-grade car. 4 seats and a decent size trunk. A great starter car.       | ⛊ Drive, <br/> 4-Seater, <br/> Trunk Space      |
-        |    Consumer Van    | A standard consumer-grade van. Heavy chassis. Great storage space, with potential for conversion. | ⛊ Drive, <br/> Storage Space, <br/> ⛊⛉ Heavy, |
-        |       Skiff        |                 A small skiff, useful for navigating the narrow canals of Wuhai..                 | ⛊ Pilot, <br/> ⛊ Unassuming                    |
-        |    Fishing Boat    |                  A basic fishing trawler, common to see along the Masursky Bay.                   | ⛊ Pilot, <br/> ⛊ Unassuming <br/> ⛉ Slow      |
+        | Name                                                                                                                                                              | Features                                                                                                                                    | Slots |
+        | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+        | <p>Anti-Flash Goggles<span>Protective Goggles that block the effect of Flashbangs.                                                                    </span></p> | **Advantages:** Blocks the effect of Flashbangs                                                                                             | ◆     |
+        | <p>Binoculars        <span>Creep on people from a safe distance                                                                                       </span></p> | **Enables:** Observe from Afar                                                                                                              | ◆     |
+        | <p>Climbing Gear     <span>Ultralight cord, a grapnel with launcher, and climbing harness                                                             </span></p> | **Enables:** Grapnel Launcher<br/><br/>**Advantages:** +1<AD/> to relevant Mobility checks<br/><br/>**Uses:** 1. Consumed if not recovered. | ◆◆    |
+        | <p>Comm Gear         <span>Radios, Earpieces, etc.<br/>Communicate via Radio, Satellite, or DFC.                                                      </span></p> | **Enables:** Insecure Comms up to 15km, Secure Comms up to 40m.                                                                             | ◇     |
+        | <p>Fake ID           <span>A fake ID. Good enough to pass a spot check, but unlikely to work well if you're actively being hunted.                    </span></p> | **Advantages:** +1<AD/> to relevant Influence checks.<br/><br/>**Disadvantages:** +1<TD/> to each check after the first.                    | ◇     |
+        | <p>GRID              <span>A portable computing device. Allows interfacing with other devices. Can be connected to the NET.                           </span></p> | **Enables:** Interface with Device, Connect to NET, Code, Hack, etc.                                                                        | ◆◆    |
+        | <p>Lockbreaking Kit  <span>Tools for picking standard, non-electronic, non-biometric locks.                                                           </span></p> | **Enables:** Pick Lock, Hotwire                                                                                                             | ◆     |
+        | <p>Portable Lab      <span>A kit of useful field-research equipment. Can identify substances and mix small batches of compounds from base ingredients.</span></p> | **Enables:** Mix Chemicals, Identify Substances                                                                                             | ◆◆    |
+        | <p>Surveillance Gear <span>Portable Cameras, Microphones, Tracking Devices                                                                            </span></p> | **Enables:** Track Target up to 1km, Record Audio/Video<br/><br/>**Disadvantages:** Detectable with Bug Detectors                           | ◆     |
+        | <p>Tool Kit          <span>A set of mechanic's tools and various bits and pieces for making repairs.                                                  </span></p> | **Enables:** Repair, Jury-Rig                                                                                                               | ◆◆    |
 
 
     </Tab>
@@ -210,53 +229,80 @@ For more information, see: [Gear System](/rustpnk/docs/arules/gear)
 
         ##### All Drugs Weigh ⬖ (Half a Slot)
 
-        |            Drug            | Feature                                                                                                                                                                                                                                                                                                     | Gear Slots |
-        | :------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: |
-        |           Trauma           | - Medical Hypo: Single Use. Restores One Hit. <br/> - Overdose: Can use up to 3 Medical Hypos per-job safely. <br/> - After 3rd: Roll a check, on a fail, take a Trauma (OD'ing)                                                                                                                            |     ⬖     |
-        |          StabilX           | - Revival Stim: Single Use. Stabilises and Heals a downed ally to 1 Hit. <br/> - Target gains the "Weakened" condition for a few scenes. <br/> - If administered while concious, or for a second time, the target rolls a check. <br/> - On a fail, they go into cardiac arrest.                            |     ⬖     |
-        |       Electrocauter        | - Cauterise Wound: Single Use. Apply to wound to seal and disinfect rapidly.<br/>- Cures "Bleeding" condition.                                                                                                                                                                                              |     ⬖     |
-        |           Blitz            | - Combat Stim: Single Use. Ignore Danger Die from Conditions and Traumas for the next roll. <br/> - Overdose: After first, gain a new Condition when effect ends. <br/> - After second, gain a Trauma when effect ends. <br/> - After third, you die.                                                       |     ⬖     |
-        |           Sharp            | -Mental Stim: Single Use. Shrug off Mental Conditions, gain an Action Die for the next check involving smarts or reflexes. <br/> - Overdose: After first, gain "Fatigue" condition when effect ends. <br/> - After third, gain a long-lasting "Brain Fog" Trauma, active when NOT using Boost for a while.  |     ⬖     |
-        | LYPs (Little Yellow Pills) | - Adrenaline Boost: Single Use. A short-lived emo-suppressor, and intense adrenaline boost. <br/> - Grants +2 Action Die to checks relating to endurance or strength.<br/> - Gain "Fatigue" condition for a scene afterwards.<br/>- Overdose: After first, only +1 Action Die<br/>- After third, no effect. |     ⬖     |
-        |          Shutdown          | - Knockout Drug: Single Use. Odourless and Tasteless.<br/>- Roll a check.<br/>- On a success they fall unconscious<br/>- On a partial they remain standing, but greatly weakened<br/>- On a 1, they choke to death                                                                                          |     ⬖     |
+       | Name                                                                                                                                                                              | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Slots |
+       | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+       | <p>Trauma (Air Hypo)       <span>A popular cocktail of drugs used by Security forces around the world to push through combat trauma.                                 </span> </p> | **Advantages:**<br/>- Reduce a single Trauma to a Level 2 Wound.<br/>- Remove a single Level 2 or 1 Wound.<br/><br/>**Overdose:**<br/>**Safe Limit:** Can use up to 3 Medical Hypos per-job safely.<br/>**On 4th+:** Roll a Check. On a Hollow Success or Bane, immediately write a Trauma (OD'ing), and become incapacitated.<br/><br/>**Uses:** Single Use.                                                                                                                                                                                        | ⬖    |
+       | <p>StabilX (Air Hypo)      <span>An emergency stimulant meant to shock a person back into mobility.                                                                  </span> </p> | **Advantages:** Stabilises and removes a single Trauma from a downed target.<br/><br/>**Disadvantages:** Target gains "Weakened" condition. Lasts for for two scenes.<br/><br/>**Overdose:**<br/>**Safe Limit:** Can be used once per-job, safely.<br/>**On 2nd+:** Target rolls a Check. On a Hollow Success or Bane, immediately write a Trauma (Cardiac Arrest) and become incapacitated.<br/><br/>**Uses:** Single Use.                                                                                                                          | ⬖    |
+       | <p>Sharp (Pills)           <span>A strong mental stimulant, often used by corporate employees to gain an edge.                                                       </span> </p> | **Advantages:**<br/>- Shrug off a Mental Condition<br/>- Gain +1<AD/> for any check involving smarts or reflexes. Lasts for two scenes.<br/><br/>**Overdose:**<br/>**Safe Limit:** Can be used once per-job, safely.<br/>**On 2nd+:** Gain "Brain Fog" condition for the next scene when effect ends.<br/>**On 4th:** Gain "Brain Fog" condition for the rest of the job.<br/><br/>**Uses:** 3 Uses.                                                                                                                                                 | ⬖    |
+       | <p>Disposable Electrocauter<span>A ring-shaped device designed to quickly cauterise wounds in an emergency.                                                          </span> </p> | **Advantages:**<br/>- Apply to wound to rapidly stop bleeding and disinfect.<br/>- Cures Bleeding condition.<br/>- Reduces Trauma from missing limbs to Level 2 Wounds.<br/><br/>**Uses:**<br/>- Unlimited use to stop Bleeding.<br/>- Single use to reduce Trauma, then discarded.                                                                                                                                                                                                                                                                  | ⬖    |
+       | <p>Zero (Air Hypo)         <span>An addictive, black-liquid. Effective pain suppressor. Allows a user to ignore otherwise cripplingly painful injuries, temporarily. </span> </p> | **Advantages:**<br/>- Ignore Threat Dice from Conditions and Trauma for the rest of the scene.<br/><br/>**Overdose:**<br/>**On 2nd:** Gain "Jitters" condition when effect ends, lasts until the end of the scene.<br/>**On 3rd+:** Roll a Check. On a Hollow Success or Bane, gain "Heart Palpitations* as a level 2 Wound.<br/>If you already have "Heart Palpitations", immediately write a Trauma (Cardiac Arrest), and become incapacitated.<br/><br/>**Uses:** Single Use                                                                      | ⬖    |
+       | <p>LYPs (Pills)            <span>Pronounced "Lips". Little Yellow Pills. Sadly, not banana flavoured.<br/>Has a reputation of calming nerves, and loosening tongues. </span> </p> | **Advantages:**<br/>- Shrug off any stress-related conditions.<br/>- Adds +1<AD/> to influence checks.<br/>- Can be administered to a target to add an additional +1<AD/> to Influence checks against them.<br/><br/>**Overdose:**<br/>**Safe Limit:** Can be used once per-job, safely.<br/>**On 2nd+:** Gain "Slurred Speech" condition for the next scene when effect ends.<br/>**On 4th:**<br/>- Gain the "Spaced Out" condition for the rest of the job.<br/>- Gain the flaw "Loose Lipped" for the rest of the job.<br/><br/>**Uses:** 3 Uses. | ⬖    |
+       | <p>BLITZ (Air Hypo)        <span>A powerful, but short-lived adrenaline shot.                                                                                        </span> </p> | **Advantages:**<br/>- Grants +3<AD/> to checks related to strength and endurance for one scene.<br/><br/>**Overdose:**<br/>**Always:** Gain "Fatigue" condition for one scene afterward.<br/>**On 2nd:** Only gain +2<AD/>.<br/>**On 3rd:** Only gain +1<AD/>.<br/>**On 4th+:** No effect.<br/><br/>**Uses:** Single Use.                                                                                                                                                                                                                            | ⬖    |
+       | <p>Shutdown (Powder)       <span>An easily dissolved powder that briefly induces severe swelling of the mucous membranes, causing suffocation.                   </span> </p>     | **Advantages:**<br/>- Odourless, Colourless, and Tasteless.<br/><br/>**Roll a check:**<br/>- On Major Success the target falls unconscious.<br/>- On Minor Success the target remains standing, but gains a condition, and their Toughness is halved.<br/>- On a Hollow Success, either nothing happens, or the target sputters and chokes to death, violently and noisily (GMs choice).<br/><br/>**Disadvantages:**<br/>- Must be administered via food or drink.<br/><br/>**Uses:** Single Use.                                                    | ⬖    |
+       | <p>Medusa (Air Hypo)       <span>A paralytic agent popular with corporate hitmen.                                                                                    </span> </p> | **Advantages:**<br/>**- Roll a Check:**<br/>- On a Major or Minor Success, the target gains the "Paralysed" condition after a few seconds.                                                                                                                                                                                                                                                                                                                                                                                                           | ⬖    |
+       | <p>Purge (Pills)           <span>A fast-acting emetic and antidote drug.                                                                                             </span> </p> | **Advantages:**<br/>- Purges toxin and poison-related conditions and wounds.<br/><br/>**Disadvantages:**<br/>- Causes severe stomach pains, sweating, and vomiting for at least one scene.<br/>                                                                                                                                                                                                                                                                                                                                                      | ⬖    |
 
     </Tab>
 
     <Tab name="Grenades">
 
         ##### All Grenades Weigh ◆ (1 Slot)
-
-        |  Grenade   | Feature                                                                                                                                                                                                                                                                                    | Gear Slots |
-        | :--------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: |
-        |    Frag    | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range.<br/>- 4-6: Target takes 2 hits.<br/>- 2-3: Target takes 1 hit.<br/>- 1: Target avoids damage entirely.                                                                                            |     ◆      |
-        | Incendiary | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range.<br/>- 4-6: Target takes 1 hit and gains the "Burning" condition.<br/>- 1-3: Target avoids damage entirely.<br/>- Also ignites nearby flammable objects.                                           |     ◆      |
-        |    EMP     | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each electrically-powered target in range.<br/>- 4-6: Target takes 2 hits.<br/>- 2-3: Target takes 1 hit.<br/>- 1: Target avoids damage.<br/>- Regardless of result, target gains the "Short Circuit" condition.        |     ◆      |
-        |   Toxin    | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range.<br/>- 6: Target gains the "Poisoned" and "Suffocating" conditions.<br/>- 4-5: Target gains the "Poisoned" condition.<br/>- 1-3: Target resists the toxins.<br/>- Blocked by Rebreathers.          |     ◆      |
-        | Sleep Gas  | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range.<br/>- 6: Target passes out. <br/>- 4-5: Target gains the "Exhausted" condition.<br/>- 1-3: Target shrugs it off.<br/>- Blocked by Rebreathers.                                                    |     ◆      |
-        |   Smoke    | - Single Use<br/>- Obscures an area for a decent amount of time.<br/>- Grants Action/Danger die to checks such as stealth, aiming, shooting, etc.                                                                                                                                          |     ◆      |
-        |   Flash    | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range.<br/>- 6: Target gains the "Blinded" and "Stunned" conditions.<br/>- 4-5: Target gains the "Blinded" condition.<br/>- 1-3: Target avoids the effect.<br/>- Blocked by Anti-Flash gear.             |     ◆      |
-        |    Stun    | - Single Use. Check determines accuracy of throw.<br/>Roll 1d6 for each target in range. Add 1 Danger Die if the target is armoured.<br/>- 6: Target takes 1 hit, and gains the "Stunned" condition.<br/>- 4-5: Target gains the "Stunned" condition.<br/>- 1-3: Target avoids the effect. |     ◆      |
+        | Name                 | Feature                                                                                                                                                                                                                                                                                                                                                                                                               | Slots |
+        | -------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+        | Breaching Charge     | Blows open doors and blasts holes in thin walls.<br/><br/>Targets immediately in the blast zone or on the other side of the door/wall suffer a Major Consequence.                                                                                                                                                                                                                                                     | ◆     |
+        | Grenade (EMP)        | Short-Circuits nearby electrical objects and targets.<br/>Can temporarily interfere with Augmentations.<br/><br/>Roll a number of d6 equal to the number of electrically-powered targets in range, and assign each result to a target.<br/>- 1-3: Target Avoids Consequences<br/>- 4-6: Target gains the "Short Circuit" condition.<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Melee** | ◆     |
+        | Grenade (Flash)      | Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target avoids the effect.<br/>- 4-5: Target gains the "Blinded" condition.<br/>- 6: Target gains the "Blinded" and "Stunned" conditions.<br/><br/>**Blocked by Anti-Flash gear**<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Melee**                                        | ◆     |
+        | Grenade (Frag)       | Damages objects and deals conditions/wounds to targets.<br/><br/>Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target Avoids Consequences<br/>- 4-5: Target Suffers Minor Consequence<br/>- 6: Target Suffers Major Consequence<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Melee**                                       | ◆     |
+        | Grenade (Incendiary) | Ignites flammable objects and inflicts conditions/wounds to targets.<br/><br/>Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target Avoids Consequences<br/>- 4-5: Target Suffers Minor Consequence<br/>- 6: Target Suffers Major Consequence<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Melee**                          | ◆     |
+        | Grenade (Sleep Gas)  | Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target shrugs it off.<br/>- 4-5: Target gains the "Exhausted" condition.<br/>- 6: Target passes out after a few seconds.<br/><br/>**Blocked by Rebreathers**<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Room**                                                             | ◆     |
+        | Grenade (Smoke)      | Obscures an area for 30 Seconds.<br/><br/>Grants +1 <AD/>/<TD/> to checks such as stealth, aiming, shooting, etc.<br/><br/>**Range: Room**                                                                                                                                                                                                                                                                            | ◆     |
+        | Grenade (Stun)       | Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target avoids the effect.<br/>- 4-6: Target gains the "Stunned" condition.<br/><br/>**Blocked by Medium Armour**<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Melee**                                                                                                        | ◆     |
+        | Grenade (Toxin)      | Roll a number of d6 equal to the number of targets in range, and assign each result to a target.<br/>- 1-3: Target resists the toxins.<br/>- 4-5: Target gains the "Poisoned" condition.<br/>- 6: Target gains the "Poisoned" and "Suffocating" conditions.<br/><br/>**Blocked by Rebreathers**<br/><br/>**Regular, Sticky, Remote, or Proximity Activated**<br/>**Range: Room**                                      | ◆     |
 
     </Tab>
+
+    <Tab name="Vehicles"> 
+    <p class="text-center"> Some Vehicles have Gear Slots as Advantages.<br/> These allow you to draw additional gear from them during a job, despite your choice of Loadout. </p>
+
+        | Name                                                                                                                                    | Features                                                                                                                                                                                                                                                                                                                                                  |
+        | --------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | <p>Classic Motorcycle<span>A classic motorcycle, popular among the nomadic groups of the Expanse.                           </span></p> | **Advantages:**<br/>**Unassuming \|** Doesn't attract attention, +1<AD/> when relevant.<br/><br/>**Space:** Single Seater. 2 Gear Slots.                                                                                                                                                                                                                  |
+        | <p>Consumer Car<span>A standard, consumer-grade car. 4 seats and a decent size trunk. A great starter car.            </span></p>       | **Advantages:**<br/>**Unassuming \|** Doesn't attract attention, +1<AD/> when relevant.<br/><br/>**Space:** 4-Seater. 4 Gear Slots.                                                                                                                                                                                                                       |
+        | <p>Consumer Van<span>A standard consumer-grade van. Heavy chassis. Great storage space, with potential for conversion.</span></p>       | **Advantages:**<br/>**Unassuming \|** Doesn't attract attention, +1<AD/> when relevant.<br/>**Heavy \|** +1<AD/> to Drive checks to do with ramming/combat driving.<br/><br/>**Disadvantages:**<br/>**Heavy\|** +1<TD/> to Drive checks to do with handling/mobility.<br/><br/>**Space:** Seats up to 6 comfortably, up to 8 uncomfortably. 8 Gear Slots. |
+        | <p>Skiff<span>A small skiff, useful for navigating the narrow canals of Wuhai.                                 </span></p>              | **Advantages:**<br/>**Small \|** Can fit along waterways that most boats can't.<br/>**Unassuming \|** Doesn't attract attention, +1<AD/> when relevant.<br/><br/>**Space:** 4-Seater. 3 Gear Slots.                                                                                                                                                       |
+        | <p>Fishing Boat<span>A basic fishing trawler, common to see along the Masursky Bay.                                   </span></p>       | **Advantages:**<br/>**Unassuming \|** Doesn't attract attention, +1<AD/> when relevant.<br/><br/>**Disadvantages:**<br/>**Slow \|** Slower than many other boats.<br/><br/>**Space:** Space for 8 people. 8 Gear Slots.                                                                                                                                   |
+
+
+    </Tab>
+
 
     <Tab name="Weapons / Armour">
 
     ##### Weapons & Armour Weigh between ◇ and ◆◆◆ (0 - 3 Slots)
 
-    | Name                  | Description                                                 | Feature                                                                                                                                                                                                                                          | Gear Slots | Basic Tags                                                                                           |
-    | --------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------------------------------------------------------------------------------------------------- |
-    | Security Grade Armour | Simple, standard-issue gear worn by security and beat-cops. | \- +2 Armour Track                                                                                                                                                                                                                               | ◆          | ⛊ Light Armour                                                                                      |
-    | Short Blade           | Knives, Claws, etc.                                         | \- Deals 1 hit on successful check.<br/><br/>\- On a 6: Grants target the "Bleeding" condition for 1d3 turns.<br/>\- Triggers on a 4-6 if the target is unaware.                                                                                 | ◆          | Attack<br/>⛊ Quiet<br/>Bloody<br/>⛉ Short Range                                                    |
-    | Long Blade            | Machetes, Katanas, Spears, etc.                             | \- Deals 1 hits on successful check.<br/><br/>\- Grants 1 Action Die for defense in melee combat.<br/><br/>\- On a 6: Grants target the "Bleeding" condition for 1d3 turns.                                                                      | ◆◆         | Attack<br/>⛊ Parry<br/>Bloody                                                                       |
-    | Short Blunt           | Knuckle Dusters, Collapsable Batons                         | \- Deals 1 hit on successful check.<br/><br/>\- On a 6: Grants target the "Stunned" condition for 1d3 turns.<br/>\- Triggers on a 4-6 if the target is unaware.                                                                                  | ◆          | Attack<br/>⛊ Quiet<br/>⛉ Short Range                                                               |
-    | Long Blunt            | Clubs, Baseball Bats, Staves                                | \- Deals 1 hits on successful check.<br/><br/>\-Grants 1 Action Die for defense in melee combat.<br/><br/>\- On a 6: Grants target the "Stunned" condition for 1d3 turns.                                                                        | ◆◆         | Attack<br/>⛊ Block                                                                                  |
-    | Light Sidearm         | Covers Light, Submachine Guns, and Auto-Pistols.            | \- Deals 2 hits on successful check.<br/><br/>\- No penalty at close range.                                                                                                                                                                      | ◆          | Shoot<br/>⛉ Low-Penetration<br/>⛉ Loud                                                             |
-    | Heavy Sidearm         | Covers Heavy pistols and Revolvers.                         | \- Deals 2 hits on successful check.<br/><br/>\- No penalty at close range.<br/><br/>\- Grants 1 Action Die against Armoured targets.                                                                                                            | ◆          | Shoot<br/>⛊ High-Penetration<br/>⛉ Loud                                                            |
-    | Auto-Rifle            | Assault Rifles                                              | \- Deals 2 hits on successful check.<br/><br/>\- +1 Danger Die when used at close-range<br/><br/>\- Autofire: Target up to 4. +1 Danger Die for each one.<br/>\- Each target takes 2 hits on a successful check.                                 | ◆◆         | Shoot<br/>⛊ Long-Range<br/>⛉ Loud<br/>⛉ Close Range Penalty                                       |
-    | Precision Rifle       | Sniper Rifles                                               | \- Deals 2 hits on successful check.<br/><br/>\- +1 Danger Die when used at close-range<br/><br/>\- Grants 1 Action Die against Armoured targets.<br/>                                                                                           | ◆◆         | Shoot<br/>⛊ High-Penetration<br/>⛊ Scoped<br/>⛊ Long-Range<br/>⛉ Loud<br/>⛉ Close Range Penalty |
-    | Shotgun               | Shotguns                                                    | \- Deals 2 hits on successful check.<br/><br/>\- +1 Action Die when used at Close Range<br/><br/>\- After a hit: Roll 1d6 for each additional nearby target (friend or foe).<br/>\- 6: Target takes 1 hit.<br/>\- 4-5: Target gains a condition. | ◆◆         | Shoot<br/>Spread<br/>⛊ Intimate<br/>⛉ Loud                                                         |
-
-
+        #### Armour
+        | Name                                                                                                 | Features                                                                                                                                                                                                                                                | Slots |
+        | ---------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----- |
+        | <p>Security Grade Armour<span>Simple, standard-issue gear worn by security and beat-cops.</span></p> | **Advantages:**<br/>**Light Armour \|** +2 Armour.<br/>**Concealed \|** Can be hidden easily below clothing.<br/><br/>**Disadvantages:**<br/>**Light Armour \|** Bonus <AD/> from Armour is nullified by attacks from Auto-Rifles and Precision Rifles. | ◆     |
+        
+        <br/>
+        #### Melee
+        | Name                                                                                                    | Features                                                                                                                                                                                                                                                                                                                 | Slots |
+        | ------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+        | <p>Short Blade          <span>Knives, Claws, etc.                                        </span></p>    | **Advantages:**<br/>**Quiet \|** +1<AD/> to Silent Takedowns<br/>**Sharp \|** On Major Success, target gains "Bleeding" condition as well as the existing consequences.<br/><br/>**Disadvantages:**<br/>**Bloody \|** Likely to make a mess.<br/>**Short Range \|** +1<TD/> in melee against targets with greater reach. | ◆     |
+        | <p>Long Blade           <span>Machetes, Katanas, Spears, etc.                            </span></p>    | **Advantages:**<br/>**Parry \|** +1<AD/> to defense against Melee<br/>**Sharp \|** On Major Success, target gains "Bleeding" condition on top of the regular consequences from the outcome.<br/><br/>**Disadvantages:**<br/>**Bloody \|** Likely to make a mess.                                                         | ◆◆    |
+        | <p>Short Blunt            <span>Knuckle Dusters, Collapsable Batons                        </span></p>  | **Advantages:**<br/>**Quiet \|** +1<AD/> to Silent Takedowns<br/>**Blunt \|** On Major Success, target gains "Stunned" condition on top of the regular consequences from the outcome.<br/><br/>**Disadvantages:**<br/>**Short Range \|** +1<TD/> in melee against targets with greater reach.                            | ◆     |
+        | <p>Long Blunt              <span>Clubs, Baseball Bats, Staves                               </span></p> | **Advantages:**<br/>**Block \|** +1<AD/> to defense against Melee<br/>**Blunt \|** On Major Success, target gains "Stunned" condition on top of the regular consequences from the outcome.                                                                                                                               | ◆◆    |
+        
+        <br/>        
+        #### Firearms
+        | Name                                                                                                       | Features                                                                                                                                                                                                                                                                                                                                     | Slots |
+        | ---------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+        | <p>Light Sidearm        <span>Covers Light, Submachine Guns, and Auto-Pistols.           </span></p>       | **Advantages:**<br/>**Close Quarters \|** No Penalty at Close Range.<br/><br/>**Disadvantages:**<br/>**Low Penetration \|** +1<TD/> against armoured targets.<br/>**Loud \|** Attracts attention.<br/><br/>**Effective Range:** Melee, Room.<br/>**Extended Range:** Far +1<TD/>. Horizon Impossible.                                        | ◆     |
+        | <p>Heavy Sidearm        <span>Covers Heavy pistols and Revolvers.                        </span></p>       | **Advantages:**<br/>**High Penetration \|** +1<AD/> against armoured targets.<br/>**Close Quarters \|** No Penalty at Melee Range.<br/><br/>**Disadvantages:**<br/>Loud \| Attracts attention.<br/><br/>**Effective Range:** Melee, Room.<br/>**Extended Range:** Far +1<TD/>. Horizon +3<TD/>.                                              | ◆     |
+        | <p>Shotgun                    <span>All Shotguns                                               </span></p> | **Advantages:**<br/>**Spread \|** On a Major Success, up to 3 additional targets nearby suffer a Minor consequence.<br/>**Close Quarters \|** No Penalty at Melee Range.<br/><br/>**Disadvantages:**<br/>**Loud \|** Attracts attention.<br/><br/>**Effective Range:** Melee, Room.<br/>**Extended Range:** Far +1<TD/>. Horizon Impossible. | ◆◆    |
+        | <p>Auto-Rifle              <span>Covers SMGs and Assault Rifles                             </span></p>    | **Advantages:**<br/>**Long Range \|** No Penalty at Far Range<br/>**Autofire \|** Target up to +3 nearby targets. +1<TD/> for each.<br/><br/>**Disadvantages:**<br/>**Loud \|** Attracts attention.<br/>**Close Range Penalty \|** +1<TD/> at Melee Range<br/><br/>**Effective Range:** Room, Far<br/>**Extended Range:** Horizon +2<TD/>.   | ◆◆    |
+        | <p>Precision Rifle    <span>Covers Hunting Rifles and Sniper Rifles                    </span></p>         | **Advantages:**<br/>**Extreme Range \|** No Penalty at Horizon Range<br/>**High Penetration \|** +1<AD/> against armoured targets.<br/><br/>**Disadvantages:**<br/>**Loud \|** Attracts attention.<br/>**Close Range Penalty \|** +1<TD/> at Melee Range<br/><br/>**Effective Range:** Room, Far, Horizon                                    | ◆◆    |
     </Tab>
 
 </Tabs>
@@ -266,98 +312,61 @@ For more information, see: [Gear System](/rustpnk/docs/arules/gear)
 ### Get Wired
 
 ##### Augmentation
-- **Augs are expensive and costly to upgrade**, but enable you to **surpass ordinary human limits**, and **don't count toward your weight limit on a job**. You can think of them like "Stunts" or "Feats"from other systems.
-- Augmentation places strain upon the body. **Each Character starts with 3 Aug Slots, and each Aug takes up 1 Slot.** You can't go beyond this limit right now, so you don't need to consider it when making a choice.
-- Some Augmentations are rarer than others. **During character creation, you can only choose from the Common and Uncommon Augs**, indicated in the tables below.
-- You can purchase, install and swap out Augs during [Downtime](/rustpnk/docs/arules/downtime-advancement). **Your choices now don't have to be permanent, just go with what seems cool.**
+**Augs are expensive, but enable you to surpass ordinary human limits.**<br/> You can think of them like "Stunts" or "Feats" from other systems.
+- **Characters start with 3 Aug Slots, and each Aug takes up 1 Slot.**<br/> Each Augmentation places strain upon the body.<br/> You can't go beyond this limit right now, but you can later using [Advancements](/rustpnk/docs/arules/downtime-advancement).
+- **Characters start with a choice of Common or Uncommon Augs.**<br/>Some Augmentations are rarer than others. Rare Augs can be acquired during play.
+- **You can purchase, install and swap out Augs during [Downtime](/rustpnk/docs/arules/downtime-advancement).** <br/> Your choices now don't have to be permanent, just go with what seems cool.
 <br/>
 **Choose some starting Augmentations. Pick one of the following configurations:**
 - **A.** Two Common Augs
 - **B.** One Uncommon Aug
 <br/>
-**Choose from the lists below, or work with the GM to create something more bespoke. Hover over dotted names for more detail.**
+
+<p class="text-center">**Choose from the lists below, or work with the GM to create something unique.**</p>
 
 <Tabs client:load>
 
     <Tab name="Common">
 
-        |                                                                                                                                   Aug                                                                                                                                   |                                                                           Description                                                                            | Basic Tags                                                   |
-        | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------- |
-        |                                 <p>Auto-Translation <span>- Base version translates words spoken to you, but doesn't enable you to speak the language back.<br/>- Upgrades allow speaking languages with increasing quality.</span></p>                                 |                                                          Translates a number of languages in real-time.                                                          | ⛊ Comprehend Language                                       |
-        |                                                                                                                         Electrodermal Implants                                                                                                                          |                                   Allows the user to alter their temperature at will. Allows survival in extreme heat or cold.                                   | ⛊ Endure Cold<br/>⛊ Endure Heat<br/>⛊ Mask Heat Signature |
-        |                                                                                     <p>Homing Tracer <span>- The sound can only be heard by the user. Good up to 1 mile.</span></p>                                                                                     | Beeps with increasing frequency and indicates direction the closer you get to a linked tracking device.<br/>Can also detect recording devices in the local area. | ⛊ Track<br/>Detect Devices                                  |
-        |                                                                     <p>Identity Scrambler <span>- Only works against electronic surveillance, not a visual inspection by a real person.</span></p>                                                                      |                      Obfuscates the user from surveillance systems. Either by scrambling their appearance, or by reporting a fake identity.                      | ⛊ Scramble Appearance                                       |
-        |        <p>Integrated Comms <span>- Radio & Satellite are insecure but transmit up to 10mi. The Encrypted upgrade obscures the contents of your comms.<br/>- DFC is secure, but only transmits roughly 40m. DFC booster increases this range to 100m.</span></p>         |                       Allows the user to transmit and receive wireless transmissions from an implanted chip, via Radio, Satellite, or DFC.                       | Communicate, <br/>⛊ Covert                                  |
-        |   <p>Limb Mod / Retractable Gear <span>- Pay for a weapon/item or use an existing one. Add the tags of the weapon/item to this aug.<br/>- You can switch attachments, but it takes time and is difficult to do yourself. An upgrade can make this faster.</span></p>    |                               Retracting blade, spikes, shield, gun, tool etc, that extend from ports built into prosthetic limbs.                               | ⛊ Concealed<br/>⛊ Tags of the Weapon                       |
-        |                                                                                                                            Optics Mod / Cam                                                                                                                             |                                                               Records AV content to data storage.                                                                | Record<br/>⛊ Concealed<br/>⛊ High-Quality                  |
-        |                                                     <p>Optics Mod / Reality Meshing <span>- Displays information about objects and places nearby. Useful for navigation, but riddled with sponsored ads.</span></p>                                                     |   Blends the physical and digital world. Acts as a HUD, and can additionally display information in the world as if it were really part of your surroundings.    | ⛊ HUD,<br/>⛊ Navigation Aid<br/>⛉ Contains in-Vision Ads  |
-        |                                                                                                                             Sense Enhancer                                                                                                                              |                                    Provides enhanced clarity and range of vision, as well as enhanced taste, smell and touch.                                    | ⛊ Observe<br/>⛊ Detect<br/>⛊ Track                        |
-        |                                          <p>Subdermal Compartment <span>- Can conceal a single slot item, or two half-slot items.<br/>- Upgrade also conceals the item(s) from more invasive scans and EMP damage.</span></p>                                           |                                                        A covert compartment, camouflaged with false skin.                                                        | ⛊ Concealed (Visually)                                      |
-        | <p>Vocal Synthesizer <span>- Can mimic voices and accents that have been previously recorded for at least 10 clean minutes.<br/>- The Banshee Module Upgrade enables a sonic attack that inflicts the "Deafened" and "Stunned" conditions to nearby enemies.</span></p> |                                                                    Mimic Voices and accents.                                                                     | ⛊ Mimic Voices/Accents<br/>⛊ Mimic Sounds                  |
+        | Common Augs                                                                                                                                                                                                                                                      | Features                                                                                                                                                                                                                                                                             |
+        | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | <p>Adaptive Rebreather              <span>Breath without oxygen. Filter Toxins. Detect Radiation.                                                                                                                                                   </span></p>  | **Enables:** Survive without oxygen, filter toxins, detect radiation.<br/><br/>**Uses:** Infinite Duration                                                                                                                                                                           |
+        | <p>Auditory Enhancer                <span>Boosts quiet or distant sounds. Can also be used to block out unwanted or overly-loud noise.                                                                                                              </span></p>  | **Advantages:**<br/>**Sensitive Hearing \|** +1<AD/> to relevant Awareness Checks<br/>**Smart EQ \|** Blocks potentially harmful frequencies.                                                                                                                                        |
+        | <p>Augmented Optics                <span>Advanced prosthetic eye replacement wired directly to the optic nerves. Provides greatly enhanced clarity and range of vision.                                                                            </span></p>   | **Enables:** Installation of advanced Optics Mods.<br/><br/>**Advantages:**<br/>**20/5 Vision \|** +1<AD/> to relevant Awareness Checks                                                                                                                                              |
+        | <p>Auto-Translation                  <span>Translates all common, modern languages in real-time.                                                                                                                                                     </span></p> | **Enables:** Real-Time Auto-Translation<br/><br/>**Disadvantages:** Does not automatically enable you to speak the language in reply.                                                                                                                                                |
+        | <p>Electrodermal Implants           <span>Allows the user to alter their temperature at will. Allows survival in extreme heat or cold.                                                                                                              </span></p>  | **Advantages:**<br/>**Mask Signature \|** Control body temperature, obscuring the user from thermal imaging.<br/>**Endure Temperature \|** Endure temperatures between 50°C and -50°C for up to 12 hours.                                                                            |
+        | <p>Integrated Comms                  <span>Allows the user to transmit and receive wireless transmissions from an implanted chip, via Radio, Satellite, or DFC.                                                                                      </span></p> | **Enables:** Insecure Comms up to 150km. Secure up to 200m.<br/><br/>**Advantages:**<br/>**Bone-Conduction \|** Can only be heard by the user.<br/>**Concealed \|** Hidden beneath the skin, and shielded from scans                                                                 |
+        | <p>Limb Mod / Retractable Gear       <span>Retracting blade, spikes, shield, gun, tool etc, that extend from ports built into prosthetic limbs.                                                                                                      </span></p> | **Enables:** Attach gear to body.<br/><br/>**Advantages:**<br/>**Integrated \|** Gear attached this way takes up 0 Gear Slots.<br/><br/>**Disadvantages:**<br/>**Welded \|** Switching attachments takes time and is difficult to do alone.<br/><br/>Can be purchased once per-limb. |
+        | <p>Subdermal Compartment             <span>A covert compartment, camouflaged with false skin.                                                                                                                                                        </span></p> | **Advantages:**<br/>**Concealed \|** Conceals a single slot item, or two half-slot items from digital scans.<br/>**Skin-Match \|** Adds +1<AD/> to checks to avoid discovery during physical searches.                                                                               |
 
     </Tab>
 
-    
     <Tab name="Uncommon">
-
-        |                                                                                                                                        Aug                                                                                                                                         |                                                                                          Description                                                                                          | Basic Tags                                                   |
-        | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------- |
-        |                                                                                        <p>Adaptive Rebreather <span>- Oxygen Supply lasts up to an hour. Recharges after a job.</span></p>                                                                                         |                                                                    Breath without oxygen. Filter Toxins. Detect Radiation.                                                                    | Air Supply<br/>Toxin Filter<br/>Detect Radiation             |
-        | <p>AI Assistant <span>- Base version contains Admin Assistant, and Wuhai public information.<br/>- Additional upgrades add new knowledge-bases (+1 Action Die)<br/>- Has capacity for up to two additional Knowledge Bases at once. Can be swapped out during Downtime.</span></p> |                                           A highly customisable AI Assistant to help with daily tasks. Upgrades provide additional knowledge-bases.                                           | ⛊ Admin Tasks, <br/>⛊ Locate Waffle House<br/>Request Help |
-        |                                                              <p>Auto-Injector <span>- Stores two charges, which take downtime to replenish. <br/> - Can choose to use these to heal One Hit during a job.</span></p>                                                               |                                                                Automatically injects the user with medication when triggered.                                                                 | Self-Heal                                                    |
-        |                                         <p>Biometric Analyser <span>- Base version reports Behavioural Analysis, Heart Rate, Stress Level<br/>- Upgraded version adds additional Databases for more information about a target.</span></p>                                         | Biometric Analysis Implants use biometric data to monitor individuals' emotional states. These devices can provide real-time feedback on stress levels, mood, health, and overall well-being. | ⛊ Analyse<br/>⛊ Kinesic Analysis, (Behavioural Analysis)   |
-        |                                                        <p>Data Interface Port (DIP) <span>- Allows fast connection and manipulation of machines without needing a terminal or grid, or can be connected to one.</span></p>                                                         |                               Enables advanced, high-speed, human-computer interfacing. A faster and more efficient way of interacting with connected devices.                                | ⛊⛊ Interface,<br/> ⛊ Direct Connection                    |
-        |                                                                                                                             Hand Mod / Nanowire Digits                                                                                                                             |                     Nanowire extends from the fingertips and can be manipulated with an incredible degree of accuracy. Good for surgery, stenography, and clicking heads.                     | ⛊ Interface, <br/>⛊ Precise<br/>⛊ Quick Fingers,          |
-        |         <p>Hand Mod / TESLA <span>- Usable twice per combat. Roll a check to make contact.<br/>- On a 6: the target falls to the floor, subdued and convulsing.<br/>- 4-5: the target gains the "Electrocuted" condition.<br/>- 1-3: the target shrugs it off.</span></p>          |                                                                  An electro-shock device built into the palm or fingertips.                                                                   | ⛊ Quiet<br/>⛊ Stunning<br/>Non Lethal                      |
-        |                                                     <p>Leg Mod / Impact Dampener <span>- Base version is quiet, but not entirely silent.<br/>- Upgrade makes movement entirely silent, and can reduce fall damage.</span></p>                                                      |                                                                                Reduces the sound of footfalls.                                                                                | ⛊ Move Quietly                                              |
-        |                                                                                                                         Limb Mod / Olympus Climbing System                                                                                                                         |                                                                        Retractable climbing gear for arm and leg augs.                                                                        | ⛊ Climb,<br/> ⛊ Grapple                                    |
-        |                                                                      <p>Microfibral Muscle <span>- Increases Loadout Limits. <br/>- Light: 4◆'s worth of items.<br/>- Heavy: 8◆'s worth of items.</span></p>                                                                       |                             Allows the user to lift/throw/carry heavy objects, and perform these tasks for a long time. Greatly reduces muscle strain over time.                              | ⛊ Lift, <br/>⛊Throw, <br/>⛊Endure                         |
-        |                                                                                  <p>Optics Mod / Flash Module <span>- Inflicts the "Stunned" conditions on enemies caught in its cone.</span></p>                                                                                  |                             Typically installed into prosthetic eyes. Emits a blinding flash that is effective against security systems as well as organic eyes.                              | ⛊ Stun                                                      |
-        |                                                                        <p>Trauma Shielding <span>- Acts as an additional source of Armour. Granting 1 Action Die for defence and +2 Max Armour.</span></p>                                                                         |                                                                      Subdermal plating that reduces the impact of hits.                                                                       | ⛊ Armoured                                                  |
-
+        | Uncommon Augs                                                                                                                                                                                                                                                    | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+        | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | <p>AI Assistant                    <span>A highly customisable AI Assistant to help with daily tasks. Upgrades provide additional knowledge-bases.                                                                                                 </span></p>   | **Enables:** Request Assistance, answers based on installed Knowledge Banks. Knowledge Banks act as Knowledge Expertise.<br/><br/>**Advantages:**<br/>**Local Information \|** Provides public information about Mars and Wuhai. Anything available on the public NET.<br/>**Admin Tasks \|** Assists with administrative tasks and calculations. +1<AD/> to any relevant check.<br/><br/>**Uses:** Capacity for three "Knowledge Banks" at any one time. |
+        | <p>Hand Mod / TESLA               <span>An electro-shock device built into the palm or fingertips.                                                                                                                                                </span></p>    | **Advantages:**<br/>**Shocking Touch \|** Roll a check to make contact.<br/>**On a Major Success:** The target is subdued and convulsing.<br/>**On a Minor or Hollow Success:** The target gains the "Shocked" condition.<br/><br/>**Uses:** Once per Scene.                                                                                                                                                                                              |
+        | <p>Identity Scrambler               <span>Obfuscates the user from surveillance systems with glitches and garbage data.                                                                                                                             </span></p>  | **Advantages:**<br/>**Scramble Appearance \|** When viewed by digital surveillance, the user is obscured by glitches and junk data. Blocking attempts to identify them visually.<br/>                                                                                                                                                                                                                                                                     |
+        | <p>Leg Mod / Impact Dampener        <span>Reduces the sound of footfalls.                                                                                                                                                                           </span></p>  | **Advantages:**<br/>**Sound Dampening \|** Nullifies all sound made by footsteps.<br/>**Impact Dampening \|** Softens the noise and impact of falls up to 10m.                                                                                                                                                                                                                                                                                            |
+        | <p>Limb Mod / Olympus Climbing System<span>Retractable climbing gear for hand and foot augs. Enables the user to cling to and move across sheer surfaces.                                                                                            </span></p> | **Enables:** Climb sheer surface without rope/handholds.                                                                                                                                                                                                                                                                                                                                                                                                  |
+        | <p>Microfibral Muscle             <span>Allows the user to lift/throw/carry heavy objects, and perform these tasks for a long time. Greatly reduces muscle strain over time.                                                                      </span></p>    | **Enables:** Endure prolonged strenuous activity.<br/><br/>**Advantages:**<br/>**Capacity \|** Increases Loadout Limits<br/>- **Light:** 1 - 3 -> 1 - 4<br/>- **Heavy:** 4 - 6 -> 5 - 7<br/><br/>**Strong \|** +1<AD/> to relevant checks.                                                                                                                                                                                                                |
+        | <p>Trauma Shielding                 <span>Subdermal plating that reduces the impact of hits.                                                                                                                                                        </span></p>  | **Advantages:**<br/>**Subdermal Plating \|** +1 Armour.<br/>**Reactive Shielding \|** Reduces Consequences from Falls, Blasts, Crashes, and Blunt impacts by one level.<br/>- Bane -> Major Consequence -> Minor Consequence -> No Consequence                                                                                                                                                                                                            |
+        | <p>Viper Sting                     <span>A concealed drug-delivery system.                                                                                                                                                                         </span></p>   | **Enables:** Inject Drug.<br/>- When used, declare any drug and resolve it's effects. You don't need to have purchased the drug beforehand.<br/><br/>**Advantages:**<br/>**Concealed \|** Hidden within the body (finger, tongue, etc.). Doesn't show on scans or physical searches.<br/>**Subtle \|** The target feels nothing. Add +2<AD/> to relevant Subterfuge checks to make contact.                                                               |
+        | <p>Vocal Synthesizer              <span>Mimic Voices and accents.                                                                                                                                                                                 </span></p>    | **Advantages:**<br/>**Mimicry \|** Mimic voices and accents that have previously been recorded for at least 5 minutes.<br/>**Foley \|** Mimic previously recorded sounds.                                                                                                                                                                                                                                                                                 |
 
     </Tab>
 
 </Tabs>
 <br/>
 #### Heavily Augmented Characters
-For characters who's background involves having a lot of Augmentations, discuss with the GM how to reconcile this discrepancy with the limited starting budget. *For example:*
+For characters who's background involves having a lot of Augmentations, discuss with the GM how to reconcile this discrepancy with the limited starting options. 
 
+**For example:**
 - A former-corp agent may have been provided with expensive Augs, but they have since been remotely shut down by the company.
 - A thug, wired up with chop-shop Augs would likely struggle with the ongoing maintenance required, leaving them to rust and fall into disrepair.
-- Work with the GM to invent a particular, *signature Aug* as a "Trademark", its tags are the *"Edges"* you add to it. An Aug added this way does not count toward your Augmentation Limit.
 
 #### Un-Augmented Characters
-For characters who prefer to remain pure and untainted by Augmentation, ask the GM about upgrading two of your Items, Vehicles, or Weapons/Armour with **Advanced Tags**. Keeping up with the augmented competition wasn't easy.
-
----
-
-## Get into Debt
-
-All characters start with **2d6x100** **₩**.
-
-### Debt
-
-Everyone owes someone, something, be it **Money** or a **Favour**.
-
-Roll **3d6×1,000**. This is how much **₩** you are in debt. This could be cold hard cash, or favours equivalent to it.
-
-Pick, or make up an individual, corporation, or faction you owe this debt to, or roll **1d12** on the following table:
-#### Debt
-|     |                                                                 |
-| --: | :-------------------------------------------------------------- |
-|   1 | A Syndicate or Gang                                             |
-|   2 | A Ripperdoc, with a kill-switch linked to your Augs             |
-|   3 | A Corrupt Politician                                            |
-|   4 | A Nomad Clan from the Expanse that you used to be part of       |
-|   5 | A hacker group, with a backdoor into your back-alley neuro augs |
-|   6 | A fixer with a dangerous reputation                             |
-|   7 | A notorious group of corrupt Cerberus enforcers.                |
-|   8 | Unpaid medical bills for yourself, or someone else              |
-|   9 | A corporation, or subsidiary you used to work for               |
-|  10 | A mysterious blackmailer, who knows too much                    |
-|  11 | A former mentor, who sees you as an investment                  |
-|  12 | A human trafficking ring                                        |
+For characters who prefer to remain pure and untainted by Augmentation, add two [Mods](/rustpnk/docs/etables/gear) to your chosen Starting Items/Weapon/Armour/Vehicle. Keeping up with the augmented competition wasn't cheap.
 
 ---
 
@@ -365,92 +374,142 @@ Pick, or make up an individual, corporation, or faction you owe this debt to, or
 
 ### Player Connections
 
-**Pick another player**, and work together to **add a detail** about how you know each other.
+Pick another player, and work together to add a detail about how you know each other.
 
-A previous job? An ex-lover? **Make something up, pick, or roll 1d20** on the table below.
 
-Add an **Edge** to one of your Trademarks, gained or honed in some way by that connection.
 
-You can have as many narrative connections to other players as you want, but **you only gain an Edge for one of them**.
+<p class="text-center">**Make something up, pick, or roll on the table below.**
+<br/>**Write an Expertise, gained or honed in some way by that connection.**
+<br/>*You can have as many narrative connections to other players as you want, but you only gain an Expertise for one of them*.</p>
 
 #### Connection
-|     |                                                                   |     |                                                 |
-| --: | :---------------------------------------------------------------- | --: | :---------------------------------------------- |
-|   1 | Had each other's backs in a brutal fight                          |  11 | Family, by blood or by circumstance             |
-|   2 | Were both double-crossed on the same job                          |  12 | Shared a cell                                   |
-|   3 | One of you helped the other to get clean                          |  13 | Lab rats in the same facility                   |
-|   4 | They came through for you at a bad time                           |  14 | Someone close to you both, died in front of you |
-|   5 | Both outsiders                                                    |  15 | Former rival, turned close ally                 |
-|   6 | Dated once, broke it off clean, but still close                   |  16 | They're your former boss                        |
-|   7 | Childhood friends                                                 |  17 | They stuck around after everyone else bailed    |
-|   8 | They're the only one who knows your real name                     |  18 | You know each other's terrible secret           |
-|   9 | Have an unspoken loyalty                                          |  19 | Saved their life on a job gone bad              |
-|  10 | Worked for the same crew, the rest are dead, but you two survived |  20 | You pulled a lot of all-nighters together       |
+<div class="sonohead rolltable">
+|           |                                                                   |           |                                                 |
+| --------: | :---------------------------------------------------------------- | --------: | :---------------------------------------------- |
+|  1_ON_D20 | Had each other's backs in a brutal fight                          | 11_ON_D20 | Family, by blood or by circumstance             |
+|  2_ON_D20 | Were both double-crossed on the same job                          | 12_ON_D20 | Shared a cell                                   |
+|  3_ON_D20 | One of you helped the other to get clean                          | 13_ON_D20 | Lab rats in the same facility                   |
+|  4_ON_D20 | They came through for you at a bad time                           | 14_ON_D20 | Someone close to you both, died in front of you |
+|  5_ON_D20 | Both outsiders                                                    | 15_ON_D20 | Former rival, turned close ally                 |
+|  6_ON_D20 | Dated once, broke it off clean, but still close                   | 16_ON_D20 | They're your former boss                        |
+|  7_ON_D20 | Childhood friends                                                 | 17_ON_D20 | They stuck around after everyone else bailed    |
+|  8_ON_D20 | They're the only one who knows your real name                     | 18_ON_D20 | You know each other's terrible secret           |
+|  9_ON_D20 | Have an unspoken loyalty                                          | 19_ON_D20 | Saved their life on a job gone bad              |
+| 10_ON_D20 | Worked for the same crew, the rest are dead, but you two survived | 20_ON_D20 | You pulled a lot of all-nighters together       |
+</div>
 
-
+---
 ### NPC Connections
-You start play knowing either **two Acquaintances** *or* **one Friend**.
 
-Give them a **name**, and an **occupation** (ideally one that makes them useful), and a **detail** about how you know them.
+#### Contacts
+You start play knowing one close **Contact**.
 
+<p class="text-center">*If you can't think of anything, or want to get to the action quicker, leave this, and invent them at a convenient moment during play.*</p>
+<p class="text-center">**Give them a name, an occupation, as well as a detail about how you know them**.
+<br/>**Make something up, or roll on the table below.**</p>
+
+
+<div class="sonohead rolltable">
+|          |                                             |           |                                                     |
+| -------: | :------------------------------------------ | --------- | --------------------------------------------------- |
+| 1_ON_D12 | A family member with a local business       | 7_ON_D12  | A smuggler operating out of Heng Fa or Seaboard B-8 |
+| 2_ON_D12 | A trusted Ripperdoc who installed your Augs | 8_ON_D12  | A radical politician with a reasonable following    |
+| 3_ON_D12 | A Fixer who trusts you                      | 9_ON_D12  | A journalist for an underground publication         |
+| 4_ON_D12 | A bartender or club owner                   | 10_ON_D12 | A mechanic with a modest garage                     |
+| 5_ON_D12 | A low-to-mid ranking corporate insider      | 11_ON_D12 | A retired mercenary                                 |
+| 6_ON_D12 | A low-to-mid ranking member of a gang       | 12_ON_D12 | A corrupt Cerberus beat-cop                         |
+</div>
+
+---
+#### Rival
 You also have a **Rival**, someone you may have wronged who hates your guts.
 
-Give them a **name**, an **occupation**, and a **detail** about why they hate you.
+<p class="text-center">*If you can't think of anything, or want to get to the action quicker, leave this, and invent them at a convenient moment during play.*</p>
+<p class="text-center">**Give them a name, an occupation, and a detail about why they hate you**.
+<br/>**Make something up, or roll on the table below.**</p>
 
-This could be a person related to your Debt, or someone entirely different.
-
-**If you can't think of anything now, leave this, and invent them at a convenient moment during play.**
+<div class="sonohead rolltable">
+|          |                                                                |           |                                                                    |
+| -------: | :------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
+| 1_ON_D12 | An enforcer from a Syndicate or Gang                           | 7_ON_D12  | The head of a notorious group of corrupt Cerberus enforcers.       |
+| 2_ON_D12 | A Ripperdoc, with a kill-switch linked to your Augs            | 8_ON_D12  | A dangerous loan-shark who you owe money to                        |
+| 3_ON_D12 | A Corrupt Politician                                           | 9_ON_D12  | An enforcer from a corporation, or subsidiary you used to work for |
+| 4_ON_D12 | Someone you worked with before, who believes you betrayed them | 10_ON_D12 | A mysterious blackmailer, who knows too much                       |
+| 5_ON_D12 | A hacker group, with a backdoor into your augs                 | 11_ON_D12 | A former mentor, who sees you as an investment                     |
+| 6_ON_D12 | A fixer with a dangerous reputation                            | 12_ON_D12 | The head of a human trafficking ring                               |
+</div>
+<br/>
+<p class="text-center">If it makes sense, you may also be in **Debt** to your rival. 
+<br/>**Roll 3d6×₩1,000. This could be cold hard cash, or favours equivalent to it.**</p>
 
 ---
 
-## Flesh Out your Character
-
-<Notice type="note"> Discuss these, if you have a cool idea already, great! Write it down! <br/><br/> If not, no worries, there's no need to solidify these details now. All of the following can be decided during play. Declare contacts, background, etc. when the situation calls for it.</Notice>
-
-### Pick a "Drive"
-
-Determine a **Drive or Motivation** for your character. *What makes them continue to live this dangerous life?*
+## Define a Drive
+Determine a **Drive or Motivation** for your character. <br/>*What are you fighting for?*
 
 This could be a personal **aspiration**, a pressing **obligation**, or an **impending threat**.
 
-If you are stuck, ask other players for ideas, or roll **1d20** on the following table and add your own **details** to flesh it out, and make it more specific.
-#### Drive
-|     |                                                                |     |                                                          |
-| --: | :------------------------------------------------------------- | --: | :------------------------------------------------------- |
-|   1 | You want to help a friend or family escape trouble             |  11 | You want to realize a dream                              |
-|   2 | You want to be in charge                                       |  12 | You did something bad, you'd do anything for forgiveness |
-|   3 | You're being blackmailed, you need to deal with it             |  13 | You want to indulge in rare and/or expensive pleasures   |
-|   4 | You're being pursued by a group or individual                  |  14 | You need to escape your current life                     |
-|   5 | You want to live a luxurious life                              |  15 | You need to carry on a legacy                            |
-|   6 | You want the admiration and respect of group or person         |  16 | You want to be free.                                     |
-|   7 | You're a desperate addict, all you want is your next fix       |  17 | You have a debt to pay, and you intend to pay it         |
-|   8 | You lost something precious, you're desperate to get it back   |  18 | You want to take revenge on a mortal enemy               |
-|   9 | Your past is a black hole, you need to know the truth          |  19 | You want to take this whole city down                    |
-|  10 | You have a personal vendetta against a particular corp or gang |  20 | You want to pursue justice for yourself, or someone else |
+- **If you can't decide right now, no worries!** 
+- One will probably develop during play, when it does, talk about it, then write it down.
+
+<p class="text-center">**Choose, make one up, or roll 1d20 on the following table. <br/>Then add your own details to flesh it out, and make it more specific.**</p>
+<div class="sonohead rolltable">
+|           |                                                                |           |                                                          |
+| --------: | :------------------------------------------------------------- | --------: | :------------------------------------------------------- |
+|  1_ON_D20 | You want to help a friend or family escape trouble             | 11_ON_D20 | You want to realize a dream                              |
+|  2_ON_D20 | You want to be in charge                                       | 12_ON_D20 | You did something bad, you'd do anything for forgiveness |
+|  3_ON_D20 | You're being blackmailed, you need to deal with it             | 13_ON_D20 | You want to indulge in rare and/or expensive pleasures   |
+|  4_ON_D20 | You're being pursued by a group or individual                  | 14_ON_D20 | You need to escape your current life                     |
+|  5_ON_D20 | You want to live a luxurious life                              | 15_ON_D20 | You need to carry on a legacy                            |
+|  6_ON_D20 | You want the admiration and respect of group or person         | 16_ON_D20 | You want to be free.                                     |
+|  7_ON_D20 | You're a desperate addict, all you want is your next fix       | 17_ON_D20 | You have a debt to pay, and you intend to pay it         |
+|  8_ON_D20 | You lost something precious, you're desperate to get it back   | 18_ON_D20 | You want to take revenge on a mortal enemy               |
+|  9_ON_D20 | Your past is a black hole, you need to know the truth          | 19_ON_D20 | You want to burn this city down                          |
+| 10_ON_D20 | You have a personal vendetta against a particular corp or gang | 20_ON_D20 | You want to pursue justice for yourself, or someone else |
+</div>
 <br/>
-<Notice type="note">If you are stuck for ideas, you can use [this list](https://onestopforwriters.com/character_motivations) for inspiration.</Notice>
+If you are stuck for ideas, you can use [this list](https://onestopforwriters.com/character_motivations) for inspiration.
 
 This can (and likely will) change over time, or once you start playing and your character's situation changes, which is fine. **It's main function is to let the GM know your Character's ambitions so they can work it into scenarios.**
 
-**If you can't decide right now, no worries!** One will probably develop during play, when it does, talk about it, then write it down.
+---
 
-### How did you get here?
+## Finishing Touches
 
-**How did you end up in Wuhai?** Come up with a *general idea* for how and why your Character is in Wuhai.
+### Starting Health
+- **Characters can take a maximum of 3 different Level 2 Wounds.**<br/> This can be increased later via Augmentation.
+- **Characters can take a maximum of 2 different Trauma before becoming Lost or Dying.**<br/> This can be increased later via Augmentation.
 
-Play to your **Contacts**, **Connection**, and **Drive**. And your **Trademarks**, are likely related in some way.
+<p class="text-center">See [Combat, Harm & Healing](/rustpnk/docs/arules/combat-harm-healing) for more information.</p>
 
-Are they a Wuhai local? Are they a Migrant from another nation? Are they a nomad from the Expanse? Have they been here long?
+### Maximum Action Points
+- **Characters have a maximum of 3 Action Points, which refresh during Downtime.** <br/> This can be increased later via Advancements.
+
+<p class="text-center">See [Downtime & Advancement](/rustpnk/docs/arules/downtime-advancement) for more information.</p>
+
+### Fleshing Out
+Discuss these, if you have a cool idea already, great! Write it down!
+
+If not, no worries, there's no need to solidify these details now. <br/>**All of the following can be decided during play. Declare details when the situation calls for it.**
+
+**What do you look like, what do you act like?** <br/>This can be a broad description, a general vibe of your look, behaviour and fashion choices.
+
+Play to your **Aspects** and **Flaws**.
+
+- What is the first thing people notice about you before you speak?
+- Do you have a particular signature item of clothing, or colour?
+- Do you have any openly visible scars, piercings or tattoos?
+- Do you have a particular affectation, bad habit, or tic?
+- Do you look to stand out, or blend in?
+
+**How did you end up in Wuhai?** Establish a *general idea* for how and why your Character is in Wuhai.
 
 These details help establish your character's implied knowledge and insight about Wuhai and beyond, and the kind of groups they may have ran into before.
 
-This is great information to know, but **if you can't think of anything right now**, or want to experience the setting first, **leave it blank and decide during play**.
+Play to your **Connections**, **Drive** and your **Aspects**.
 
-### Pick Languages
-
-Wuhai is a hugely, culturally diverse place, so knowing at least a few languages is pretty standard. Not to mention the commonplace auto-translation augs available.
-
-**Most people speak English and Mandarin as common languages.** There are also many Russian, Korean, Japanese, and Spanish speakers here.
-
-Feel free to **pick an additional language** based on your **heritage** or **background** if it makes sense to do so.
-
+- Where were you born?<br/> Are they a Wuhai local? Are they a Migrant from another nation? Are they a nomad from the Expanse?
+- Have they been here long?
+- Do you have a favourite hang-out spot?<br/> Make one up and work with the GM to place it somewhere in the city.
+- Where do they live? Do they have family here?
+- Wuhai is hugely multi-cultural. What languages do they speak?
