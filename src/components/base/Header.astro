@@ -23,16 +23,16 @@ const menu = [
     name: "Setting",
     url: "/rustpnk/docs/bsetting",
   },
-  {
-    name: "Factions",
-    url: "/rustpnk/docs/cfactions",
-  },
+  // {
+  //   name: "Factions",
+  //   url: "/rustpnk/docs/cfactions",
+  // },
   // {
   //   name: "Misc Topics",
   //   url: "/rustpnk/docs/dothertopics",
   // },
   {
-    name: "Data",
+    name: "Tables",
     url: "/rustpnk/docs/etables",
   },
   // {
@@ -41,6 +41,11 @@ const menu = [
   // }
 ];
 ---
+  <!-- <div class="container py-2 pb-0 audioplayer">
+    <audio controls transition:persist class="w-full" preload="auto">
+      <source src="/rustpnk/media/WuhaiAmbient.mp3" type="audio/mp3">
+    </audio>
+  </div> -->
 
 <header
   transition:persist
@@ -95,9 +100,19 @@ const menu = [
       </a>
     </div>
   </nav>
+
 </header>
 
 <style>
+
+	audio{
+		filter: invert(100%);
+    	height: 25px;
+      width: 10%;
+      margin-left:auto;
+      margin-right:auto;
+      background-color: transparent;
+	}
 
 .nav{
   background-color: rgba(0, 0, 0, 0.8);
