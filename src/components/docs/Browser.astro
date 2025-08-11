@@ -30,7 +30,7 @@ const { menu, currentPage } = Astro.props;
                     <li class="ml-4">
                       <a
                         href={`/rustpnk/docs/${child.id}`}
-                        class={`w-full leading-none no-underline ${child.id === currentPage ? "font-bold" : ""}`}
+                        class={`w-full leading-none no-underline subnavitem ${child.id === currentPage ? "font-bold" : ""}`}
                       >
                         {child.title.slice(4)}
                       </a>

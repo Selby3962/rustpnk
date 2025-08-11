@@ -1,5 +1,5 @@
 ---
-title: 5 - Misc
+title: 5 - Other Topics
 description: ""
 image: "@assets/docs/headers/city2.png" 
 ---
