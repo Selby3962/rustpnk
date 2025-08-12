@@ -41,15 +41,10 @@ const menu = [
   // }
 ];
 ---
-  <!-- <div class="container py-2 pb-0 audioplayer">
-    <audio controls transition:persist class="w-full" preload="auto">
-      <source src="/rustpnk/media/WuhaiAmbient.mp3" type="audio/mp3">
-    </audio>
-  </div> -->
 
 <header
   transition:persist
-  class={`nav container glass py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
+  class={`nav container glass intersect:animate-fadeDown py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
 >
   <nav class="relative flex flex-wrap items-center justify-between fill stroke">
     <!-- navbar toggler -->
@@ -74,30 +69,35 @@ const menu = [
       id="nav-menu"
       class="text-center lg:text-left order-3 hidden w-full pb-6 md:order-1 md:flex md:w-auto md:space-x-2 md:pb-0 lg:space-x-4"
     >
+    <!-- <li class="hidden lg:block stroke px-2 text-txt-p block py-3">//</li> -->
       {
         menu.map((item) => (
           <li class="stroke px-2">
             <a
               href={item.url}
-              class={`block p-2 font-secondary font-semibold text-txt-p transition dark:text-darkmode-txt-p lg:px-2 lg:py-3 ${
+              class={`block p-2 font-secondary font-semibold text-txt-p transition dark:text-darkmode-txt-p lg:px-3 lg:py-3 ${
                 (pathname === `${item.url}/` || pathname === item.url) &&
                 "active"
               }`}
             >
-              {item.name}
+              {item.name.toUpperCase()}
             </a>
           </li>
+          // <li class="hidden lg:block stroke px-2 text-txt-p block py-3">//</li>
         ))
       }
     </ul>
-    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+    <div class="searchDiv order-1 ml-auto flex items-center md:order-2 lg:ml-0 py-2">
       <a
-        class="mr-4 inline-block border-border text-xl text-txt-p dark:border-darkmode-border dark:text-darkmode-txt-p"
-        href="/search"
-        aria-label="search"
+      class="search mr-4 inline-block border-border text-xl text-txt-p dark:border-darkmode-border dark:text-darkmode-txt-p"
+      href="/search"
+      aria-label="search"
       >
-        <IoSearch />
-      </a>
+      <IoSearch />
+    </a>
+    <audio controls controlslist="nodownload" transition:persist class="w-full" preload="auto">
+      <source src="/rustpnk/media/WuhaiAmbient.mp3" type="audio/mp3">
+    </audio>
     </div>
   </nav>
 
@@ -105,17 +105,41 @@ const menu = [
 
 <style>
 
+.search{
+  margin-right: -50px;
+}
+
+.searchDiv{
+  margin-top: 5px;
+}
+
 	audio{
 		filter: invert(100%);
-    	height: 25px;
-      width: 10%;
-      margin-left:auto;
-      margin-right:auto;
+    	height: 32px;
+      width: 100px;
       background-color: transparent;
 	}
+  
+  audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    margin-right: -100px;
+    overflow:hidden;
+  }
+
+  audio::-webkit-media-controls-timeline{
+    visibility: collapse;
+  }
+
+  audio::-webkit-media-controls-mute-button{
+    visibility: collapse;
+  }
 
 .nav{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.25);
+  /* width: 1168px; */
 }
 
 /* nav stroke */
