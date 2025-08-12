@@ -5,7 +5,7 @@ image: "@assets/docs/headers/combat.png"
 ---
 
 ## Getting Hurt
-Instead of a pool of Hit Points, characters suffer **Conditions, Wounds, and Traumas**.
+Instead of a pool of Hit Points, Player Characters (PCs) suffer **Conditions, Wounds, and Traumas**.
 
 ### Conditions
 <p class="text-center">**Conditions are temporary afflictions.**<br/> Physical, Situational, or Psychological problems that cause trouble in the short-term.
@@ -148,97 +148,154 @@ Use common sense to judge how long "soon" is. At most its the end of the scene, 
 ---
 
 ## Combat
+Combat plays out largely the same as regular gameplay, with the exception of **Momentum**.
 
 ### Momentum
-Whichever side currently has "**Momentum**" gets to control the action. 
+While engaged in hostilities with an NPC, Momentum determines when the Players are **Acting** or **Reacting**.
 
-**At the start of Combat:**
-- Decide a Turn Order for Players. (E.g. Flip a coin, heads is Clockwise, tails is Counter-Clockwise).
-- Roll 1d6.
-    - **On a 1-3:** The enemies start with Momentum and will act first.
-    - **On a 4-6:** The characters will start with Momentum, and will act first.
-    - **SURPRISE:** If one side gets the drop on the other, they immediately take a turn. Roll for initiative **after** they complete their surprise actions.
+- While the **Players have Momentum**, any Player can take an action, often involving a Check.
+- While the **Enemies have Momentum**, any Enemy can take an action, often to force Players to React with a Check.
 
-<br/>
-Whoever has **Momentum** gets to act, and Momentum **swaps back and forth with the flow of Successes and Failures**.
-
-**The Players roll every check**, either making an active move against the enemy, or reacting to a move made against them. 
-
-- **On a Success:** Momentum remains with or shifts to the players. The next player in the turn order gets to declare an action.
-- **On a Partial Success:** As a partial consequence or benefit, Momentum *could* shift either way.
-- **On a Fail:** Momentum remains with or shifts to the enemies. 
-
-If you find yourself caught in a spiral of failures, the currently acting player can **spend a Stunt Point to Seize Momentum for the players**. See [Stunt Points](/rustpnk/docs/arules/skill-checks#stunt-points).
-
-The player who spent the Stunt Point gets to act first. After they act (assuming they Succeed), move on to the next player in the original Turn Order.
-
-
-
-<br/>
----
-### Attacking
-When **attacking an enemy**, describe what you do and **make a check**.
-
-A **Success** or **Partial Success** causes Harm to the target based on the type of weapon used (See [Gear](/rustpnk/docs/arules/gear)). **Boons** can be spent to cause **additional hits**.
-
-If the intent is to knock down, stun, trap or inflict some other **Condition**, describe how you do it and make the check. **Certain weapon types have a chance of inflicting Conditions** as part of their **Feature**.
-
-**Partial Successes, Failed attacks and Botches can result in consequences** such as suffering harm back, guns jamming, being knocked down, dazed or trapped, losing a weapon or running out of ammo.
-<br/>
-
-#### Unaware Targets
-When attacking an unaware target, add Action and Danger die related to stealth, along with any die for the attack.
-- **On a Boon:** Deal twice as many hits.
-- **On a Success:** The target also gains a condition (in addition to any conditions already granted by the weapon.)
+Momentum passes back and forth with the flow of Successes and Failures.
 
 ---
-### Defending
-When **targeted by an attack**, describe how you are avoiding or resisting harm and **make a check**.
 
-Different **Trademarks, Edges** and **Tags** will be relevant depending on the approach you choose:
-- When **dodging, ducking, weaving and making yourself harder to hit**, tags that increase your **mobility** are going to be useful.
-- If attempting to **resist, endure, block or deflect an attack**, tags related to **armor**, **toughness** and **durability** are going to come into play.
+#### Gaining/Maintaining/Losing Momentum
+<p class="text-center">**A possible Consequence of a Check could be losing Momentum.**<br/>The enemy takes advantage of an opening, a mistake, or some other opportunity to strike back.</p>
 
-What happens depends on the result of the check:
-- **Success** means you don’t take a hit. 
-- **Partial Success** you take reduced harm, or no harm at all, or might suffer some other consequence instead, such as a condition.
-- **Failure** means you take the full hit, and possibly another consequence, such as a condition as well.
-- **A Botch** results in the character suffering increased damage, or another appropriate consequence.
+**Examples:**
+- **Gaining Momentum:** An NPC attacks a PC. The PC rolls to dodge and roll a Minor Success.<br/> They suffer a condition, but use their partial success to take back Momentum, shifting control back to the Players.
+- **Losing Momentum:** A PC attacks an NPC, they roll a Minor Success. <br/>They deal damage, but as a consequence, the Enemy gets a chance to Act. The PC must now React or suffer.
+- **Maintaining Momentum:** A PC Attacks an NPC, they roll a Minor Success. <br/> They deal less damage, but maintain Momentum. Another Player gets a chance to Act.
 
-#### Armour
-Wearing Armour grants you two main benefits:
-- **Tags** that grant additional **Action Dice** when making **defense checks**. 
-<br/>- For example, Security-Grade Armour provides the "Armoured" tag.
-- Increases the maximum value of your **Armour Track**. Marking boxes on your Armour track allows you to **soak hits**, one for one. 
-<br/>- For example, Security-Grade Armour sets your Armour Track to 2.
-<br/>- This represents lucky hits, glancing blows, and taking hits in less lethal areas.
-
-Once your Armour Track fills, the Armour **isn't broken**, it no longer soaks hits, but it still provides Action Die when defending against attacks, and any fictional advantages or disadvantages it may have.
+<p class="text-center">It is up to the GM to decide when the outcome of a roll shifts Momentum.<br/> Follow the fiction, and treat it as an [Advantage/Consequence](/rustpnk/docs/arules/skill-checks#advantages--consequences) like any other check.</p>
 
 <br/>
+#### Seize Momentum
+If the Players find themselves caught in a spiral of failures, any player can spend an [Action Point](/rustpnk/docs/arules/skill-checks) to **Seize Momentum**.
+- The Player who spent the point describes what they do to disrupt the flow, and create a momentary distraction, or opportunity.
+- Momentum shifts back to the Players. <br/> - The player who spends the point decides who gets to Act.<br/> - Losing Momentum is unavailable as a Consequence for this first check.
+
 ---
+
+#### Acting
+**Acting is any active action taken by a Player Character. Some examples include:**
+| Action           | Example Resolution                                                                                                                           |
+| ---------------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| Attack           | Roll a Check. Success could mean dealing conditions and wounds of increasing effectiveness.                                                  |
+| Disarm           | Roll A Check. Major Success knocks the Enemy's weapon from their hands. Minor or Hollow might put you and/or the target in a worse position. |
+| Reposition       | Spend time getting into a more advantageous position, adding <AD/> to later checks.                                                          |
+| Talk             | Roll a Check. Attempt diplomacy or intimidation, possibly inflicting a condition.                                                            |
+| Use Gear/Aug     | Use a feature of gear or an augmentation. Throw a Grenade, Use Meds, Hack something. Roll if needed.                                         |
+| Manipulate Scene | Fiddle with something in the scene to try and improve positioning, or add an exploitable detail. Roll if needed.                             |
+| Recover          | Do something to remove a Condition. Put pressure on a bleeding wound, shake off a stunning blow, etc.                                        |
+<br/>
+- **GM Advice:** When players roll a check to attack NPCs, ask the player how they would like the outcome of that check to manifest.
+- **For Example:** 
+<br/>- On a Major Success, do they want to inflict a Level Two Wound, or a Level One Wound + Condition? <br/>- On a Minor Success, do they want to inflict a Level One Wound or a Condition?
+
+<br/>
+#### Reacting
+**Reacting is any action taken in response to an action taken against a PC. Some examples include:**
+| Reaction           | Example Resolution                                                                                          |
+| ------------------ | :---------------------------------------------------------------------------------------------------------- |
+| Block/Defend/Dodge | Roll a Check. Levels of success mean taking less, or no conditions/wounds.                                  |
+| Parry/Counter      | Roll a Check. Levels of success mean taking full/less conditions/wounds, but also dealing damage in return. |
+| Use Gear/Aug       | Use a feature of gear or an augmentation. Roll if needed.                                                   |
+| Resist             | Attempt to stay on your feet after an earth-shaking explosion. Break free of a grapple.                     |
+
+---
+
+#### Turn Orders
+**Player Turns in Combat have no strict order. The GM and Players must work together to ensure that each player involved in the scene gets a chance to act.**
+
+**Some general guidance here:**
+- Most of the time, you'll follow the fiction. Which character would logically act now?
+- If it is unclear, or that character has already acted recently, pick a different character. Decide as a group.
+- If a Player hasn't had a chance to Act or React yet, they act. Be sure to share the spotlight.
+
+<p class="text-center">**Remember: Even non-acting players, and characters far from the action can contribute with checks to create opportunities, improve position, and otherwise assist the acting player.<br/><br/> Be open to suggestions, and resolve these first.**</p>
+
+---
+
+### Armour
+**Wearing Armour provides two major benefits:**
+- **+<AD/> to checks relating to Blocking/Defending** <br/> - When rolling to Defend in combat, you can add additional <AD/> as part of the [Advantages of your Armour](/rustpnk/docs/arules/gearsystem).
+- **Armour Track** - See Below
+
+<br/>
+#### Armour Track
+Armour also provides a Track that increases as you equip Armour. Each piece of Armour will state how much of an increase it provides.
+
+<p class="text-center">**Players can opt to mark their Armour Track to reduce the consequences of a hit by one level per Armour spent.**<br/>Trauma -> Level Two Wound -> Level One Wound -> Condition -> No Damage</p>
+
+---
+
+### Weapons
+<p class="text-center">**All Weapons are equally as deadly.**</p>
+
+Instead of variable damage, each class of weapon has its own [Advantages and Disadvantages](/rustpnk/docs/etables/gear), listed beside them. 
+- The best weapon is whichever one best fits the context, and the one you have the most skill with.
+- **For Example:**<br/>- Short Melee weapons excel for quiet, close-range, intimate work. <br/>- Blades might make a target bleed.<br/>-Shotguns and auto-rifles can potentially hit multiple targets.
+
+---
+
 ### NPC Stats
+**Much like PCs, NPCs can suffer Conditions, Wounds, and Trauma.**
 
-#### Hits
-Unlike Player Characters (PCs), **NPCs only have one Hit Track, labelled "Harm"**, which tracks all sources of damage.
-
-**Once it fills, the NPC will either die, pass out, surrender, or attempt to flee.**
+However, NPCs track these things slightly differently. In addition, they also have a **Toughness** Rating, explained below.
 
 #### Toughness
-NPCs have an associated **Toughness**, relative to their strength.
+All NPCs have a [Toughness Rating](/rustpnk/docs/etables/threats). This rating serves to abstract more granular statistics:
 
-When facing off against an NPC, each point of **Toughness** adds one **Danger Die** to the pool. This is in addition to any conditions the player may have, scene tags etc. that might also add Danger Dice. (See: [Skill Checks](/rustpnk/docs/arules/skill-checks))
+<div class="sonohead">
+|                   |                                                                                                                                                                                                                                 |
+| ----------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Armour            | Instead of tracking Armour for each NPC, the advantage of it is simply factored into their Toughness.<br/> NPCs cannot mark Armour to soak injuries the same way that PCs can.                                                  |
+| Threat            | Their relative Threat (combat stats, mobility, resilience etc.) is factored into Toughness.<br/> **Players add** <TD/> **equal to the Threat's Toughness to any checks made against them.**                                     |
+| Maximum Wounds    | Instead of tracking individual, descriptive Wounds, the GM can simply tally up the total number an NPC has taken and compare it with their Maximum Wounds.<br/> **An NPCs Maximum Wounds is equal to their Base Toughness x2.** |
+| Current Condition | As they suffer harm, their effectiveness will be reduced. <br/> **Toughness is reduced by 1 for every 4 Wounds they suffer.**                                                                                                   |
+</div>
 
-NPC Hit Tracks are split up into groups of 2. **Reduce Toughness by 1 each time a hit brings them below one of these Thresholds.**
-An enemy that starts off almost untouchable, will gradually be weakened as the fight goes on.
 
-**As a GM, be up-front about a threat's Toughness rating before players commit to a roll during Combat.** They can back out and try a different strategy if they find themselves outmatched. 
+---
 
-#### Armour
-NPC Armour functions differently to PC Armour. 
-- NPCs can be Armoured, this is factored into their Toughness Rating.
-- NPCs cannot use Armour to soak hits.
+#### Conditions
+Conditions function the same as they do for PCs. The NPC can have any number of them, and the players gain <AD/> in checks against them if they choose to exploit them.
 
+<br/>
+#### Wounds
+**For ease of book-keeping, Wounds are tracked in a more abstract way:**
+- Keep a tally for each NPC.
+- Each time an NPC suffers a Wound, add one or two tallies, depending on the severity of the wound.<br/> (Level One = 1 | Level Two = 2)
+- Once an NPC reaches their maximum number of Wounds (Base Toughness x2), they suffer a Trauma.
+- Reduce an NPCs Toughness by 1 for every 4 Wounds (tallies).
+
+<br/>
 #### Trauma
-Extremely tough, or reoccurring enemies may also have **Trauma** boxes, the same as PCs.
-Typically, upon marking a Trauma, and not dying, the enemy will make an attempt to escape.
+A typical, regular enemy can only ever suffer a single Trauma.
+
+- Once they do, they've been dealt with, definitively.
+- Elite/Boss level enemies might be able to suffer 2 Trauma before succumbing. <br/>- Meaning, they have 2 times the Maximum Wounds of regular enemies.
+
+---
+
+#### Defeating an NPC
+In the case of regular enemies, once they suffer a single Trauma, they have been defeated.
+
+However, this doesn't mean that death is the only way to stop an NPC. 
+
+**At the GMs discretion:**
+- An enemy suffering over 50% of their Max Wounds, and/or facing overwhelming odds may attempt to bargain for their lives, or simply run away.
+- Suffering a single devastating blow (explosion, throat slit, shot to the head) might be enough to finish them off in a single check.
+
+Generally, follow the fiction. Zoom in on the fights that are interesting, but feel free to play smaller encounters fast and loose.
+
+---
+
+#### NPC Features
+Like Gear and Augs, NPCs might have features; actions and special moves they can trigger a number of times per combat.
+
+These moves typically allow them to do something special when a PC suffers consequences while Reacting to it.
+
+See [Threats](/rustpnk/docs/etables/threats) for a list of example moves.

@@ -12,7 +12,7 @@ const { menu, currentPage } = Astro.props;
 
 {
   menu.length > 0 && (
-    <div class="relative glass rounded-lg p-4 my-2 w-full intersect:animate-fadeRight opacity-0">
+    <div class="relative browser rounded-lg p-4 my-2 w-full intersect:animate-fadeRight opacity-0">
       <ScrollArea className="h-full" client:only="react">
         <h2 class="text-2xl border-none">Index</h2>
         <ul class="list-none m-0">
@@ -48,6 +48,11 @@ const { menu, currentPage } = Astro.props;
 
 
 <style>
+
+.browser{
+    background-color: rgba(0, 0, 0, 0.129);
+  	/* border-right: 1px solid rgba(118, 118, 118, 0.663); */
+}
 
 .ml-0 a{
   font-size: 12px;

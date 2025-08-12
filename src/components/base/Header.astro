@@ -44,7 +44,7 @@ const menu = [
 
 <header
   transition:persist
-  class={`nav container glass intersect:animate-fadeDown py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
+  class={`nav container intersect:animate-fadeDown py-2 z-30 mb-4 lg:mt-4 lg:rounded-lg ${stickyHeader && "sticky top-0"}`}
 >
   <nav class="relative flex flex-wrap items-center justify-between fill stroke">
     <!-- navbar toggler -->
@@ -139,6 +139,7 @@ const menu = [
 
 .nav{
   background-color: rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(118, 118, 118, 0.663);
   /* width: 1168px; */
 }
 
