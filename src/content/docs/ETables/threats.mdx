@@ -2,70 +2,87 @@
 title: 2 - Threats
 description: ""
 image: "@assets/docs/headers/combat.png"
-hideToc: true
-hideNav: true
+# hideToc: true
+# hideNav: true
 ---
 
-#### See [Combat](/rustpnk/docs/arules/combat-harm-healing) for details.
+#### See [Combat](/rustpnk/docs/arules/combat-harm-healing) and [Checks](/rustpnk/docs/arules/skill-checks) for details.
+
 
 ---
-
-## Environmental Threats
 
 ## NPC Threats
 
 ### Common Threats
 <div class="table-full">
-| Name           | Tags                                                   | Possible Augs                              | Max Hits                           | Toughness                            |
-| -------------- | ------------------------------------------------------ | ------------------------------------------ | ---------------------------------- | ------------------------------------ |
-| Civilian       | Wants no part of this, easily frightened               | \-                                         | <span class="hits">■       </span> | <span class="hits">\-       </span>  |
-| Corporate Suit | Authority, call security, lock you out                 | Comms                                      | <span class="hits">■       </span> | <span class="hits">\-        </span> |
-| Hoodlum        | Tough in numbers, Looking for trouble                  | \-                                         | <span class="hits">■       </span> | <span class="hits">■        </span>  |
-| Ripperdoc      | Medically trained, Nervous, Shady                      | Bio Analyser, Integrated Surgical Tools    | <span class="hits">■       </span> | <span class="hits">■■       </span>  |
-| Security Guard | Alert, grapple, not paid enough                        | Comms                                      | <span class="hits">■■      </span> | <span class="hits">■        </span>  |
-| Ganger         | Knucklehead, Tough in numbers                          | Hidden Weapons                             | <span class="hits">■■      </span> | <span class="hits">■■       </span>  |
-| Cultist        | Brainwashed, Zealous                                   | Pain Inhibitors, Insurance Unit            | <span class="hits">■■      </span> | <span class="hits">■■       </span>  |
-| Fixer          | Streetwise, Knows a good deal                          | Comms                                      | <span class="hits">■■      </span> | <span class="hits">■■       </span>  |
-| Pyromaniac     | Obsessed with fire, Immune to fear                     | Pain Inhibitors, Therapeutic Neuro-Dampers | <span class="hits">■■      </span> | <span class="hits">■■       </span>  |
-| Ripper         | Stun gun, fast, stealthy                               | Tesla, Viper Sting                         | <span class="hits">■■      </span> | <span class="hits">■■       </span>  |
-| Beat Cop       | Jumpy, armed and armoured                              | Comms                                      | <span class="hits">■■ \| ■ </span> | <span class="hits">■■       </span>  |
-| Bodyguard      | Professional, protect his client's interests, armoured | Comms                                      | <span class="hits">■■ \| ■ </span> | <span class="hits">■■ \| ■  </span>  |
-</div>
-
+<Accordion client:load title="Show/Hide">
+| Name /<br/>Toughness                             | Basic / Special Actions                                                                                                                                                                                                                                                   |
+| ------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Civilian       <br/><span class="TD XL">0</span> | **Basic Actions:** Flee, Call the Cops, Cower                                                                                                                                                                                                                             |
+| Corporate Suit <br/><span class="TD XL">0</span> | **Basic Actions:** Call Security, Lock you out                                                                                                                                                                                                                            |
+| Hoodlum        <br/><span class="TD XL">1</span> | **Basic Actions:** Ambush, Beatdown<br/><br/>**No Limit:** Gang up (Add the Toughness of up to 3 Hoodlums as TD to an attack)<br/><br/>**No Limit:** Grapple (Grapple a distracted target from behind. Grants the "Grappled" condition)                                   |
+| Ripperdoc      <br/><span class="TD XL">2</span> | **No Limit:** Back-Alley Surgery (Use surgical tools to slice deeply into the target. Target suffers the "Bleeding" condition)<br/><br/>**Twice:** Target Weakness (Use bio-scanner to hone in on a weak-point. Makes an existing Wound of the GMs choice 1 level worse.) |
+| Cultist        <br/><span class="TD XL">2</span> | **Basic Actions:** Surround, Sacrifice<br/><br/>**Once:** Ignore Pain (Reduce Wounds by 2)<br/><br/>**Once:** Martyr (Cult Leader activates their Insurance Unit. Explosion wounds those nearby)                                                                          |
+| Fixer          <br/><span class="TD XL">2</span> | **Basic Actions:** Try to make a deal, Escape, Call Bodyguard                                                                                                                                                                                                             |
+| Ripper         <br/><span class="TD XL">2</span> | **Basic Actions:** Ambush, Hide in the Shadows, Hit & Run Tactics<br/>**No Limit:** Stun Gun (Apply the Stunned Condition)                                                                                                                                                |
+| Security Guard <br/><span class="TD XL">2</span> | **Basic Actions:** Call for Backup<br/><br/>**No Limit:** Stun Gun (Apply the Stunned Condition)<br/><br/>**No Limit:** Disarm (Attempt to take control of the target's weapon)                                                                                           |
+| Ganger         <br/><span class="TD XL">2</span> | **Basic Actions:** Ambush, Beatdown, Shoot Wildly<br/><br/>**No Limit:** Takedown (Attempt to tackle and bring down the target. Grants the "Knocked Down" condition.)<br/><br/>**Twice:** Gang up (Add the Toughness of up to 3 Gangers as TD to an attack)               |
+| Pyromaniac     <br/><span class="TD XL">2</span> | **Basic Actions:** Scream<br/><br/>**Twice:** Molotov (Throw a molotov cocktail, grants the "Burning" condition)                                                                                                                                                          |
+| Beat Cop       <br/><span class="TD XL">2</span> | **Basic Actions:** Radio for Backup, Bludgeon<br/><br/>**Once:** Restrain (Attempt to restrain a Grappled or Knocked Down target in handcuffs)                                                                                                                            |
+| Bodyguard      <br/><span class="TD XL">3</span> | **Basic Actions:** Protect Client Interests, Keep Mouth Shut, Assist Client<br/><br/>**Three Times:** Cover Target (Take a wound instead of a target. The wound is one level lower.)                                                                                      |
+</Accordion>
+<br/>
 ---
 
 ### Tough Threats
-<div class="table-full">
-| Name              | Tags                                                    | Possible Augs                   | Max Hits                            | Toughness                            |
-| ----------------- | ------------------------------------------------------- | ------------------------------- | ----------------------------------- | ------------------------------------ |
-| Gang Leader       | Henchmen, cunning, intimidate                           | Comms                           | <span class="hits">■■ \| ■  </span> | <span class="hits"> ■■ \| ■  </span> |
-| Cerberus Enforcer | Police Brutality, Short-fuse, armed and armoured        | Comms                           | <span class="hits">■■ \| ■■ </span> | <span class="hits"> ■■ \| ■ </span>  |
-| Hitman            | Cold, professional, relentless                          | Tactical HUD, Tesla             | <span class="hits">■■ \| ■■ </span> | <span class="hits"> ■■ \| ■ </span>  |
-| Merc              | Combat armour, tactical augs, well trained              | Comms, Tactical HUD             | <span class="hits">■■ \| ■■ </span> | <span class="hits"> ■■ \| ■ </span>  |
-| Gang Tough        | Loyal, dumb, 'roided up                                 | Microfibral Muscle, Extra Limbs | <span class="hits">■■ \| ■■ </span> | <span class="hits"> ■■ \| ■■ </span> |
-| Corpo Soldier     | Defend corporate interests, well trained, well equipped | Comms, Tactical HUD, Black Box  | <span class="hits">■■ \| ■■ </span> | <span class="hits"> ■■ \| ■■ </span> |
-</div>
-
+<Accordion client:load title="Show/Hide">
+| Name /<br/>Toughness                               | Basic / Special Actions                                                                                                                                                                                                                                                                                                                            |
+| -------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cerberus Enforcer<br/><span class="TD XL">4</span> | **Basic Actions:** Call for Backup, Bludgeon, Shoot<br/><br/>**No Limit:** Restrain (Attempt to restrain a Grappled or Knocked Down target in handcuffs)<br/><br/>**Once:** K-9 Unit/Drone Support (Activate a nearby FENRIR K-9 Unit/Combat Drone)                                                                                                |
+| Gang Tough       <br/><span class="TD XL">4</span> | **Basic Actions:** Protect Leader, Kill, Shout<br/><br/>**No Limit:** Wild Swings/Reckless Shooting (Hits up to 3 nearby targets. Targetted PCs roll separately.)<br/><br/>**Once:** Use Blitz (For the next Roll against them TD added for Toughness is equal to their original Toughness, regardless of how many wounds the enemy has suffered.) |
+| Gang Leader      <br/><span class="TD XL">4</span> | **Basic Actions:** Call for Backup, Activate Trap<br/><br/>**Customise Special Actions to fit the theme of the faction/character.**                                                                                                                                                                                                                |
+| Merc             <br/><span class="TD XL">4</span> | **Basic Actions:** Group Tactics, Shoot, Use Grenades<br/><br/>**No Limit:** Tactical Analysis (Add 1TD when defending against attacks from them)<br/><br/>**Once:** Use Grenade (Pick a Grenade. Attempts to land it near the target. Apply the effects to all nearby targets.)                                                                   |
+| Corpo Soldier    <br/><span class="TD XL">4</span> | **Basic Actions:** Call for Backup, Defend Corporate Interests, Keep Mouth Shut, Avoid Collateral<br/><br/>**No Limit:** Tactical Analysis (Add 1TD when defending against attacks from them)<br/><br/>**Once:** Black Box (Ignite fiercely upon death. Leaves nothing but ashes. Those nearby could be caught on fire.)                           |
+| Hitman           <br/><span class="TD XL">4</span> | **Basic Actions:** Ambush from afar, avoid confrontation, blend into a crowd<br/><br/>**No Limit:** Tactical Analysis (Add 1TD when defending against attacks from them)<br/><br/>**Twice:** TESLA (Attempt to use TESLA unit. Grants Electrocuted and/or Knocked Down)                                                                            |
+</Accordion>
+<br/>
 ---
 
 ### Elite Threats
-<div class="table-full">
-| Name               | Tags                                                                       | Possible Augs                                                | Max Hits                                  | Toughness                                 |
-| ------------------ | -------------------------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------- | ----------------------------------------- |
-| Syndicate Assassin | Surgical precision, Poisoned blade, Quick escape, Disguise                 | Viper Sting, Chem Dispersal Unit, Morphic Skin               | <span class="hits"> ■■ \| ■■  </span>     | <span class="hits"> ■■ \| ■■ \| ■ </span> |
-| Corpo Elite        | Defend corporate interests, well trained, well equipped, heavily augmented | Comms, Tactical HUD, Black Box, Extra Limbs, Mounted Weapons | <span class="hits"> ■■ \| ■■ \| ■ </span> | <span class="hits"> ■■ \| ■■ \| ■ </span> |
-</div>
-
+<Accordion client:load title="Show/Hide">
+| Name /<br/>Toughness                                | Basic / Special Actions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Toughness |
+| --------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| Syndicate Assassin<br/><span class="TD XL">5</span> | **Basic Actions:** Ambush, Hit & Run Tactics, Change Face<br/><br/>**No Limit:** Evasion (Add 1TD to all attempts to hit them)<br/><br/>**Once:** Viper Sting (Inject a Toxin at Melee Range. Grants "Poisoned" Condition, or makes an existing Poison-related wound worse)<br/><br/>**Twice:** Disperse Chemicals (Obscure area with Smoke or Toxins. Disappear from view.)                                                                                                                                                                                                                                                                             |           |
+| Corpo Elite       <br/><span class="TD XL">5</span> | **Basic Actions:** Call for Backup, Defend Corporate Interests, Keep Mouth Shut, Avoid Collateral<br/><br/>**No Limit:** Tactical Analysis (Add 1TD when defending against attacks from them)<br/><br/>**No Limit:** Extra-Limbs (Attack three times. Either the same target, or three different ones. PCs roll to defend for each attack.)<br/><br/>**Once:** Black Box (Ignite fiercely upon death. Leaves nothing but ashes. Those nearby could be caught on fire. Nearby targets roll.)<br/><br/>**Twice:** Mounted Heavy Weapon (Rockets or Minigun. Deals a level 3 wound to one target. Or spread it out between up to three. Each target rolls.) |           |
+</Accordion>
+<br/>
 ---
 
 ### Mechanical Threats
-<div class="table-full">
-| Name                | Tags                                                     | Max Hits                                 | Toughness                                |
-| ------------------- | -------------------------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Scouting Drone      | Scouting, spying                                         | <span class="hits">■             </span> | <span class="hits">■■            </span> |
-| Cyberhound          | Four-legged, Silent hunter, Augmented senses             | <span class="hits">■■            </span> | <span class="hits">■■ \| ■       </span> |
-| Combat Drone        | Armed, Fly fast                                          | <span class="hits">■■ \| ■       </span> | <span class="hits">■■ \| ■■      </span> |
-| Scrap Mech          | Junk Armour, Poor Signal, Power Tools                    | <span class="hits">■■ \| ■■ \| ■ </span> | <span class="hits">■■ \| ■■      </span> |
-| Security Mech       | Heavy Armour, Remote Controlled, Heavy Weaponry          | <span class="hits">■■ \| ■■ \| ■ </span> | <span class="hits">■■ \| ■■ \| ■ </span> |
-| AEGIS Scorpion Tank | Heavy Armour, AI Controlled, Heavy Weaponry, Relentless, | <span class="hits">■■ \| ■■ \| ■■</span> | <span class="hits">■■ \| ■■ \| ■■</span> |
+<Accordion client:load title="Show/Hide">
+| Name /<br/>Toughness                                 | Basic / Special Actions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scouting Drone     <br/><span class="TD XL">1</span> | **No Limit:** Evasion (Add 1TD to all attempts to hit them)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Combat Drone       <br/><span class="TD XL">2</span> | **No Limit:** Evasion (Add 1TD to all attempts to hit them)<br/><br/>**Once:** Launch WASPS (Targets up to 3 targets. Each target rolls separately. Grants "Electrocuted" condition on hit.)                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Autonomous Turret  <br/><span class="TD XL">2</span> | **Basic Actions:** Lock-On, Shoot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| FENRIR K-9 Unit    <br/><span class="TD XL">2</span> | **No Limit:** Bring Down (Attempt to knock a target to the ground and hold them there. Grants Restrained and Knocked Down conditions.)<br/><br/>**No Limit:** Bite (Deal a level 1 wound and/or "Poisoned" condition to a target that is currently being restrained by "Bring Down".)<br/><br/>**No Limit:** Detect Threats (Use thermal optics to detect hidden targets)                                                                                                                                                                                                                                 |
+| Scrap Mech         <br/><span class="TD XL">4</span> | **Basic Actions:** Perform Task<br/><br/>**No Limit:** Wide Attacks (Attacks target up to 2 nearby targets. Each target rolls separately)<br/><br/>**Once:** Go Berserk (At 1 Toughness, TD added for Toughness is equal to original Toughness)                                                                                                                                                                                                                                                                                                                                                           |
+| Security Mech      <br/><span class="TD XL">5</span> | **Basic Actions:** Neutralise Threat, Attempt to Avoid Collateral<br/><br/>**No Limit:** Lock-On (Target a specific character. That character takes 2TD to attempts to defend from the Tank's attacks)<br/><br/>**No Limit:** Relentless (TD added for Toughness cannot go lower than 3, regardless of how many Wounds the Mech has)                                                                                                                                                                                                                                                                      |
+| AEGIS Scorpion Tank<br/><span class="TD XL">6</span> | **Basic Actions:** Pursue, Utterly Destroy, Ignore Collateral<br/><br/>**No Limit:** Lock-On (Target a specific character. That character takes 2TD to attempts to defend from the Tank's attacks)<br/><br/>**No Limit:** Relentless (TD added for Toughness cannot go lower than 4, regardless of how many Wounds the Tank has)<br/><br/>**Once:** Drone Swarm (Release 3 Combat Drones)<br/>**Three Times:** Breaching Shot (Blow a hole in cover, or take out part of a structure.)<br/><br/>**Three Times:** Launch HS-Rockets. (Rockets seek out up to three targets. Each target rolls separately.) |
+</Accordion>
+<br/>
+---
+
+## Environmental Threats
+### Networks
+<Accordion client:load title="Show/Hide">
+| Name /<br/>Toughness                                     | Actions                                                                  |
+| -------------------------------------------------------- | :----------------------------------------------------------------------- |
+| Public NET             <br/><span class="TD XL">1</span> | Serve Targeted Ad, Request Face ID, Paywall                              |
+| Private NET            <br/><span class="TD XL">3</span> | Passworded, Firewall,                                                    |
+| Corporate NET          <br/><span class="TD XL">4</span> | Require Biometric ID, Firewall, Lockdown, Security Alert                 |
+| DARKNET Node           <br/><span class="TD XL">5</span> | Self-Destruct Node, Trojan, Silent Alert                                 |
+| Corporate Blacksite NET<br/><span class="TD XL">6</span> | Require Biometric ID, Firewall, Lockdown, Security Alert, Scorched Earth |
+</Accordion>
+<br/>
 </div>
