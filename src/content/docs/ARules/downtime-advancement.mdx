@@ -1,175 +1,458 @@
 ---
-title: 4 - Downtime // Advancement
+title: 5 - Downtime // Advancement
 description: ""
-image: "@assets/docs/headers/apartment.png"
+image: "@assets/docs/headers/guy.png"
 ---
 
-## Aftermath Phase
-Immediately after a Job is the Aftermath Phase. This is when rewards from Jobs are paid out, and **Hostility** & **Status** are tallied up.
+## Aftermath
+<p class="text-center">**Immediately after a Job is the Aftermath.**
+<br/>XP, Status, and Hostility are tallied up, and rewards for the job are paid out.</p>
 
-See [Crew Mechanics](/rustpnk/docs/arules/crew-faction) for more detail about the stages of this phase.
+---
+
+### Experience (EXP)
+**Player Characters earn Experience for taking risks and completing jobs.**
+
+<p class="text-center">**EXP is tracked on your Character Sheet in the form of Six, 8-Segment [Clocks](/rustpnk/docs/arules/skill-checks#clocks--extended-checks)**<br/> Each Segment of a clock is equal to 1 EXP.</p>
+<div class="clock w-full text-center"> 8/8 5/8 0/8 0/8 0/8 0/8 </div>
+
+**At the end of a job, mark segments on the left-most, non-full clock, for the following:**
+<div class="sonohead">
+| Trigger                  | Description                                                                                                                                        | Amount                                                                      |
+| ------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Survived                 | Even if the Job ended in failure, **you made it back alive**.                                                                                      | +2 EXP (or +3, for particularly long or challenging jobs. GM's discretion.) |
+| Suffered                 | You suffered a Trauma during the job.                                                                                                              | +2 EXP (each)                                                               |
+| Pushed your Luck         | You spent one or more Action Points during the job.                                                                                                | +1 EXP                                                                      |
+| Gambled and Lost         | You suffered one or more Banes during the job.                                                                                                     | +1 EXP                                                                      |
+| Played to your Strengths | You acted in a way that aligns with your **Aspects**                                                                                               | +1 EXP                                                                      |
+| Chased a Dream           | You made progress toward your **Drive** in some specific, meaningful way.                                                                          | +1 EXP                                                                      |
+| Relied on your Friends   | You made use of your **Bonds** with another player character, or otherwise **developed your relationship** with another PC in some meaningful way. | +1 EXP                                                                      |
+</div>
+
+<br/>
+- **GM Advice:** For much faster games, double the amount of EXP gained from each source.
+- For marginally faster games, reduce the number of Segments each clock has to 6.
+- Likewise, for slower games, increase the number of Segments of each clock to 10 or 12.
+
+<br/>
+### Advancement
+**Advancements are improvements you can purchase for your Character, representing their growing skill and knowledge.**
+
+**At any point during Downtime (the period of time between Jobs), a Player can spend full Experience Clocks on the following Advancements:**
+
+| Advancement                    | Benefit                                                                                                                                                                                           | Cost                                |
+| ------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
+| Improve Skill                  | Increase a [Skill](character-creation#skills-and-expertise) by +1. **Max +4**. <br/> There are upper limits on the number of skills you can have at certain levels. See details below this table. | 1 Full EXP Clock per Level of Skill |
+| Write an Expertise             | Write a new Expertise next to a Skill. **Max 3 Expertise per Skill** <br/>                                                                                                                        | 1 Full EXP Clock                    |
+| Increase Maximum Action Points | Increase your Maximum Action Points by +1. **Max +5**                                                                                                                                             | 2 Full EXP Clocks                   |
+| Increase Augmentation Slots    | Increase your Maximum Augmentation Slots by +1. **Max +6**                                                                                                                                        | 1 Full EXP Clock                    |
+
+<br/>
+#### Skill Level Limits
+To stop veteran characters from becoming ultimate jack-of-all-trades, there are limits imposed upon Skill levels:
+- **Any number of Skills can be at +1.** You can have a go at anything.
+- **A maximum of 6 Skills can be at +2.** You can be broadly competent at a wide range of skills.
+- **A maximum number of 3 Skills can be at +3.** Your specialist subjects are narrower.
+- **A maximum of 2 Skills can be at +4.** There isn't time in the day to be a Master of everything.<br/> This 
+
+<br/>
+- **GM Advice:** If you want more heroic, veteran Player Characters, bump up or remove these limits.
+- Likewise, for less competent, veteran Player Characters, reduce these limits further.
+
+#### Changing your Character
+At the GM's discretion, you may also make sideways adjustments to your character, such as:
+- Change an Aspect
+- Move a point in one Skill to another Skill.
+- Swap one Expertise for another
+- Swap out, add, or remove a Flaw (down to a minimum of 3 and a maximum of 6)
+- Change your Drive
+<br/>
+**When Advancing or Changing your Character, try to justify these changes based on your character's shifting circumstances.**
+- What lessons did you learn from the last job? What specific situation pushed you to change?
+- When changing skills or expertise, what made you shift your focus?
+- When writing new skills and expertise, how have you spent your time to improve these specialisms? How do you train? Who do you train with?
+- etc.
+
+
+---
+
+### Status
+**Status** indicates how well known, respected, and feared the Crew are among their clients, allies, and enemies.
+
+**As it increases, so does your Rank.**
+
+<p class="text-center">The Crew Sheet displays ten, 8-Segment [Clocks](/rustpnk/docs/arules/skill-checks#clocks--extended-checks). <br/>Every point of Status adds one tick to a clock.</p>
+
+<div class="clock w-full text-center"> 8/8 8/8 8/8 8/8 3/8 0/8 0/8 0/8 0/8 0/8 </div>
+<p class="text-center"> Example: The crew have 4 Full Clocks, one at 3/8, the rest empty.<br/>The Crew are Rank 4 ("Connected")<br/>
+**The number of fully filled clocks represents your Rank.** </p>
+
+
+<br/>
+<p class="text-center">**When Status passes certain Thresholds, the Crew's Rank increases.**</p>
+
+| Clocks Req. | Rank           | Title     |
+| ----------- | -------------- | --------- |
+| 0 Clocks    | **- Rank 1 -** | Unknown   |
+| 1 Clock     | **- Rank 2 -** | Whispers  |
+| 2 Clocks    | **- Rank 3 -** | Known     |
+| 4 Clocks    | **- Rank 4 -** | Connected |
+| 7 Clocks    | **- Rank 5 -** | Respected |
+| 10 Clocks   | **- Rank 6 -** | Legends   |
+
+<br/>
+<p class="text-center">As your Crew Rank increases, you gain access to new Features and Advantages.<br/>
+See [Crew Advancement](/rustpnk/docs/arules/crew-faction#status--rank) for more details.</p>
+
+<br/>
+#### Gaining Status
+**Status is gained at the end of a job, depending on a number of factors:**
+<div class="sonohead">
+|                |                                                                                                                                                                  |
+| -------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   **Success:** | Gain **+1** Status if the job was a Success.<br/> Meaning, the primary objective was achieved (even if it came at a cost).                                       |
+| **Archetype:** | Gain **+1** Status if the group played to the Strengths of your Crew Archetype.                                                                                  |
+|     **Noise:** | Gain **+1** Status if you gained 2 or more Hostility during the job.                                                                                             |
+|   **Profile:** | Gain **+1** to **+3** Status, depending on the Rank of the target.<br/> **0-1: +1**<br/> **2-3: +2**<br/> **4+: +3.**                                            |
+|     **Bonus:** | At the GMs discretion, the Crew may gain an additional **+1-2** Status for longer jobs, or for especially successful jobs (Quiet, clean, bonus objectives, etc.) |
+</div>
+
+<br/>
 
 ---
 
 ### Hostility
 **Hostility** represents how likely your enemies are to make a move against you.
 
-**Hostility** is displayed as a Track, split into groups of three, every **three ticks** your Retribution Rating increases. 
+**Hostility** is displayed as five 3-Segment Clocks. For each full clock, your Hostility Rating increases. 
 
-As your Retribution increases, the events and complications you'll face during downtime become more severe.
+<div class="clock w-full text-center"> 3/3 3/3 1/3 0/3 0/3 </div>
+<p class="text-center"> Example: The crew have 2 Full Clocks, one at 1/3, the rest empty.<br/>The Crew have a Hostility Rating of 2. </p>
+
+As your Hostility increases, the events and complications you'll face during downtime become more severe. See [Downtime](/rustpnk/docs/arules/downtime-advancement#events--retribution).
 
 #### Gaining Hostility
 Hostility is gained at the end of a job, depending on a number of factors:
-- **Noise:** If the job was loud and chaotic, gain **+1 Hostility**.
-- **Evidence:** If the Crew were identified, or left behind a trail of evidence linking back to them, gain **+1 Hostility**.
-- **Profile:** If the Target was particularly High Profile, gain **+1 Hostility**.
+<div class="sonohead">
+|               |                                                                                                            |
+| ------------: | :--------------------------------------------------------------------------------------------------------- |
+|    **Noise:** | If the job was loud and chaotic, **Gain +1 Hostility**.                                                    |
+| **Evidence:** | If the Crew were identified, or left evidence linking back to them, **Gain +1 Hostility**.                 |
+|  **Profile:** | If either of the above were true:<br/> **Gain +1 Hostility for each Rank of the Target above the Crew's.** |
 
----
-
-### Status
-**Status** indicates how well known, respected, and feared the Crew are among their clients, allies, and enemies. 
-
-**When Status passes certain Thresholds, the Crew's Status Rank increases:**
-<div class="table-full">
-| 0 Status | 10 Status | 20 Status | 40 Status | 60 Status | 80 Status |
-| -------- | --------- | --------- | --------- | --------- | --------- |
-| Unknown  | Whispers  | Known     | Connected | Respected | Legends   |
 </div>
 
 <br/>
+<p class="text-center">**Hostility clocks are spent by the GM during Downtime to introduce complications.**</p>
 
-#### Gaining Status
-**Status is gained at the end of a job, depending on a number of factors:**
-- **Archetype:** Gain **+1** Status if the group played to the particular strengths (Triggers) of Crew.
-- **Noise:** Gain **+1** Status if you gained 2 or more Hostility during the job.
-- **Profile:** Gain **+1** to **+3** Status, depending on the Tier of the target. **0-1: +1** | **2-3: +2** | **4: +3.**
-- **Bonus:** At the GMs discretion, the Crew may gain an additional **+1-2** Status for longer jobs, or for especially successful jobs (Quiet, clean, bonus objectives, etc.)
+At any time between Jobs, usually during Life scenes (See: [Life Phase](/rustpnk/docs/arules/downtime-advancement#life-phase)) the GM can choose to spend Full Hostility Clocks to introduce trouble and complications.
+
+The more Clocks spent, the greater the potential complication could be.
+
+**For Example:**
+- **A Faction the crew have targeted previously come for revenge.**<br/>- The level of response probably depends on how badly they've been fucked with.
+- **A PCs Rival makes moves to complicate their lives.**<br/>- They might damage their status with a contact, making them unavailable until they make amends.
+- **A group of corrupt, Cerberus enforcers begin harassing the Crew.**<br/>- What do they want? Bribes? Dirty Work?
+- **A Faction takes sudden interest in the crew.**<br/>- Everywhere they go, they can't help feeling watched..
+- **Someone takes advantage of a lack of security to steal something from the Crew.**<br/>- A vehicle, or it's wheels/engine/stereo.
+- **The location of the Crew's safehouse is revealed.**<br/>- Or worse, it's being raided *right now*.
 
 ---
 
-### Payout ₩
-At the end of a job, the team (as a collective) are paid an amount of ₩on determined by the nature, opposition, and expected challenges of the job.
+### Get Paid
+**At the end of a job, the team (as a collective) are paid an amount of ₩on determined by the nature, opposition, and expected challenges of the job.**
 
 **Opposition/Employer/Rank** - **Typical Payout**
 - **Street Gang / Rank I:** ₩1,500 - ₩3,000
-- **Organised Gang / Rank II:** ₩3,000 - ₩6,000
-- **Major Syndicate / Rank III:** ₩6,000 - ₩12,000
-- **Corporation / Rank IV:** ₩12,000 - ₩24,000
-- **Mega-Corporation or Nation / Rank V+:** ₩24,000 - ₩50,000
+- **Organised Gang / Rank II - Rank III:** ₩3,000 - ₩6,000
+- **Major Syndicate / Rank III - Rank IV:** ₩6,000 - ₩12,000
+- **Corporation / Rank IV - Rank V:** ₩12,000 - ₩24,000
+- **Mega-Corporation or Nation / Rank VI+:** ₩24,000 - ₩50,000+
 
-Expect these payouts to be modified by some percentage depending on the client's requirements, additional objectives, relative success, and the cost of any gear provided to pull off the job.
+Expect these payouts to be modified by some percentage depending on the client's requirements, additional objectives, relative success, and possibly the cost of any specialist gear provided to pull off the job.
 
-Additional loot such as data and loose items can usually be sold to a fence for a marked-down fee. Player contacts or other special efforts to locate the *right* buyer can increase the amount gained.
+**If it seems interesting, play out a Vignette of the crew meeting with their client to secure the payment.**
+- Who goes to meet the client?
+- Are there any complications with getting paid?
+- Is there any difficult news to deliver to the client?
 
----
-
-## Downtime Phase
-The period between Jobs is called Downtime. During this time, characters can train, attempt to [heal injuries](/rustpnk/docs/arules/combat-harm-healing#recovery), purchase [gear](/rustpnk/docs/arules/gear), work on projects, etc.
-
----
-
-### Advancement
-Characters learn and grow from their experiences. This is reflected through advancement.
-
-#### Experience Points (EXP)
-Experience represents growth and development. Characters mark Experience at the end of each job for each of the following that is true:
-- **You Survived:** Even if the job was a failure, you made it out alive. **Gain +1 EXP**, *or at the GM's discretion, +2 if the job was particularly long or difficult.*
-
-- **You Faced your Demons:** One or more of your **Flaws** caused you significant trouble during the job. **Gain +1 EXP.**
-- **You Faced Adversity:** You suffered, but at least you learned from it. **Gain +1 EXP** for *each* **Botch** Result or **Trauma** you suffered.
-- **You Made a Connection:** You made use of your **Ties** to another player character, or otherwise **developed your relationship** with them in some meaningful way. **Gain +1 EXP.**
-- **You Chased a Dream:** You made progress toward your **Drive** in some specific, meaningful way. **Gain +1 EXP.**
 <br/>
-Clear **8 EXP** to do one of the following:
-- Write a new **Trademark** (to a maximum of 4)
-- Write a new **Edge** for any trademark (to a maximum of 5 per Trademark)
-- Increase your **Physical** or **Mental** Hit Track by one (to a maximum of 5)
-- Increase your **Stunt Point** maximum by one (to a maximum of 5)
-- Increase your **Augmentation Slots** by one (to a maximum of 5)
-<br/>
-#### Change your Character
-At the GM's discretion, you may also make the following changes during downtime:
-- Change a trademark’s name
-- Add a trigger to a trademark.
-- Change / swap an edge
-- Change a trauma description
-- Change your drive.
-- Add, Remove or Replace an Augmentation.
-<br/>- Installing Augs takes a toll on your body. Make a check. If you fail, you'll suffer Augmentation Rejection that lasts the duration of the next job.
-<br/>- There are drugs available to combat this, but don't expect them to be readily available.
+<p class="text-center">**Whatever happens, if the Crew succeeded in *any capacity* they should get at least 75% of the intended payout, one way or another, even if its delayed.<br/> Don't short-change them.**</p> 
 
-Try to make changes and advancements relevant to your character's current or changing situation, and to the overall story at play.
+#### Selling Loot
+Additional loot such as data and loose items can usually be sold to a fence for a marked-down fee. Player contacts or other special efforts to locate the *right* buyer could increase the amount gained.
+
+Play out a vignette, or make a job out of of the players finding a buyer and organising a sale if the loot is interesting or dangerous.
+
+Otherwise, feel free to add an additional percent of the total job payout as earnings from selling loot, and move past it.
+
+- **GM Advice:** A good starting figure here is somewhere between 10 - 20% of the total job payout.
+- Add an additional 10% for rare and valuable loot.
+- Add an additional 10% if the crew make efforts to find the right buyer.
+- Or, to add a degree of randomness, roll 2, 3, or 4d10, add the result together. This is the percentage of the total job payout made from selling loot.
 
 ---
 
-### Spending ₩
+### Debriefing
+**Gather the crew together after the job.**
 
-#### Uses for ₩on
-- **Training:** Spend ₩2,000 to mark an additional **+1 EXP**, once per-job.
-- **Pay for Treatment:** Spend ₩2,000 to heal 1 **Physical Trauma**. The price doubles for each subsequent Trauma, to represent more complex care, but resets after each job.
-- **Repair Gear:** Pay 25% of the base cost of the Item/Aug. The need for this depends on how reckless you are, but applies in cases where Trauma results in gear being lost or damaged.
-- **Purchase/Upgrade Gear:** Players can purchase and upgrade their Augs and Equipment. 
-<br/>- Depending on the rarity or legality of the item, characters may need to make special efforts to acquire it.
-<br/>- Characters may be required to call upon contacts, factions, local knowledge, or their own skills to acquire or modify what they need.
-<br/>- Items/Weapons/Armour have a maximum limit of 2 Advanced Tags (Upgrades). Augmentations do not have this limit.
+**If it seems interesting, play out a vignette and allow the Characters to discuss the fallout of the job.**
+
+- Where do they meet up? What condition are the Characters in? Is anybody missing?
+- How did the job go? How are the Characters feeling right now?
+- What do the Characters do to celebrate or commiserate? 
+
+---
+
+## Downtime
+**The period between Jobs is called Downtime.**<br/> Characters can spend this time on beneficial activities and preparations for future jobs.
+
+<p class="text-center">**Characters can do up to 3 Downtime Activities per-downtime.**</p>
+
+<br/>
+| Activity        | Description                                                              |
+| --------------- | :----------------------------------------------------------------------- |
+| Rest/Recover    | Heal Level One Wounds. Reduce Level Two Wounds. Attempt to Reduce Trauma |
+| Seek Medicare   | Pay to Reduce Wounds and Trauma.                                         |
+| Training        | Gain +1EXP.                                                              |
+| Side Hustle     | Make some extra cash.                                                    |
+| Work on Project | Make progress on a Project.                                              |
+
+<br/>
+
+---
+
+### Rest/Recover
+Once per-downtime, spend time resting and recuperating to lower the severity of your Wounds.
+
+**When choosing this Activity, resolve the following in order:**
+- Remove all of your Level One Wounds, and any Conditions you still have.
+- Reduce all of your Level Two Wounds to Level One Wounds.
+
+<br/>
+**Then, for each Trauma:**
+- **Roll a Check. You cannot spend Action Points on the result.** 
+- **Add <AD/> for any Skills, Expertise, Crew Features, and Lifestyle factors that might help you recover.**<br/> - Medical Skills, yours or an ally's. Safehouse advantages such as "Medbay" or "Amenities". Lifestyle advantages such as "Decent Diet", etc.
+- **Add +2 <TD/> for each Trauma you currently have**.
+- **Add <TD/> for any Lifestyle factors that might hinder your recovery**. <br/> - No Safe Place to Sleep, Poor Diet, Poor Hygiene, etc.
+
+<br/>
+**Compare the Outcome with the list below:**
+- **On a Boon:** The Trauma is healed completely.
+- **On a Major Success:** The Trauma is reduced to a Level One Wound.
+- **On a Minor Success:** The Trauma is reduced to a Level Two Wound.
+- **On a Hollow Success or Bane:** The Trauma remains.
+
+<br/>
+<p class="text-center">**If it seems interesting, play out a vignette.**<br/> Where do you go to recover? Who comes to see you? How do you spend your recovery time?</p>
+
+---
+
+### Seek Medicare
+**If you need to be fighting fit ASAP, and you have money to burn, you can pay for specialist Medicare to speed up the process.**
+
+- **Pay ₩1,000** to remove all Level One Wounds.
+- **Pay ₩2,000** to remove all Level Two Wounds.
+- **Pay ₩3,000** to remove a Trauma.
+
+You can do this *after* attempting to heal using the Rest/Recover action.
+
+---
+
+### Training
+Once per-downtime, a character can spend time training and honing their skills.
+
+- **Mark +1EXP on an Experience Clock.**<br/>- The "Training Room" Safehouse upgrade increases this to +2EXP.
+
+<br/>
+<p class="text-center">**If it seems interesting, play out a vignette.**<br/> How do you train? Who do you train with? Do you have a Mentor?</p>
+<br/>
+---
+
+### Side Hustle
+Characters can apply their skills to Side Hustles to earn additional ₩, once per-downtime.
+
+The amount you make is based on the payout of the previous job (an abstract of the sort of cash your crew can bring in), and how much of a challenge you choose to take on.
+
+**Follow this procedure:**
+- Decide on the Skill you are monetising, add <AD/> for it and any relevant Expertise.
+- Add <TD/> based on how much of a challenge you want to take on.<br/>- The more <TD/> you add, the more you stand to make.
+- Compare the Challenge and Outcome with the table below. 
+- The percentage is based on the payout from the previous job.
+
+<br/>
+| Challenge | Boon | Major Success | Minor Success | Hollow Success | Bane |
+| --------- | ---- | ------------- | ------------- | -------------- | ---- |
+| <TD/> x1  | 10%  | 5%            | 2%            | 0%             | 0%   |
+| <TD/> x2  | 15%  | 10%           | 5%            | 2%             | 0%   |
+| <TD/> x3  | 20%  | 15%           | 10%           | 5%             | 2%   |
+| <TD/> x4  | 25%  | 20%           | 15%           | 5%             | 2%   |
+| <TD/> x5  | 30%  | 25%           | 20%           | 10%            | 5%   |
+| <TD/> x6  | 35%  | 30%           | 20%           | 10%            | 5%   |
+
+<br/>
+<p class="text-center">**If it seems interesting, play out a vignette.**<br/> What do you do for your Side Hustle? Who's the client? What does it look like?</p>
+<br/>
 
 ---
 
 ### Projects
-Players can pile money, skill, and time into Projects during Downtime, which will come to fruition at a later date. This can be done once per-job.
+**Once per-downtime, Players can pile time, money and skill into Projects, which come to fruition at a later date.**
 
-A long-term project could be any number of things, from working your way into a social circle, uncovering information, upgrading gear (adding additional tags), or repairing a damaged vehicle, etc.
+A long-term project could be any number of things: Working your way into a social circle, uncovering information, researching new tech, [crafting and upgrading gear](/rustpnk/docs/arules/gearsystem#crafting), repairing a damaged vehicle, etc.
 
 #### Starting a Project
-Agree with the GM how complex the project is to achieve. The GM will start a **4-12 segment clock** to represent your progress.
+**Agree with the GM how complex the project is to achieve.**
 
+<p class="text-center">**The Project Clock has a number of segments equal to:**<br/>8 - Relevant Skill</p>
+
+<p class="text-center">**For example, a character with +2 Engineering wants to build a Drone.** <br/> The Project Clock has 8 Segments - 2 for Engineering Skill.</p><p class="text-center"> **Total Segments:** 6.</p>
+<div class="clock w-full text-center"> 0/8 > 0/6 </div>
+
+
+#### Project Costs
+**Depending on the nature of the Project, you may also need to pay ₩ toward Materials, Bribes, and other overheads.**
+
+- **When Crafting Gear/Drugs:** You need to pay for materials (100% of the base item/mod cost - 20% for each level in the most relevant Skill).
+- **For anything else:** ₩0 to ₩300 per Clock Segment.<br/>- Use the **Difficulty** established below as a guide.<br/>- Use logic, if there's no reason for the project to cost anything, it's free.
+
+<p class="text-center">**These are one-off payments to get the Project started.**</p>
+
+<br/>
 #### Making Progress
-**Create a Dice Pool.** Add Action Die for **relevant edges and advantages** that would help you with your project. Add Danger Die for any **challenges** or **factors that might impede you**.
+**Once per downtime, make a Check:**
+<div class="sonohead">
+|                            |                                                                                                                                                                                                                    |
+| -------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Base Skill & Expertise** | Pick and add <AD/> for the most relevant Skill and any associated Expertise.                                                                                                                                       |
+| **Advantages**             | Add <AD/> for any useful gear, access to workshops, or access to expert contacts that could help.                                                                                                                  |
+| **Base Difficulty**        | Projects have a base number of <TD/> between +1 and +3. <br/>  Determine this between the Player and the GM. <br/>Consider how complicated the Project is. How hard is it to access the materials/people you need? |
+| **Lacking Something**      | Without the right knowledge, contacts, tools, schematics, or access to an expert, the GM may decide to add +1 to +3<TD/> to the check to progress the Project, depending on the complexity of the item.            |
 
-Each time you roll to make progress, decide with the GM how **expensive** progress will be. Access to materials, people, and specialist tools isn't cheap.
-<br/>If you have all the skills and material at hand, it doesn't need to cost anything at all.
+</div>
 
-**Consult the following to see how it goes:**
-- **On a 6:** Tick the Progress Clock twice, **OR** Tick the Progress Clock once, and reduce the cost by 50%.
-- **On a 4-5:** Tick the Progress Clock once.
-- **On a 1-3:** A Complication occurs and you make No Progress **OR** Tick the Progress Clock once, and pay an additional 50%.
+<br/>
+**Then, compare the result with the table below:**
+| Result         | Outcome                                |
+| -------------- | :------------------------------------- |
+| Boon           | +1 Ticks on the Project Clock per Boon |
+| Major Success  | +2 Ticks on the Project Clock          |
+| Minor Success  | +1 Ticks on the Project Clock          |
+| Hollow Success | 0 Ticks on the Project Clock           |
+| Bane           | 0 Ticks on the Project Clock           |
 
-- **On a Boon:** Add an additional tick to the clock, **OR** forego all monetary cost. If you have 2 or more boons, you can do both.
-- **On a Botch:** A Complication occurs and you make No Progress
+<br/>
+#### Limitations & Exceptions
+**Vehicles:**
+- You can Mod a Vehicle as Project, but you cannot create one from scratch.
+- Vehicle mods are complex. <br/> - Start with a Base Difficulty of 3 <TD/>.
 
-If the project costs money, pay what is owed now, **regardless** of if you **succeeded** or **failed**.
-<br/>At the GM's discretion, you could add this cost to a **Debt**.
+<br/>
+**Augmentations:**
+- You can opt to swap Engineering/Tech for Medical.
+- You cannot craft Augmentations from scratch, but you can craft Augmentation Mods.
+- Augmentation Mods are significantly more complex than regular items.<br/> - Start with a Base Difficulty of 3 <TD/>. <br/> - Expertise is vital, anything missing will definitely add <TD/>.
 
+<br/>
+**Drugs & Grenades:**
+- For Drugs, swap Engineering/Tech for Medical.
+- For both Drugs & Grenades, the Project Clock starts at 4 Segments instead of 8.
 
 ---
 
-## Narrative Phase 
-This is an opportunity to play out scenes from the character's everyday lives, meet with contacts, fish for opportunities, get caught in Events, and/or generally get into trouble.
+## Preparations
+**At any time between Jobs, players can seek out and purchase/upgrade gear, or install/swap Augmentations.**
 
-**Narrative scenes don't have to take place in sequence**, they can take place all at the same time, or even as part of a flashback (i.e. in a character's past, before/an unseen part of the last job, etc.).
+The only limit is how much ₩ you have.
 
-**Scenes played out during this phase share the same mechanics as the Job phase.** Checks are made when it seems like what the characters are doing has a chance of failure or complication.
-*Often the consequences are lowered in this phase, but not always!*
+### Purchase/Upgrade Gear
+**To Purchase or Upgrade Gear, first, declare what it is you are buying.**
 
-Likewise, if it makes sense, and it seems as though the fiction is naturally flowing from the Narrative Phase to the Job Phase, establish **Loadout** and switch phase.
+#### Common Gear
+**If the GM agrees it is reasonable and common enough for you to find:**
+- Pay the ₩ and write on on your character sheet.
 
-### Hostility / Retribution
-As players begin to make waves in the city of Wuhai, people will begin to take notice. 
+**If you decide to look for better prices on common gear, make a Check:**
+- Add <AD/> for Awareness or Influence (for searching, or dealing), and any attached Expertise.
+- Add <TD/> equal to 4 - the Skill you are using.
 
-There is a chance that events and complications may occur to help or hinder the crew. 
-<br/>These can occur whenever it makes narrative sense, and will be increasingly dangerous the more enemies and hostility the crew build up.
+**Compare the Result with the table below:**
+| Result         | Outcome                       |
+| -------------- | :---------------------------- |
+| Boon           | Additional 5% less, per Boon  |
+| Major Success  | 25% Less                      |
+| Minor Success  | 10% Less                      |
+| Hollow Success | 100% of the Cost              |
+| Bane           | Additional 10% more, per Bane |
 
-##### Optional "Retribution Roll"
-To inject an element of chance, you can optionally use a "Retribution Roll" to decide if an complication should occur.
+<br/>
+#### Uncommon Gear
+**If the GM agrees the item is reasonable, but difficult to locate, make a Check:**
+- Add <AD/> for Awareness or Influence (for searching, or dealing), and any attached Expertise.
+- Add <TD/> equal to 6 - the Skill you are using.
+<br/>
+**Compare the Result with the table below:**
+| Result         | Outcome                             |
+| -------------- | :---------------------------------- |
+| Boon           | Additional 5% less per Boon.        |
+| Major Success  | You find it, and it costs 25% less. |
+| Minor Success  | You find it                         |
+| Hollow Success | You find it, but it costs 25% more. |
+| Bane           | You don't find it.                  |
 
-Create a pool of dice as usual. 
 
-**Add Action Die for:**
-- **Contacts:** If the crew have a contacts that can help them prepare for or weather the incoming threat, add **+1** Action Die.
-- **Allied Factions:** For each **Faction at +2 or above**, add **+1** Action Die.
-- **Security:** Take into account any tags the crew have from improvements, such as "Security" from their Safehouse. Add **+1** Action Die for each of these.
+<br/>
+<p class="text-center">**If it seems interesting, play out a vignette.**<br/> How do you go about your search? Where do you look? Who do you speak to?</p>
+<br/>
 
-**Add Danger Die for:**
-- **Retribution:** Every Three Hostility the Crew have increases their Retribution Rating. **Add Danger Die equal to their Retribution Rating.**
-- **Enemy Factions:** For each **Faction at -2 or below**, add **+1** Danger Die.
-- **(In-)Security:** For any tags relating to a lack of security that the crew may have, or any expensive assets they have which are poorly protected, add **+1** Danger Die.
+### Install/Swap Augmentations
+**As long as you have free Augmentation Slots, you can install new Augs.**
+
+**Installing and Swapping out Augmentations puts strain on the body.<br/> When attempting, roll a Check:**
+- Add <AD/> for a Skill and any Expertise that would help you with either the procedure, or the recovery.
+- Add +1<AD/> for any help from expert contacts, or another Player Character with relevant Skills.
+- Add <AD/> for any Lifestyle Advantages or Crew Features that might help with the procedure or the recovery.
+- Add <TD/> for each currently occupied Augmentation Slot.
+
+**On a Hollow Success, or a Minor Success with a Bane:**
+- You suffer the Augmentation Rejection condition, which lasts for the duration of the next job.
+- Your nervous system flares in response to your new steel. Using your new Aug in a check adds +1 <TD/>.
+
+---
+
+
+## Life Phase
+**This is an opportunity to play out scenes from the character's everyday lives.**
+
+This could be one of the following, or something completely different:
+- Meeting with a Contact
+- Securing a new Job
+- Getting caught up in Complications
+- Working toward a Drive
+- Exploring a character's Aspects
+
+<br/>
+**Life scenes don't have to take place in sequence**, they can take place all at the same time, or even as part of a flashback (i.e. in a character's past, before the last job, etc.).
+
+**Scenes played out during this phase share the same mechanics as the Job phase.**<br/> Checks are made when it seems like what the characters are doing has a chance of failure or complication.<br/>
+<p class="text-center">**The GM might go easy on serious consequences in this phase, but don't push your luck!**</p>
+- **GM Advice:** If it makes sense, and it seems as though the fiction is naturally pushing the characters into the next Job, establish [Loadout](/rustpnk/docs/arules/gearsystem#loadout) and jump straight into the action.
+<br/>
+
+<p class="text-center">**Only play out life scenes that seem interesting to you as GM, and your Players.**<br/>
+**As a GM, make use of these scenes to seed hooks for new jobs.**</p>
+- **GM Advice:** Some groups might want to spend more time here, while others will want to get back to the action ASAP.
+- In addition, keep them short, and limited to one per-player, per-downtime. If you already ran scenes as part of Downtime Actions, feel free to skip it here.
+
+
+<br/>
+<p class="text-center">**If by the end of this phase the crew have no clear new Job to go to, prompt the group about what their goals are, or introduce an appropriate scenario.**</p>
+
+ **For Example:**
+- One of the Crew's Contacts reaches out for help.
+- A Fixer they've worked for before, or one who has heard of the crew's reputation, offers work.
+- A Rival causes trouble that the crew must respond to.
+- A Friendly Faction comes looking to collect on a favour.
+- An Enemy Faction is out for blood.
+
+<p/>
