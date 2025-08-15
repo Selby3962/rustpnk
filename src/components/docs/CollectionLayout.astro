@@ -23,7 +23,7 @@ const { Content, headings } = await render(collectionIndex);
 >
   <Header />
   <PageHeader title={collectionIndex.data.title.slice(3)} />
-  <div class="container glass"></div>
+  <div class="container glass intersect:animate-fadeDown"></div>
   <br/>
   <section class="container">
     <Content />
@@ -53,8 +53,6 @@ const { Content, headings } = await render(collectionIndex);
   </section>
   <ClientRouter fallback="swap" />
 </BaseLayout>
-
----
 
 <style>
   .cardRow{
